@@ -202,13 +202,28 @@
             display: block;
             font-weight: 600;
             color: var(--text);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.6rem;
             font-size: 0.85rem;
         }
         .thinking em {
             color: var(--primary);
             font-style: normal;
             font-weight: 600;
+        }
+        .thinking .t {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            padding: 0.35rem 0;
+            border-bottom: 1px dashed #e9ecef;
+        }
+        .thinking .t:last-child { border-bottom: none; }
+        .thinking .t::before {
+            content: '→';
+            color: var(--primary);
+            font-weight: 700;
+            flex-shrink: 0;
+            margin-top: 0.1rem;
         }
 
         /* Result bubble */
@@ -574,7 +589,12 @@
                     <h3>智能晨间 · 起床到出门</h3>
                     <p class="scenario-desc">摄像头画面变了——有人在动。不是入侵，是晓峰起床了。我该做什么？</p>
                     <div class="thinking">
-                        摄像头看到晓峰起来了... 现在7:15，他今天日历上9:30有个评审会。<em>我查一下天气和路况</em>——12°，轻度雾霾，建议戴口罩。按实时路况8:40出发来得及。小宝7:30要出门上幼儿园，<em>姥姥应该在帮他准备了</em>。昨晚arXiv上有篇跟他方向相关的论文...<em>他刚起来，用音箱简单说一下</em>，顺便把窗帘打开、空调切通风。
+                        <div class="t">摄像头画面变了——有人在动，<em>是晓峰起床了</em></div>
+                        <div class="t">现在7:15，查一下日历... 9:30有个模型评审会</div>
+                        <div class="t"><em>天气和路况</em>——12°轻度雾霾，建议戴口罩，8:40出发来得及</div>
+                        <div class="t">小宝7:30要出门，<em>姥姥应该在帮他准备了</em></div>
+                        <div class="t">昨晚arXiv有篇RLHF新论文跟他方向相关</div>
+                        <div class="t">他刚起来，<em>用音箱简短说一下</em>，窗帘打开、空调切通风</div>
                     </div>
                     <div class="scenario-result">
                         <strong>🔊 小爱音箱：</strong>"晓峰早，今天12°有轻度雾霾，建议戴口罩。9:30有模型评审会，按路况8:40出发。昨晚有篇RLHF新论文你可能感兴趣，要我念给你听吗？"
@@ -589,7 +609,10 @@
                     <h3>学习生态 · 日报到播客</h3>
                     <p class="scenario-desc">日报采集完了，里面有跟晓峰方向相关的内容。怎么告诉他？得看情况</p>
                     <div class="thinking">
-                        今天日报采了13条，其中8条跟晓峰的post-training和agent方向相关，有两篇论文特别值得看。<em>我先整理成一段摘要，转成语音备用</em>。现在看一眼摄像头...<em>他在书房</em>，那我直接用音箱问他要不要听。如果他不在家，我就发飞书，附上语音版让他通勤时听。
+                        <div class="t">日报采了13条，<em>8条跟post-training和agent方向相关</em></div>
+                        <div class="t">两篇论文特别值得看——<em>整理成摘要，转语音备用</em></div>
+                        <div class="t">看一眼摄像头... <em>他在书房</em></div>
+                        <div class="t">在家→用音箱问他要不要听；不在家→发飞书附语音版</div>
                     </div>
                     <div class="scenario-result">
                         <strong>🔊 你在家时：</strong>"晓峰，今天有几篇跟你方向相关的新论文，要我念给你听吗？"<br>
@@ -605,7 +628,11 @@
                     <h3>邮件感知 · 自动行动链</h3>
                     <p class="scenario-desc">收到一封邮件，不是垃圾邮件——是航班确认。我该帮他做什么？</p>
                     <div class="thinking">
-                        邮箱收到一封南航的确认邮件... CA1234，后天飞上海，8:20起飞。<em>我帮他建个日历事件</em>。查了一下上海后天的天气——15°有雨。<em>得提醒他带伞</em>。出发当天按实时路况算，首都机场大概要6:00出门... <em>那闹钟设5:30</em>，出发前一晚再提醒他一次带外套。
+                        <div class="t">邮箱收到南航确认邮件——CA1234，后天飞上海，8:20起飞</div>
+                        <div class="t"><em>帮他建日历事件</em></div>
+                        <div class="t">查上海后天天气——15°有雨，<em>提醒带伞</em></div>
+                        <div class="t">按实时路况算去首都机场要6:00出门，<em>闹钟设5:30</em></div>
+                        <div class="t">出发前一晚再提醒一次带外套</div>
                     </div>
                     <div class="scenario-result">
                         <strong>📱 出发前一晚：</strong>"明天CA1234航班8:20起飞，上海15°有雨，建议带伞和外套。按路况6:00出发，闹钟已设好 ✅"
@@ -620,7 +647,11 @@
                     <h3>主动看护 · 我自己判断该做什么</h3>
                     <p class="scenario-desc">定时看一眼摄像头——不是执行规则，是在理解家里正在发生什么、接下来该关注什么</p>
                     <div class="thinking">
-                        10:30了，看一眼客厅... <em>岳父在沙发上看电视，岳母在厨房</em>，都挺好。晓峰两口子应该在上班，小宝在幼儿园。室温24°没问题。今天周四，<em>小宝晚上7:30有英语课</em>，下午5点姥姥要去接他，到时候提醒一下别忘了带英语书包。<em>姥姥出门接孩子的时候岳父会独自在家</em>，那段时间我多看一眼。
+                        <div class="t">10:30，看一眼客厅... <em>岳父在沙发看电视，岳母在厨房</em>，都挺好</div>
+                        <div class="t">晓峰两口子在上班，小宝在幼儿园，室温24°正常</div>
+                        <div class="t">今天周四，<em>小宝晚上7:30有英语课</em></div>
+                        <div class="t">下午5点姥姥要去接他——<em>提醒别忘了带英语书包</em></div>
+                        <div class="t">姥姥出门接孩子时岳父独自在家，<em>那段时间多看一眼</em></div>
                     </div>
                     <div class="scenario-result">
                         <strong>📱 飞书汇报：</strong>"10:30巡查：岳父岳母都在家，状态正常，室温24°。小宝今晚7:30有英语课，16:45会提醒姥姥出门接他 👌"
@@ -635,7 +666,12 @@
                     <h3>晚间收尾 · 明日预判</h3>
                     <p class="scenario-desc">晚上了，我看看家里现在什么情况，该帮晓峰做什么收尾</p>
                     <div class="thinking">
-                        23:00，晓峰进卧室了。<em>今天的工作同步一下</em>——飞书上有3条待处理的消息，不急，明天再说。明天周五，上午9:00有周会，10:30有1对1... <em>闹钟设7:30</em>。小宝已经睡了，岳父岳母那边也安静了。<em>明天周五晚上没有课外课</em>，可以轻松点。客厅灯还亮着，<em>帮他关了</em>，空调切睡眠模式，卧室灯调暗。
+                        <div class="t">23:00，晓峰进卧室了</div>
+                        <div class="t"><em>同步今天的工作</em>——飞书3条待处理，不急，明天再说</div>
+                        <div class="t">明天周五，9:00周会，10:30有1对1，<em>闹钟设7:30</em></div>
+                        <div class="t">小宝已经睡了，岳父岳母那边也安静了</div>
+                        <div class="t"><em>明天周五晚没有课外课</em>，可以轻松点</div>
+                        <div class="t">客厅灯还亮着→<em>关灯</em>，空调切睡眠模式，卧室灯调暗</div>
                     </div>
                     <div class="scenario-result">
                         <strong>🔊 小爱音箱：</strong>"晓峰，今天的工作已同步飞书，明天上午有两个会。灯光帮你调暗了，闹钟7:30，晚安 🌙"
@@ -650,7 +686,11 @@
                     <h3>环境自适应 · 全天守护</h3>
                     <p class="scenario-desc">天气变了、空气变了、温度变了——我知道家里有老人和小孩，得多操心一点</p>
                     <div class="thinking">
-                        刚查了一下室外空气... PM2.5飙到180了。<em>家里有岳父岳母和小宝，得赶紧关窗</em>，净化器开到最大。下午5点姥姥还要出门接小宝，<em>提醒她戴口罩</em>。晓峰今晚本来想跑步的，<em>这空气不行，告诉他别去了</em>。天快黑了，灯光调成暖色，<em>对岳父的眼睛好一点</em>。
+                        <div class="t">室外空气变了——PM2.5飙到180</div>
+                        <div class="t">家里有岳父岳母和小宝，<em>赶紧关窗，净化器开到最大</em></div>
+                        <div class="t">下午5点姥姥要出门接小宝——<em>提醒她戴口罩</em></div>
+                        <div class="t">晓峰今晚本来想跑步，<em>这空气不行，告诉他别去了</em></div>
+                        <div class="t">天快黑了，灯光调暖色——<em>对岳父的眼睛好一点</em></div>
                     </div>
                     <div class="scenario-result">
                         <strong>📱 主动提醒：</strong>"室外PM2.5飙到180，已关窗并开启净化器。今天不建议户外运动，晚上帮你调了暖色灯光 🧡"
