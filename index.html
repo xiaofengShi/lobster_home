@@ -98,6 +98,9 @@
             max-width: 1100px;
             margin: 0 auto;
         }
+        section + section {
+            border-top: 1px solid var(--border);
+        }
         .section-header {
             text-align: center;
             margin-bottom: 3.5rem;
@@ -137,6 +140,7 @@
             height: 280px;
             object-fit: cover;
             display: block;
+            border-bottom: 1px solid var(--border);
         }
         .scenario-body {
             padding: 2rem 2.5rem 2.5rem;
@@ -243,13 +247,16 @@
         /* Devices */
         .devices {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 1rem;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.2rem;
+        }
+        @media (max-width: 768px) {
+            .devices { grid-template-columns: repeat(2, 1fr); }
         }
         .device {
             background: var(--bg-white);
             border-radius: 16px;
-            padding: 1.5rem;
+            padding: 1.5rem 1rem;
             text-align: center;
             border: 1px solid var(--border);
             transition: all 0.3s;
@@ -358,8 +365,6 @@
             grid-template-columns: 1fr 1fr;
             gap: 1.5rem;
             position: relative;
-            max-width: 800px;
-            margin: 0 auto;
         }
         .loop-center {
             position: absolute;
@@ -421,9 +426,6 @@
             grid-template-columns: repeat(4, 1fr);
             gap: 1rem;
             margin-top: 2.5rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
         }
         .real-number-item {
             text-align: center;
@@ -451,8 +453,6 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1.5rem;
-            max-width: 900px;
-            margin: 0 auto;
         }
         @media (max-width: 768px) {
             .evo-grid { grid-template-columns: 1fr; }
@@ -461,7 +461,7 @@
             background: var(--bg-white);
             border: 1px solid var(--border);
             border-radius: var(--radius);
-            padding: 1.8rem;
+            padding: 2rem;
             box-shadow: var(--shadow);
             transition: all 0.3s ease;
         }
@@ -471,7 +471,7 @@
         }
         .evo-icon { font-size: 2rem; margin-bottom: 0.5rem; }
         .evo-card h4 {
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             font-weight: 700;
             color: var(--text);
             margin-bottom: 1rem;
@@ -481,7 +481,7 @@
             display: flex;
             align-items: flex-start;
             gap: 0.6rem;
-            font-size: 0.85rem;
+            font-size: 0.88rem;
             line-height: 1.5;
         }
         .evo-day {
@@ -489,10 +489,10 @@
             background: var(--primary-light);
             color: var(--primary);
             font-weight: 600;
-            padding: 0.15rem 0.5rem;
+            padding: 0.2rem 0.6rem;
             border-radius: 6px;
-            font-size: 0.75rem;
-            min-width: 45px;
+            font-size: 0.78rem;
+            min-width: 48px;
             text-align: center;
         }
         .evo-text { color: var(--text-muted); }
@@ -521,28 +521,28 @@
             
             <div class="loop-node loop-sense">
                 <div class="loop-icon">👁️</div>
-                <h4>感知</h4>
+                <h4>① 感知</h4>
                 <p>摄像头 · 温湿度 · 门锁 · 移动传感 · 日历 · 天气</p>
                 <div class="loop-detail">每10-30分钟自动看一眼家里，读取14个设备的实时数据</div>
             </div>
             
             <div class="loop-node loop-think">
                 <div class="loop-icon">🧠</div>
-                <h4>理解</h4>
+                <h4>② 理解</h4>
                 <p>VLM视觉分析 · 家庭成员识别 · 语境判断 · 日程关联</p>
                 <div class="loop-detail">不是"检测到人"，是"姥姥在客厅看电视，小宝还在幼儿园"</div>
             </div>
             
             <div class="loop-node loop-act">
                 <div class="loop-icon">⚡</div>
-                <h4>行动</h4>
+                <h4>③ 行动</h4>
                 <p>音箱播报 · 飞书推送 · 空调/灯/净化器 · 场景切换</p>
                 <div class="loop-detail">根据理解结果选择最合适的方式——在家用音箱说，不在家推飞书</div>
             </div>
             
             <div class="loop-node loop-evolve">
                 <div class="loop-icon">🔄</div>
-                <h4>进化</h4>
+                <h4>④ 进化</h4>
                 <p>认人记忆 · 习惯发现 · 设备自发现 · 能力边界感知</p>
                 <div class="loop-detail">新设备接入 → 自动感知能力扩展 · 需求超出能力 → 告诉你该补什么设备</div>
             </div>
