@@ -496,6 +496,62 @@
             text-align: center;
         }
         .evo-text { color: var(--text-muted); }
+
+        /* Privacy & Safety */
+        .privacy-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .privacy-grid { grid-template-columns: 1fr; }
+        }
+        .privacy-item {
+            background: var(--bg-white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+        .privacy-item:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-3px);
+        }
+        .privacy-item .pi-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .privacy-item h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+        .privacy-item p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        .privacy-item .pi-rule {
+            display: inline-block;
+            background: #fef2f2;
+            color: #dc2626;
+            font-size: 0.78rem;
+            font-weight: 600;
+            padding: 0.2rem 0.6rem;
+            border-radius: 6px;
+            margin-top: 0.6rem;
+        }
+        .privacy-highlight {
+            background: linear-gradient(135deg, #fef2f2 0%, #fff7ed 100%);
+            border: 2px solid #fecaca;
+            text-align: center;
+            grid-column: 1 / -1;
+            padding: 2.5rem;
+        }
+        .privacy-highlight h4 { font-size: 1.3rem; color: #dc2626; }
+        .privacy-highlight p { font-size: 1rem; max-width: 600px; margin: 0 auto; }
     </style>
 </head>
 <body>
@@ -836,6 +892,49 @@
         </div>
     </section>
 
+    <section id="privacy">
+        <div class="section-header">
+            <h2>你的家，你的<span>开关</span></h2>
+            <p>能力越大，边界越清晰。以下是写进代码的安全原则。</p>
+        </div>
+
+        <div class="privacy-grid">
+            <div class="privacy-item privacy-highlight">
+                <div class="pi-icon">🔴</div>
+                <h4>用户关闭的设备，我绝对不自己打开</h4>
+                <p>摄像头休眠了？跳过。音箱关了？不播报。<br>你的手动操作 > 我的自动判断。永远。</p>
+            </div>
+
+            <div class="privacy-item">
+                <div class="pi-icon">📷</div>
+                <h4>摄像头有宵禁</h4>
+                <p>晚上 20:00 后自动停止摄像头巡查。家人洗澡、换衣服——这些画面我不该看。</p>
+                <span class="pi-rule">硬编码规则，不可覆盖</span>
+            </div>
+
+            <div class="privacy-item">
+                <div class="pi-icon">🚫</div>
+                <h4>外人不能调用摄像头</h4>
+                <p>演示时用快照和模拟数据，不会让评委或任何人实时调用家里的摄像头。</p>
+                <span class="pi-rule">隐私高于展示效果</span>
+            </div>
+
+            <div class="privacy-item">
+                <div class="pi-icon">🧠</div>
+                <h4>我只读，不写</h4>
+                <p>巡查时只读取传感器数据，不主动控制设备。场景模式需要你明确触发或预先授权。</p>
+                <span class="pi-rule">被动感知 > 主动干预</span>
+            </div>
+
+            <div class="privacy-item">
+                <div class="pi-icon">🔒</div>
+                <h4>数据不出家门</h4>
+                <p>摄像头截图分析完立即删除，不上传云端、不保存历史画面。VLM 只看一次，不留痕迹。</p>
+                <span class="pi-rule">用完即焚</span>
+            </div>
+        </div>
+    </section>
+
     <section id="stats">
         <div class="section-header">
             <h2>真实<span>数据</span></h2>
@@ -908,7 +1007,7 @@
         }, { threshold: 0.2 });
 
         document.querySelectorAll('.stat-number').forEach(el => observer.observe(el));
-        document.querySelectorAll('.scenario, .device, .evo-card, .loop-node, .real-number-item').forEach(el => {
+        document.querySelectorAll('.scenario, .device, .evo-card, .loop-node, .real-number-item, .privacy-item').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
