@@ -774,7 +774,7 @@
             <div class="loop-node loop-sense">
                 <div class="loop-icon">👁️</div>
                 <h4>① 感知</h4>
-                <p>摄像头 · 温湿度 · 门锁 · 移动传感 · 日历 · 天气 · <strong>语音</strong></p>
+                <p>摄像头 · 温湿度 · 门锁 · 移动传感 · 天气 · 提醒 · <strong>语音</strong></p>
                 <div class="loop-detail">每10-30分钟自动巡查，读取16个设备数据，还能听你说话（"龙虾，明天天气"）</div>
             </div>
             
@@ -842,14 +842,13 @@
                     <p class="scenario-desc">摄像头画面变了——有人在动。不是入侵，是主人起床了。我该做什么？</p>
                     <div class="thinking">
                         <div class="t">摄像头画面变了——有人在动，<em>VLM 识别是主人起床了</em></div>
-                        <div class="t">现在7:15，查一下日历... 9:30有个会议</div>
-                        <div class="t"><em>查天气</em>——12°轻度雾霾，建议戴口罩</div>
-                        <div class="t">孩子7:30要出门上学，<em>家人应该在帮他准备了</em></div>
+                        <div class="t"><em>查 Open-Meteo</em>——12°轻度雾霾，建议戴口罩</div>
+                        <div class="t">检查提醒列表 → 今天下午3点有个周会</div>
                         <div class="t">昨晚arXiv有篇跟他方向相关的新论文</div>
                         <div class="t">他刚起来，<em>用音箱简短说一下</em>，空调切通风</div>
                     </div>
                     <div class="scenario-result">
-                        <strong>🔊 小爱音箱：</strong>"早上好，今天12°有轻度雾霾，建议戴口罩。9:30有会议。昨晚有篇新论文你可能感兴趣，要我念给你听吗？"
+                        <strong>🔊 小爱音箱：</strong>"早上好，今天12°有雾霾，建议戴口罩。下午3点有周会。昨晚有篇新论文你可能感兴趣，要我念给你听吗？"
                     </div>
                 </div>
             </div>
@@ -883,7 +882,7 @@
             </div>
 
             <div class="scenario">
-                <img class="scenario-img" src="images/email.png" alt="邮件感知">
+                <img class="scenario-img" src="images/email.png" alt="消息感知">
                 <div class="scenario-body">
                     <span class="scenario-tag">📬 全天 · 事件驱动</span>
                     <h3>消息感知 · 自动行动链</h3>
@@ -928,15 +927,14 @@
                     <h3>晚间收尾 · 明日预判</h3>
                     <p class="scenario-desc">晚上了，我看看家里现在什么情况，该做什么收尾</p>
                     <div class="thinking">
-                        <div class="t">23:00，主人进卧室了</div>
-                        <div class="t"><em>同步今天的工作</em>——飞书3条待处理，不急，明天再说</div>
-                        <div class="t">明天周五，9:00周会，10:30有1对1，<em>闹钟设7:30</em></div>
+                        <div class="t">23:00，摄像头检测到活动减少，<em>主人进卧室了</em></div>
+                        <div class="t">检查提醒列表 → 明天无待办提醒</div>
                         <div class="t">孩子已经睡了，老人那边也安静了</div>
                         <div class="t"><em>明天周五晚没有课外课</em>，可以轻松点</div>
-                        <div class="t">客厅灯还亮着→<em>关灯</em>，空调切睡眠模式，卧室灯调暗</div>
+                        <div class="t">客厅灯还亮着 → <em>关灯</em>，空调切睡眠模式</div>
                     </div>
                     <div class="scenario-result">
-                        <strong>🔊 小爱音箱：</strong>"今天的工作已同步飞书，明天上午有两个会。灯光帮你调暗了，闹钟7:30，晚安 🌙"
+                        <strong>🔊 小爱音箱：</strong>"明天没有待办提醒，周五晚没课外课。灯光帮你调暗了，晚安 🌙"
                     </div>
                 </div>
             </div>
@@ -946,16 +944,16 @@
                 <div class="scenario-body">
                     <span class="scenario-tag">🌦️ 全天 · 持续感知</span>
                     <h3>环境自适应 · 全天守护</h3>
-                    <p class="scenario-desc">天气变了、空气变了、温度变了——我知道家里有老人和小孩，得多操心一点</p>
+                    <p class="scenario-desc">天气变了、温度变了——我知道家里有老人和孩子，得多操心一点</p>
                     <div class="thinking">
-                        <div class="t">室外空气变了——PM2.5飙到180</div>
-                        <div class="t">家里有老人和孩子，<em>赶紧关窗，净化器开到最大</em></div>
-                        <div class="t">下午5点家人要出门接孩子——<em>提醒戴口罩</em></div>
-                        <div class="t">主人今晚本来想跑步，<em>这空气不行，告诉他别去了</em></div>
-                        <div class="t">天快黑了，灯光调暖色——<em>对老人的眼睛好一点</em></div>
+                        <div class="t">Open-Meteo 推送 → 未来2小时有雨，降水概率80%</div>
+                        <div class="t">下午5点家人要出门接孩子 → <em>提醒带伞</em></div>
+                        <div class="t">室温降到20° → <em>空调调到24°</em></div>
+                        <div class="t">空气质量不佳 → <em>净化器开到强档</em></div>
+                        <div class="t">天快黑了 → <em>灯光调暖色</em>，对老人眼睛友好</div>
                     </div>
                     <div class="scenario-result">
-                        <strong>📱 主动提醒：</strong>"室外PM2.5飙到180，已关窗并开启净化器。今天不建议户外运动，晚上帮你调了暖色灯光 🧡"
+                        <strong>📱 主动提醒：</strong>"未来2小时有雨，已提醒家人出门带伞。室温偏低已调空调，净化器已开启 🧡"
                     </div>
                 </div>
             </div>
@@ -1014,15 +1012,15 @@
                 <div class="evo-timeline">
                     <div class="evo-step">
                         <span class="evo-day">发现</span>
-                        <span class="evo-text">检测到新设备接入 → 自动读取能力和状态</span>
+                        <span class="evo-text">HA 检测到新设备接入 → 自动读取能力和状态</span>
                     </div>
                     <div class="evo-step">
                         <span class="evo-day">集成</span>
-                        <span class="evo-text">新窗帘电机接入 → 自动加入晨间场景</span>
+                        <span class="evo-text">新加湿器接入 → 自动纳入环境联动</span>
                     </div>
                     <div class="evo-step">
                         <span class="evo-day">联动</span>
-                        <span class="evo-text">起床时自动开窗帘，不需要你配规则</span>
+                        <span class="evo-text">室内干燥时自动开启，不需要你配规则</span>
                     </div>
                 </div>
             </div>
@@ -1033,15 +1031,15 @@
                 <div class="evo-timeline">
                     <div class="evo-step">
                         <span class="evo-day">你说</span>
-                        <span class="evo-text">"帮我监测一下花园的浇水情况"</span>
+                        <span class="evo-text">"帮我监测老人夜间起夜情况"</span>
                     </div>
                     <div class="evo-step">
                         <span class="evo-day">我想</span>
-                        <span class="evo-text">当前没有土壤湿度传感器，无法直接感知</span>
+                        <span class="evo-text">当前卧室没有人体传感器，摄像头夜间又关了</span>
                     </div>
                     <div class="evo-step">
                         <span class="evo-day">我说</span>
-                        <span class="evo-text">"需要一个土壤湿度传感器（小米花花草草检测仪，￥79），接入后我就能帮你了"</span>
+                        <span class="evo-text">"卧室加一个人体传感器（米家人体2，￥59），接入后我就能帮你了"</span>
                     </div>
                 </div>
             </div>
