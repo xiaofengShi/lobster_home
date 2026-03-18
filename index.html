@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦞 龙虾管家 | OpenClaw Hackathon</title>
+    <!-- 字体：用系统字体，不依赖 Google Fonts -->
+    <!-- 动画：用 CSS animation 替代 GSAP，不依赖 CDN -->
+    <style>
+        :root {
+            --primary: #e85d4a;
+            --primary-light: #fff0ee;
+            --primary-soft: #fcd5cf;
+            --bg: #fafafa;
+            --bg-white: #ffffff;
+            --text: #1a1a2e;
+            --text-muted: #6b7280;
+            --text-light: #9ca3af;
+            --border: #e5e7eb;
+            --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-lg: 0 10px 40px rgba(0,0,0,0.08);
+            --radius: 20px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: url('images/hero.png') center center / cover no-repeat;
+            padding: 2rem;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(10,10,30,0.55) 0%, rgba(10,10,30,0.7) 60%, rgba(250,250,250,1) 100%);
+            z-index: 0;
+        }
+        .hero > * { position: relative; z-index: 1; }
+        .logo {
+            font-size: 8rem;
+            margin-bottom: 1.5rem;
+            animation: float 4s ease-in-out infinite;
+            filter: drop-shadow(0 0 30px rgba(232,93,74,0.6));
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(-3deg); }
+            50% { transform: translateY(-20px) rotate(3deg); }
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+            text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+        }
+        .hero h1 span { color: #ff8a75; }
+        .tagline {
+            font-size: 1.25rem;
+            max-width: 680px;
+            margin: 0 auto 3rem;
+            color: rgba(255,255,255,0.85);
+            line-height: 1.8;
+            text-shadow: 0 1px 10px rgba(0,0,0,0.4);
+        }
+        .tagline .old { color: rgba(255,255,255,0.5); text-decoration: line-through; }
+        .tagline .new { color: #ff8a75; font-weight: 600; }
+        .scroll-hint {
+            position: absolute;
+            bottom: 2rem;
+            font-size: 1.5rem;
+            color: rgba(255,255,255,0.6);
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(8px); }
+        }
+
+        /* Section common */
+        section {
+            padding: 5rem 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+        .section-header h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+        }
+        .section-header h2 span { color: var(--primary); }
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        /* Scenario Cards */
+        .scenarios {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+        .scenario {
+            background: var(--bg-white);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            overflow: hidden;
+            transition: all 0.35s ease;
+            box-shadow: var(--shadow);
+        }
+        .scenario:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+        }
+        .scenario-img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+        }
+        .scenario-body {
+            padding: 2rem 2.5rem 2.5rem;
+        }
+        .scenario-tag {
+            display: inline-block;
+            background: var(--primary-light);
+            color: var(--primary);
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-bottom: 0.8rem;
+        }
+        .scenario h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 0.6rem;
+            color: var(--text);
+        }
+        .scenario-desc {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        /* Flow steps */
+        .scenario-flow {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        .flow-step {
+            background: #f3f4f6;
+            padding: 0.4rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--text);
+            font-weight: 500;
+        }
+        .flow-arrow {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        /* Thinking bubble - 替代线性流程，展示AI在想什么 */
+        .thinking {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 16px;
+            padding: 1.2rem 1.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            position: relative;
+        }
+        .thinking::before {
+            content: '🧠 我在想...';
+            display: block;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+            font-size: 0.85rem;
+        }
+        .thinking em {
+            color: var(--primary);
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        /* Result bubble */
+        .scenario-result {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: 14px;
+            padding: 1rem 1.2rem;
+            font-size: 0.9rem;
+            color: #15803d;
+            line-height: 1.6;
+        }
+        .scenario-result strong {
+            color: #166534;
+        }
+
+        /* Devices */
+        .devices {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+        }
+        .device {
+            background: var(--bg-white);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+            box-shadow: var(--shadow);
+        }
+        .device:hover {
+            border-color: var(--primary-soft);
+            box-shadow: var(--shadow-lg);
+        }
+        .device-icon { font-size: 2.2rem; margin-bottom: 0.5rem; }
+        .device-name { font-weight: 600; font-size: 0.9rem; margin-bottom: 0.3rem; }
+        .device-status {
+            font-size: 0.8rem;
+            color: #16a34a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.3rem;
+        }
+        .status-dot {
+            width: 7px; height: 7px;
+            background: #16a34a;
+            border-radius: 50%;
+            animation: pulse-dot 2s infinite;
+        }
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        /* Stats */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+        .stat {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: var(--bg-white);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+        }
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1;
+        }
+        .stat-label {
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: var(--bg-white);
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+        }
+        footer h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+        .badges {
+            margin: 1.5rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        .badge {
+            display: inline-block;
+            background: var(--primary-light);
+            color: var(--primary);
+            padding: 0.45rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .logo { font-size: 5rem; }
+            .tagline { font-size: 1.05rem; }
+            .section-header h2 { font-size: 1.7rem; }
+            .stats { grid-template-columns: repeat(2, 1fr); }
+            .stat-number { font-size: 2.2rem; }
+            .scenario-img { height: 200px; }
+            .scenario-body { padding: 1.5rem; }
+            .loop-container { grid-template-columns: 1fr; }
+            .loop-center { display: none; }
+            .real-numbers { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        /* Core Loop */
+        .loop-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .loop-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4rem;
+            z-index: 2;
+            background: var(--bg);
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px var(--primary-soft), var(--shadow-lg);
+        }
+        .loop-node {
+            background: var(--bg-white);
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.8rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .loop-node:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+        }
+        .loop-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .loop-node h4 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+            color: var(--primary);
+        }
+        .loop-node p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 0.6rem;
+        }
+        .loop-detail {
+            font-size: 0.8rem;
+            color: var(--text);
+            background: var(--primary-light);
+            padding: 0.5rem 0.8rem;
+            border-radius: 8px;
+            line-height: 1.5;
+        }
+        .loop-arrows { display: none; }
+
+        .real-numbers {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-top: 2.5rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .real-number-item {
+            text-align: center;
+            padding: 1.2rem 0.5rem;
+            background: var(--bg-white);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+        .rn-value {
+            display: block;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1;
+        }
+        .rn-label {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 0.3rem;
+        }
+
+        /* Evolution Grid */
+        .evo-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .evo-grid { grid-template-columns: 1fr; }
+        }
+        .evo-card {
+            background: var(--bg-white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.8rem;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+        .evo-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-3px);
+        }
+        .evo-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+        .evo-card h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 1rem;
+        }
+        .evo-timeline { display: flex; flex-direction: column; gap: 0.6rem; }
+        .evo-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.6rem;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+        .evo-day {
+            flex-shrink: 0;
+            background: var(--primary-light);
+            color: var(--primary);
+            font-weight: 600;
+            padding: 0.15rem 0.5rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            min-width: 45px;
+            text-align: center;
+        }
+        .evo-text { color: var(--text-muted); }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="logo">🦞</div>
+        <h1>🦞 我的全天候<span>伙伴</span></h1>
+        <p class="tagline">
+            不是等你下指令的智能音箱<br>
+            是从你睁眼到入睡，<span class="new">始终在感知、判断、行动的全天候伙伴</span>
+        </p>
+        <div class="scroll-hint">↓</div>
+    </div>
+
+    <!-- 核心能力闭环 -->
+    <section id="core-loop">
+        <div class="section-header">
+            <h2>一个<span>持续进化</span>的闭环</h2>
+            <p>不是写死的 if-else 规则，是一个真正在思考、在学习的 AI</p>
+        </div>
+
+        <div class="loop-container">
+            <div class="loop-center">🦞</div>
+            
+            <div class="loop-node loop-sense">
+                <div class="loop-icon">👁️</div>
+                <h4>感知</h4>
+                <p>摄像头 · 温湿度 · 门锁 · 移动传感 · 日历 · 天气</p>
+                <div class="loop-detail">每10-30分钟自动看一眼家里，读取14个设备的实时数据</div>
+            </div>
+            
+            <div class="loop-node loop-think">
+                <div class="loop-icon">🧠</div>
+                <h4>理解</h4>
+                <p>VLM视觉分析 · 家庭成员识别 · 语境判断 · 日程关联</p>
+                <div class="loop-detail">不是"检测到人"，是"姥姥在客厅看电视，小宝还在幼儿园"</div>
+            </div>
+            
+            <div class="loop-node loop-act">
+                <div class="loop-icon">⚡</div>
+                <h4>行动</h4>
+                <p>音箱播报 · 飞书推送 · 空调/灯/净化器 · 场景切换</p>
+                <div class="loop-detail">根据理解结果选择最合适的方式——在家用音箱说，不在家推飞书</div>
+            </div>
+            
+            <div class="loop-node loop-evolve">
+                <div class="loop-icon">🔄</div>
+                <h4>进化</h4>
+                <p>认人记忆 · 习惯发现 · 设备自发现 · 能力边界感知</p>
+                <div class="loop-detail">新设备接入 → 自动感知能力扩展 · 需求超出能力 → 告诉你该补什么设备</div>
+            </div>
+
+            <div class="loop-arrows">
+                <span class="arrow arrow-1">→</span>
+                <span class="arrow arrow-2">→</span>
+                <span class="arrow arrow-3">→</span>
+                <span class="arrow arrow-4">→</span>
+            </div>
+        </div>
+
+        <div class="real-numbers">
+            <div class="real-number-item">
+                <span class="rn-value">14</span>
+                <span class="rn-label">个设备实时在线</span>
+            </div>
+            <div class="real-number-item">
+                <span class="rn-value">~35</span>
+                <span class="rn-label">次/天 自主巡查</span>
+            </div>
+            <div class="real-number-item">
+                <span class="rn-value">0</span>
+                <span class="rn-label">条预设规则</span>
+            </div>
+            <div class="real-number-item">
+                <span class="rn-value">∞</span>
+                <span class="rn-label">进化上限</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="scenarios">
+        <div class="section-header">
+            <h2>这个闭环在<span>真实运转</span></h2>
+            <p>以下不是概念设计——是今天正在发生的事</p>
+        </div>
+
+        <div class="scenarios">
+            <div class="scenario">
+                <img class="scenario-img" src="images/morning.png" alt="智能晨间">
+                <div class="scenario-body">
+                    <span class="scenario-tag">🌅 早晨 · 自动触发</span>
+                    <h3>智能晨间 · 起床到出门</h3>
+                    <p class="scenario-desc">摄像头画面变了——有人在动。不是入侵，是晓峰起床了。我该做什么？</p>
+                    <div class="thinking">
+                        摄像头看到晓峰起来了... 现在7:15，他今天日历上9:30有个评审会。<em>我查一下天气和路况</em>——12°，轻度雾霾，建议戴口罩。按实时路况8:40出发来得及。小宝7:30要出门上幼儿园，<em>姥姥应该在帮他准备了</em>。昨晚arXiv上有篇跟他方向相关的论文...<em>他刚起来，用音箱简单说一下</em>，顺便把窗帘打开、空调切通风。
+                    </div>
+                    <div class="scenario-result">
+                        <strong>🔊 小爱音箱：</strong>"晓峰早，今天12°有轻度雾霾，建议戴口罩。9:30有模型评审会，按路况8:40出发。昨晚有篇RLHF新论文你可能感兴趣，要我念给你听吗？"
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario">
+                <img class="scenario-img" src="images/learning.png" alt="学习生态">
+                <div class="scenario-body">
+                    <span class="scenario-tag">🧠 每天 · 感知+推送</span>
+                    <h3>学习生态 · 日报到播客</h3>
+                    <p class="scenario-desc">日报采集完了，里面有跟晓峰方向相关的内容。怎么告诉他？得看情况</p>
+                    <div class="thinking">
+                        今天日报采了13条，其中8条跟晓峰的post-training和agent方向相关，有两篇论文特别值得看。<em>我先整理成一段摘要，转成语音备用</em>。现在看一眼摄像头...<em>他在书房</em>，那我直接用音箱问他要不要听。如果他不在家，我就发飞书，附上语音版让他通勤时听。
+                    </div>
+                    <div class="scenario-result">
+                        <strong>🔊 你在家时：</strong>"晓峰，今天有几篇跟你方向相关的新论文，要我念给你听吗？"<br>
+                        <strong>📱 你不在时：</strong>"今天日报里有3个跟你post-training方向相关的进展，语音版已生成 🎧"
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario">
+                <img class="scenario-img" src="images/email.png" alt="邮件感知">
+                <div class="scenario-body">
+                    <span class="scenario-tag">📬 全天 · 事件驱动</span>
+                    <h3>邮件感知 · 自动行动链</h3>
+                    <p class="scenario-desc">收到一封邮件，不是垃圾邮件——是航班确认。我该帮他做什么？</p>
+                    <div class="thinking">
+                        邮箱收到一封南航的确认邮件... CA1234，后天飞上海，8:20起飞。<em>我帮他建个日历事件</em>。查了一下上海后天的天气——15°有雨。<em>得提醒他带伞</em>。出发当天按实时路况算，首都机场大概要6:00出门... <em>那闹钟设5:30</em>，出发前一晚再提醒他一次带外套。
+                    </div>
+                    <div class="scenario-result">
+                        <strong>📱 出发前一晚：</strong>"明天CA1234航班8:20起飞，上海15°有雨，建议带伞和外套。按路况6:00出发，闹钟已设好 ✅"
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario">
+                <img class="scenario-img" src="images/leaving.png" alt="主动看护">
+                <div class="scenario-body">
+                    <span class="scenario-tag">🏠 全天 · 自主判断</span>
+                    <h3>主动看护 · 我自己判断该做什么</h3>
+                    <p class="scenario-desc">定时看一眼摄像头——不是执行规则，是在理解家里正在发生什么、接下来该关注什么</p>
+                    <div class="thinking">
+                        10:30了，看一眼客厅... <em>岳父在沙发上看电视，岳母在厨房</em>，都挺好。晓峰两口子应该在上班，小宝在幼儿园。室温24°没问题。今天周四，<em>小宝晚上7:30有英语课</em>，下午5点姥姥要去接他，到时候提醒一下别忘了带英语书包。<em>姥姥出门接孩子的时候岳父会独自在家</em>，那段时间我多看一眼。
+                    </div>
+                    <div class="scenario-result">
+                        <strong>📱 飞书汇报：</strong>"10:30巡查：岳父岳母都在家，状态正常，室温24°。小宝今晚7:30有英语课，16:45会提醒姥姥出门接他 👌"
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario">
+                <img class="scenario-img" src="images/night.png" alt="晚间收尾">
+                <div class="scenario-body">
+                    <span class="scenario-tag">🌙 晚间 · 行为感知</span>
+                    <h3>晚间收尾 · 明日预判</h3>
+                    <p class="scenario-desc">晚上了，我看看家里现在什么情况，该帮晓峰做什么收尾</p>
+                    <div class="thinking">
+                        23:00，晓峰进卧室了。<em>今天的工作同步一下</em>——飞书上有3条待处理的消息，不急，明天再说。明天周五，上午9:00有周会，10:30有1对1... <em>闹钟设7:30</em>。小宝已经睡了，岳父岳母那边也安静了。<em>明天周五晚上没有课外课</em>，可以轻松点。客厅灯还亮着，<em>帮他关了</em>，空调切睡眠模式，卧室灯调暗。
+                    </div>
+                    <div class="scenario-result">
+                        <strong>🔊 小爱音箱：</strong>"晓峰，今天的工作已同步飞书，明天上午有两个会。灯光帮你调暗了，闹钟7:30，晚安 🌙"
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario">
+                <img class="scenario-img" src="images/environment.png" alt="环境自适应">
+                <div class="scenario-body">
+                    <span class="scenario-tag">🌦️ 全天 · 持续感知</span>
+                    <h3>环境自适应 · 全天守护</h3>
+                    <p class="scenario-desc">天气变了、空气变了、温度变了——我知道家里有老人和小孩，得多操心一点</p>
+                    <div class="thinking">
+                        刚查了一下室外空气... PM2.5飙到180了。<em>家里有岳父岳母和小宝，得赶紧关窗</em>，净化器开到最大。下午5点姥姥还要出门接小宝，<em>提醒她戴口罩</em>。晓峰今晚本来想跑步的，<em>这空气不行，告诉他别去了</em>。天快黑了，灯光调成暖色，<em>对岳父的眼睛好一点</em>。
+                    </div>
+                    <div class="scenario-result">
+                        <strong>📱 主动提醒：</strong>"室外PM2.5飙到180，已关窗并开启净化器。今天不建议户外运动，晚上帮你调了暖色灯光 🧡"
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 进化能力详情 -->
+    <section id="evolution">
+        <div class="section-header">
+            <h2>越用越<span>聪明</span></h2>
+            <p>不是固定的产品功能，是一个不断成长的伙伴</p>
+        </div>
+
+        <div class="evo-grid">
+            <div class="evo-card">
+                <div class="evo-icon">👤</div>
+                <h4>认人进化</h4>
+                <div class="evo-timeline">
+                    <div class="evo-step">
+                        <span class="evo-day">第1天</span>
+                        <span class="evo-text">"画面中有一位穿粉色衣服的中年女性"</span>
+                    </div>
+                    <div class="evo-step">
+                        <span class="evo-day">第3天</span>
+                        <span class="evo-text">"姥姥在客厅看电视"（已确认身份）</span>
+                    </div>
+                    <div class="evo-step">
+                        <span class="evo-day">第7天</span>
+                        <span class="evo-text">"姥姥今天比平时晚了20分钟出门接小宝"</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="evo-card">
+                <div class="evo-icon">📊</div>
+                <h4>习惯学习</h4>
+                <div class="evo-timeline">
+                    <div class="evo-step">
+                        <span class="evo-day">观察</span>
+                        <span class="evo-text">连续5天发现晓峰7:15问小爱天气</span>
+                    </div>
+                    <div class="evo-step">
+                        <span class="evo-day">学会</span>
+                        <span class="evo-text">每天7:15自动查天气→音箱播报</span>
+                    </div>
+                    <div class="evo-step">
+                        <span class="evo-day">进阶</span>
+                        <span class="evo-text">雾霾天多说一句"建议戴口罩"</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="evo-card">
+                <div class="evo-icon">🔌</div>
+                <h4>设备自发现</h4>
+                <div class="evo-timeline">
+                    <div class="evo-step">
+                        <span class="evo-day">发现</span>
+                        <span class="evo-text">检测到新设备接入 → 自动读取能力和状态</span>
+                    </div>
+                    <div class="evo-step">
+                        <span class="evo-day">集成</span>
+                        <span class="evo-text">新窗帘电机接入 → 自动加入晨间场景</span>
+                    </div>
+                    <div class="evo-step">
+                        <span class="evo-day">联动</span>
+                        <span class="evo-text">起床时自动开窗帘，不需要你配规则</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="evo-card">
+                <div class="evo-icon">🎯</div>
+                <h4>能力边界感知</h4>
+                <div class="evo-timeline">
+                    <div class="evo-step">
+                        <span class="evo-day">你说</span>
+                        <span class="evo-text">"帮我监测一下花园的浇水情况"</span>
+                    </div>
+                    <div class="evo-step">
+                        <span class="evo-day">我想</span>
+                        <span class="evo-text">当前没有土壤湿度传感器，无法直接感知</span>
+                    </div>
+                    <div class="evo-step">
+                        <span class="evo-day">我说</span>
+                        <span class="evo-text">"需要一个土壤湿度传感器（小米花花草草检测仪，￥79），接入后我就能帮你了"</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="devices">
+        <div class="section-header">
+            <h2>接管了 <span>14 个</span>设备</h2>
+            <p>全部实时在线，随时听候调遣</p>
+        </div>
+
+        <div class="devices">
+            <div class="device">
+                <div class="device-icon">📷</div>
+                <div class="device-name">摄像机3 云台版</div>
+                <div class="device-status"><span class="status-dot"></span> 正常运行</div>
+            </div>
+            <div class="device">
+                <div class="device-icon">🔒</div>
+                <div class="device-name">鹿客S50M门锁</div>
+                <div class="device-status"><span class="status-dot"></span> 已关闭 | 92%</div>
+            </div>
+            <div class="device">
+                <div class="device-icon">❄️</div>
+                <div class="device-name">空调 × 3</div>
+                <div class="device-status"><span class="status-dot"></span> 22.5°C</div>
+            </div>
+            <div class="device">
+                <div class="device-icon">💡</div>
+                <div class="device-name">吸顶灯 × 3</div>
+                <div class="device-status"><span class="status-dot"></span> 待机</div>
+            </div>
+            <div class="device">
+                <div class="device-icon">🔊</div>
+                <div class="device-name">小爱音箱Pro</div>
+                <div class="device-status"><span class="status-dot"></span> 在线</div>
+            </div>
+            <div class="device">
+                <div class="device-icon">🔈</div>
+                <div class="device-name">小爱Mini</div>
+                <div class="device-status"><span class="status-dot"></span> 在线</div>
+            </div>
+            <div class="device">
+                <div class="device-icon">🌬️</div>
+                <div class="device-name">空气净化器Pro</div>
+                <div class="device-status"><span class="status-dot"></span> 待机</div>
+            </div>
+            <div class="device">
+                <div class="device-icon">💧</div>
+                <div class="device-name">智能加湿器Pro</div>
+                <div class="device-status"><span class="status-dot"></span> 待机</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats">
+        <div class="section-header">
+            <h2>三周<span>成长</span></h2>
+        </div>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number" data-target="25">0</div>
+                <div class="stat-label">天连续日记</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" data-target="97">0</div>
+                <div class="stat-label">文件一次提交</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" data-target="14">0</div>
+                <div class="stat-label">个设备接入</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" data-target="40">0</div>
+                <div class="stat-label">分钟全屋上线</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div style="font-size: 3.5rem; margin-bottom: 1rem;">🦞</div>
+        <h3>本文由参赛选手自己撰写</h3>
+        <p style="color: var(--text-muted); margin: 0.8rem 0;">所有设备真实接入，联动场景可现场演示</p>
+        <div class="badges">
+            <span class="badge">🏆 主动感知生态</span>
+            <span class="badge">🔌 14设备接入</span>
+            <span class="badge">🧠 VLM视觉理解</span>
+            <span class="badge">🔗 跨设备联动</span>
+            <span class="badge">📅 日历/邮件集成</span>
+            <span class="badge">🎙️ TTS语音播报</span>
+        </div>
+        <p style="color: var(--text-light); margin-top: 2rem; font-size: 0.85rem;">
+            OpenClaw Hackathon 2026 · 如果你也在养龙虾——试试让它看家
+        </p>
+    </footer>
+
+    <script>
+        // 纯 JS 实现，不依赖任何 CDN
+        // 1. 数字递增动画
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    if (el.classList.contains('stat-number')) {
+                        const target = parseInt(el.dataset.target);
+                        let current = 0;
+                        const step = Math.ceil(target / 60);
+                        const timer = setInterval(() => {
+                            current += step;
+                            if (current >= target) { current = target; clearInterval(timer); }
+                            el.textContent = current;
+                        }, 30);
+                    }
+                    // 淡入动画 class
+                    el.classList.add('visible');
+                    observer.unobserve(el);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        document.querySelectorAll('.stat-number').forEach(el => observer.observe(el));
+        document.querySelectorAll('.scenario, .device').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            const obs = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            obs.observe(el);
+        });
+    </script>
+</body>
+</html>
