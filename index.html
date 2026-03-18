@@ -925,22 +925,22 @@
             <div class="scenario">
                 <img class="scenario-img" src="images/night.png" alt="晚间收尾">
                 <div class="scenario-body">
-                    <span class="scenario-tag">🌙 晚间 · 定时触发</span>
+                    <span class="scenario-tag">🌙 晚间 · 智能触发</span>
                     <h3>晚间收尾 · 明日预判</h3>
-                    <p class="scenario-desc">22点了，摄像头已休眠，不打扰家人。静默检查设备状态，飞书发一条晚安总结</p>
+                    <p class="scenario-desc">默认23点触发。如果发现主人还在跟我对话，自动延后——最晚凌晨1点，一定帮你收尾</p>
                     <div style="display:flex;gap:1.5rem;align-items:flex-start;margin-top:1rem;flex-wrap:wrap;">
+                        <div style="flex:1;min-width:240px;">
+                            <div class="thinking" style="margin:0;">
+                                <div class="t">23:00 晚间收尾触发，<em>发现主人还在对话，延后</em></div>
+                                <div class="t">01:00 对话结束，<em>开始收尾</em></div>
+                                <div class="t">摄像头已休眠 → 跳过，<em>不打扰家人</em></div>
+                                <div class="t">检查提醒 + 课外课 + 设备状态 + 天气</div>
+                                <div class="t">超过22点 → <em>飞书静默推送，不用音箱</em></div>
+                            </div>
+                        </div>
                         <div style="flex:0 0 auto;">
                             <img src="images/evening_demo.jpg" alt="晚间收尾实际飞书截图" style="width:260px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.12);border:1px solid #e2e8f0;">
                             <div style="font-size:0.7rem;color:var(--text-light);margin-top:0.3rem;text-align:center;">实际飞书推送</div>
-                        </div>
-                        <div style="flex:1;min-width:240px;">
-                            <div class="thinking" style="margin:0;">
-                                <div class="t">22:00 晚间收尾触发，<em>摄像头已休眠，跳过</em></div>
-                                <div class="t">检查提醒列表 → 无待办提醒</div>
-                                <div class="t"><em>周五晚没有课外课</em>，可以轻松点</div>
-                                <div class="t">客厅灯还亮着 → <em>关灯</em>，空调切睡眠</div>
-                                <div class="t">超过22点 → <em>飞书静默推送</em></div>
-                            </div>
                         </div>
                     </div>
                 </div>
