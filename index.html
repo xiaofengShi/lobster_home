@@ -497,6 +497,81 @@
         }
         .evo-text { color: var(--text-muted); }
 
+        /* Compare: Traditional vs Lobster Home */
+        .compare-container {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 1.5rem;
+            align-items: start;
+        }
+        @media (max-width: 768px) {
+            .compare-container { grid-template-columns: 1fr; }
+            .compare-arrow { transform: rotate(90deg); }
+        }
+        .compare-card {
+            background: var(--bg-white);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+        .compare-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-3px);
+        }
+        .compare-old { opacity: 0.85; }
+        .compare-old:hover { opacity: 1; }
+        .compare-label {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+        .compare-img {
+            width: 100%;
+            max-height: 280px;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            margin-bottom: 1rem;
+        }
+        .compare-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            margin-bottom: 1rem;
+        }
+        .compare-item {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            padding: 0.3rem 0.6rem;
+            background: #f3f4f6;
+            border-radius: 8px;
+        }
+        .compare-verdict {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            padding: 0.8rem;
+            background: #fef2f2;
+            border-radius: 10px;
+            border: 1px solid #fecaca;
+        }
+        .compare-verdict-new {
+            background: #f0fdf4;
+            border-color: #bbf7d0;
+            color: #15803d;
+        }
+        .compare-arrow {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            align-self: center;
+            text-align: center;
+        }
+
         /* Privacy & Safety */
         .privacy-grid {
             display: grid;
@@ -564,6 +639,48 @@
         </p>
         <div class="scroll-hint">↓</div>
     </div>
+
+    <!-- 传统 vs Lobster Home 对比 -->
+    <section id="compare">
+        <div class="section-header">
+            <h2>从<span>规则</span>到<span>思考</span></h2>
+            <p>传统智能家居 = 写规则。Lobster Home = 让 AI 自己判断该做什么。</p>
+        </div>
+
+        <div class="compare-container">
+            <div class="compare-card compare-old">
+                <div class="compare-label">🏠 传统米家智能场景</div>
+                <img src="images/mijia_screenshot.jpg" alt="米家智能场景截图" class="compare-img">
+                <div class="compare-list">
+                    <div class="compare-item">离家 → 关灯+关空调</div>
+                    <div class="compare-item">回家 → 开灯+开空调</div>
+                    <div class="compare-item">晚安 → 关灯</div>
+                    <div class="compare-item">起床 → 开灯+开窗帘</div>
+                </div>
+                <div class="compare-verdict">
+                    <strong>本质：</strong>if 条件A → then 动作B<br>
+                    写死的规则，不理解上下文，不会随机应变
+                </div>
+            </div>
+
+            <div class="compare-arrow">→</div>
+
+            <div class="compare-card compare-new">
+                <div class="compare-label">🦞 Lobster Home</div>
+                <div class="thinking" style="margin:1rem 0 1rem">
+                    <div class="t">晓峰起床了，但今天下雨</div>
+                    <div class="t"><em>不开窗帘</em>——跟传统"起床=开窗帘"不同</div>
+                    <div class="t">他9:30有评审会，路况拥堵，<em>比平时早15分钟提醒</em></div>
+                    <div class="t">岳父刚量过血压偏高，<em>空调温度调高1度</em></div>
+                    <div class="t">小宝昨晚咳嗽，<em>加湿器调到60%</em></div>
+                </div>
+                <div class="compare-verdict compare-verdict-new">
+                    <strong>本质：</strong>LLM 理解环境 → 实时判断 → 个性化行动<br>
+                    没有规则，每次决策都基于当前真实情况
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- 核心能力闭环 -->
     <section id="core-loop">
@@ -1009,7 +1126,7 @@
         }, { threshold: 0.2 });
 
         document.querySelectorAll('.stat-number').forEach(el => observer.observe(el));
-        document.querySelectorAll('.scenario, .device, .evo-card, .loop-node, .real-number-item, .privacy-item').forEach(el => {
+        document.querySelectorAll('.scenario, .device, .evo-card, .loop-node, .real-number-item, .privacy-item, .compare-card').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
