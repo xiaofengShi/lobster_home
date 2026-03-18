@@ -501,7 +501,7 @@
 <body>
     <div class="hero">
         <div class="logo">🦞</div>
-        <h1>🦞 我的全天候<span>伙伴</span></h1>
+        <h1>我的全天候<span>伙伴</span></h1>
         <p class="tagline">
             不是等你下指令的智能音箱<br>
             是从你睁眼到入睡，<span class="new">始终在感知、判断、行动的全天候伙伴</span>
@@ -625,10 +625,10 @@
                 <img class="scenario-img" src="images/email.png" alt="邮件感知">
                 <div class="scenario-body">
                     <span class="scenario-tag">📬 全天 · 事件驱动</span>
-                    <h3>邮件感知 · 自动行动链</h3>
-                    <p class="scenario-desc">收到一封邮件，不是垃圾邮件——是航班确认。我该帮他做什么？</p>
+                    <h3>消息感知 · 自动行动链</h3>
+                    <p class="scenario-desc">收到一条消息，不是闲聊——是航班确认。我该帮他做什么？</p>
                     <div class="thinking">
-                        <div class="t">邮箱收到南航确认邮件——CA1234，后天飞上海，8:20起飞</div>
+                        <div class="t">飞书收到南航确认消息——CA1234，后天飞上海，8:20起飞</div>
                         <div class="t"><em>帮他建日历事件</em></div>
                         <div class="t">查上海后天天气——15°有雨，<em>提醒带伞</em></div>
                         <div class="t">按实时路况算去首都机场要6:00出门，<em>闹钟设5:30</em></div>
@@ -838,42 +838,48 @@
 
     <section id="stats">
         <div class="section-header">
-            <h2>三周<span>成长</span></h2>
+            <h2>真实<span>数据</span></h2>
+            <p>不是 PPT 上的数字——来自正在运行的系统</p>
         </div>
         <div class="stats">
             <div class="stat">
-                <div class="stat-number" data-target="25">0</div>
-                <div class="stat-label">天连续日记</div>
+                <div class="stat-number" data-target="117">0</div>
+                <div class="stat-label">个实体已扫描</div>
             </div>
             <div class="stat">
-                <div class="stat-number" data-target="97">0</div>
-                <div class="stat-label">文件一次提交</div>
+                <div class="stat-number" data-target="17">0</div>
+                <div class="stat-label">个能力维度</div>
             </div>
             <div class="stat">
                 <div class="stat-number" data-target="14">0</div>
-                <div class="stat-label">个设备接入</div>
+                <div class="stat-label">个设备在线</div>
             </div>
             <div class="stat">
-                <div class="stat-number" data-target="40">0</div>
-                <div class="stat-label">分钟全屋上线</div>
+                <div class="stat-number" data-target="0">0</div>
+                <div class="stat-label">行预设规则</div>
             </div>
         </div>
     </section>
 
     <footer>
         <div style="font-size: 3.5rem; margin-bottom: 1rem;">🦞</div>
-        <h3>本文由参赛选手自己撰写</h3>
-        <p style="color: var(--text-muted); margin: 0.8rem 0;">所有设备真实接入，联动场景可现场演示</p>
+        <h3>不是产品演示，是正在运行的生态</h3>
+        <p style="color: var(--text-muted); margin: 0.8rem 0;">所有设备真实接入，所有场景真实运转，现场可演示</p>
         <div class="badges">
-            <span class="badge">🏆 主动感知生态</span>
-            <span class="badge">🔌 14设备接入</span>
-            <span class="badge">🧠 VLM视觉理解</span>
-            <span class="badge">🔗 跨设备联动</span>
-            <span class="badge">📅 日历/邮件集成</span>
-            <span class="badge">🎙️ TTS语音播报</span>
+            <span class="badge">🏠 Home Assistant</span>
+            <span class="badge">🧠 VLM 视觉理解</span>
+            <span class="badge">🔊 小爱音箱 TTS</span>
+            <span class="badge">📱 飞书推送</span>
+            <span class="badge">🔄 持续进化</span>
+            <span class="badge">🔌 14 设备接入</span>
+            <span class="badge">📷 摄像头巡查</span>
+            <span class="badge">🎙️ Edge TTS 语音</span>
         </div>
-        <p style="color: var(--text-light); margin-top: 2rem; font-size: 0.85rem;">
-            OpenClaw Hackathon 2026 · 如果你也在养龙虾——试试让它看家
+        <p style="color: var(--text-light); margin-top: 1.5rem; font-size: 0.85rem;">
+            Built with <a href="https://github.com/openclaw/openclaw" style="color: var(--primary); text-decoration: none;">OpenClaw</a> · Powered by LLM + VLM + Home Assistant
+        </p>
+        <p style="color: var(--text-light); margin-top: 0.5rem; font-size: 0.8rem;">
+            OpenClaw Hackathon 2026 · 北纬龙虾大赛 · 生产力赛道
         </p>
     </footer>
 
@@ -902,7 +908,7 @@
         }, { threshold: 0.2 });
 
         document.querySelectorAll('.stat-number').forEach(el => observer.observe(el));
-        document.querySelectorAll('.scenario, .device').forEach(el => {
+        document.querySelectorAll('.scenario, .device, .evo-card, .loop-node, .real-number-item').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
