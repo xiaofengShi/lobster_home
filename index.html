@@ -347,8 +347,6 @@
         /* Responsive */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.2rem; }
-            .scenario-result [style*="display:flex"] { flex-direction: column; }
-            .scenario-result img[alt="飞书推送实录"] { width: 100% !important; }
             .logo { font-size: 5rem; }
             .tagline { font-size: 1.05rem; }
             .section-header h2 { font-size: 1.7rem; }
@@ -816,21 +814,17 @@
                         <div class="t">看一眼摄像头... <em>他在书房</em></div>
                         <div class="t">在家→用音箱问他要不要听；不在家→发飞书附语音版</div>
                     </div>
-                    <div class="scenario-result" style="background:#f8fafc;border-color:#e2e8f0;padding:1.2rem;">
+                    <div class="scenario-result" style="background:#f8fafc;border-color:#e2e8f0;padding:1.5rem;">
                         <div style="font-size:0.82rem;color:var(--text-muted);margin-bottom:0.8rem;font-weight:600;">📱 真实飞书推送（2026-03-18 · 不在家时自动触发）</div>
-                        <div style="display:flex;gap:1rem;align-items:flex-start;">
-                            <img src="images/demo_feishu_chat.jpg" alt="飞书推送实录" style="width:220px;border-radius:14px;border:1px solid var(--border);box-shadow:0 4px 20px rgba(0,0,0,0.08);flex-shrink:0;">
-                            <div style="font-size:0.85rem;color:var(--text-muted);line-height:1.7;">
-                                <div style="font-weight:600;color:var(--text);margin-bottom:0.5rem;">🦞 判断逻辑：</div>
-                                <div style="margin-bottom:0.3rem;">① 日报采集完成，筛出与你方向相关的内容</div>
-                                <div style="margin-bottom:0.3rem;">② 看摄像头 → <strong style="color:var(--primary);">你不在家</strong></div>
-                                <div style="margin-bottom:0.3rem;">③ 选择飞书推送（不用音箱）</div>
-                                <div style="margin-bottom:0.3rem;">④ 发送文字摘要 + 飞书文档链接</div>
-                                <div style="margin-bottom:0.3rem;">⑤ 生成全中文语音版，通勤时可听</div>
-                                <div style="margin-top:0.8rem;padding:0.5rem 0.7rem;background:#f0fdf4;border-radius:8px;color:#15803d;font-size:0.8rem;">
-                                    💡 如果你在家 → 会用小爱音箱问你要不要听
-                                </div>
-                            </div>
+                        <img src="images/demo_feishu_chat.jpg" alt="飞书推送实录" style="width:100%;max-width:420px;display:block;margin:0 auto 1rem;border-radius:14px;border:1px solid var(--border);box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;font-size:0.85rem;color:var(--text-muted);">
+                            <div style="padding:0.5rem 0.7rem;background:var(--primary-light);border-radius:8px;">① 日报采集完成 → 筛出相关内容</div>
+                            <div style="padding:0.5rem 0.7rem;background:var(--primary-light);border-radius:8px;">② 看摄像头 → <strong style="color:var(--primary);">不在家</strong></div>
+                            <div style="padding:0.5rem 0.7rem;background:var(--primary-light);border-radius:8px;">③ 选飞书推送 + 文档链接</div>
+                            <div style="padding:0.5rem 0.7rem;background:var(--primary-light);border-radius:8px;">④ 生成全中文语音版 🎧</div>
+                        </div>
+                        <div style="margin-top:0.8rem;padding:0.5rem 0.7rem;background:#f0fdf4;border-radius:8px;color:#15803d;font-size:0.82rem;text-align:center;">
+                            💡 如果你在家 → 会用小爱音箱直接问你要不要听
                         </div>
                     </div>
                 </div>
