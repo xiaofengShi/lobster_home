@@ -500,20 +500,20 @@
         /* Evolution Grid */
         
 .evo-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
             gap: 1.5rem;
-            max-width: 960px;
+            justify-content: center;
+            max-width: 1000px;
             margin: 0 auto;
         }
-        .evo-grid > .evo-card:last-child:nth-child(odd) {
-            grid-column: 1 / -1;
-            max-width: 460px;
-            justify-self: center;
+        .evo-card {
+            flex: 0 1 calc(33.333% - 1rem);
+            min-width: 260px;
         }
         @media (max-width: 768px) {
             
-.evo-grid { grid-template-columns: 1fr; }
+.evo-card { flex: 0 1 100%; min-width: unset; }
         }
         .evo-card {
             background: var(--bg-white);
@@ -894,7 +894,7 @@
             </div>
 
             <div class="scenario">
-                <img class="scenario-img" src="images/email.png" alt="消息感知">
+                <img class="scenario-img" src="images/email.jpg" alt="消息感知">
                 <div class="scenario-body">
                     <span class="scenario-tag">📬 全天 · 事件驱动</span>
                     <h3>消息感知 · 自动行动链</h3>
@@ -914,7 +914,7 @@
             </div>
 
             <div class="scenario">
-                <img class="scenario-img" src="images/leaving.png" alt="主动看护">
+                <img class="scenario-img" src="images/leaving.jpg" alt="主动看护">
                 <div class="scenario-body">
                     <span class="scenario-tag">🏠 全天 · 自主判断</span>
                     <h3>主动看护 · 我自己判断该做什么</h3>
@@ -933,7 +933,7 @@
             </div>
 
             <div class="scenario">
-                <img class="scenario-img" src="images/night.png" alt="晚间收尾">
+                <img class="scenario-img" src="images/night.jpg" alt="晚间收尾">
                 <div class="scenario-body">
                     <span class="scenario-tag">🌙 晚间 · 智能触发</span>
                     <h3>晚间收尾 · 明日预判</h3>
@@ -957,7 +957,7 @@
             </div>
 
             <div class="scenario">
-                <img class="scenario-img" src="images/environment.png" alt="环境自适应">
+                <img class="scenario-img" src="images/environment.jpg" alt="环境自适应">
                 <div class="scenario-body">
                     <span class="scenario-tag">🌦️ 全天 · 持续感知</span>
                     <h3>环境自适应 · 全天守护</h3>
