@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/hero.jpg" alt="Lobster Home" width="100%">
+</p>
+
 # 🦞 Lobster Home
 
 **会进化的家庭 AI——不是智能家居，是一个真正在思考的家庭成员。**
