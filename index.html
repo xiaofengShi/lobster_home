@@ -498,13 +498,22 @@
         }
 
         /* Evolution Grid */
-        .evo-grid {
+        
+.evo-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.5rem;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        .evo-grid > .evo-card:last-child:nth-child(odd) {
+            grid-column: 1 / -1;
+            max-width: 460px;
+            justify-self: center;
         }
         @media (max-width: 768px) {
-            .evo-grid { grid-template-columns: 1fr; }
+            
+.evo-grid { grid-template-columns: 1fr; }
         }
         .evo-card {
             background: var(--bg-white);
