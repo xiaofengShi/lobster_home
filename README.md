@@ -42,8 +42,8 @@
 ```
 门锁触发 → 侦查蜂发布 door_unlock 事件
          → 守卫蜂：已知指纹 + 合理时段 → ✅ 安全
-         → 哺育蜂：17:17 = 接小宝回来 → 关怀消息
-         → 舞蹈蜂：飞书 "小宝到家啦！🎒" + 音箱播报
+         → 哺育蜂：17:17 = 接孩子回来 → 关怀消息
+         → 舞蹈蜂：飞书 "孩子到家啦！🎒" + 音箱播报
          → 筑巢蜂：记录到家时间，学习行为模式
 ```
 
@@ -141,5 +141,5 @@ VLM 视觉特征 + 门锁指纹 ID 交叉验证。**贝叶斯后验概率 > 90%*
   <em>让技术有人情味，这就是 LobsterHive 的核心竞争力。</em>
 </p>
 <p align="center">
-  <em>Powered by <a href="https://openclaw.ai">OpenClaw</a> · Built by 晓峰 & 🦞Alan</em>
+  <em>Powered by <a href="https://openclaw.ai">OpenClaw</a> · Built with 🦞 & ❤️</em>
 </p>
