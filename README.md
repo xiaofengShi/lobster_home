@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://xiaofengshi.github.io/lobster_home/">🌐 在线主页</a> ·
   <a href="https://xiaofengshi.github.io/lobster_home/#dashboard">📊 实时仪表盘</a> ·
-  <a href="https://feishu.cn/docx/LDksdHQfAo7z99xNiXmc6BShncd">📄 设计文档</a>
+  <a href="https://feishu.cn/docx/QLuUd9qvvoGDHmx2JMPcnZhKn3c">📄 项目文档</a>
 </p>
 
 ---
