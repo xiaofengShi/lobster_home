@@ -1,0 +1,333 @@
+{
+  "generated_at": "2026-03-21T18:38:09.435579",
+  "hive": {
+    "all_ok": true,
+    "bee_count": 5,
+    "bees_detail": {
+      "dancer": {
+        "name": "dancer",
+        "state": "ready",
+        "trigger_type": "event",
+        "last_run": "2026-03-21T18:38:09.367837",
+        "last_run_duration": null,
+        "total_runs": 1,
+        "error_count": 0,
+        "consecutive_errors": 0,
+        "ok": true
+      },
+      "guard": {
+        "name": "guard",
+        "state": "ready",
+        "trigger_type": "event",
+        "last_run": "2026-03-21T18:38:06.563995",
+        "last_run_duration": null,
+        "total_runs": 2,
+        "error_count": 0,
+        "consecutive_errors": 0,
+        "ok": true
+      },
+      "scout": {
+        "name": "scout",
+        "state": "ready",
+        "trigger_type": "cron",
+        "last_run": "2026-03-21T18:38:06.563887",
+        "last_run_duration": null,
+        "total_runs": 1,
+        "error_count": 0,
+        "consecutive_errors": 0,
+        "ok": true
+      },
+      "nurse": {
+        "name": "nurse",
+        "state": "ready",
+        "trigger_type": "cron",
+        "last_run": null,
+        "last_run_duration": null,
+        "total_runs": 0,
+        "error_count": 0,
+        "consecutive_errors": 0,
+        "ok": true
+      },
+      "builder": {
+        "name": "builder",
+        "state": "ready",
+        "trigger_type": "event",
+        "last_run": "2026-03-21T18:38:09.368088",
+        "last_run_duration": null,
+        "total_runs": 1,
+        "error_count": 0,
+        "consecutive_errors": 0,
+        "ok": true
+      }
+    },
+    "state": {
+      "mode": "normal",
+      "mode_params": {},
+      "mode_set_at": "2026-03-21T17:29:20.236074",
+      "mode_expires_at": null,
+      "family_overrides": {}
+    }
+  },
+  "bees": {},
+  "events": {
+    "total": 103,
+    "recent_500": 103,
+    "today": 103,
+    "by_type": {
+      "feishu_sent": 50,
+      "scene_report": 25,
+      "speaker_played": 25,
+      "bee_healed": 3
+    },
+    "by_dancer": {
+      "dancer": 75,
+      "scout": 25,
+      "queen": 3
+    },
+    "last_10": [
+      {
+        "dancer": "dancer",
+        "type": "speaker_played",
+        "intensity": "normal",
+        "payload": {
+          "text": "温馨提醒，今天周六，19:30有英语课，建议18:50提醒家人准备。室外阴天+大风（8.2km/h）"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-21T18:38:09.367425"
+      },
+      {
+        "dancer": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "🦞 18:32 巡查报告（画面来自5分钟前）\n【在家人员】  \nPERSON_FEATURE: [无可见人物] | GUESS: [无可见人物]  \n【状态评估】  \n画面中无人，环境安静，无异常活动",
+          "target": "ou_a9ca7506b002b1be36148b97d622d551"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-21T18:38:08.328060"
+      },
+      {
+        "dancer": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】  \nPERSON_FEATURE: [无可见人物] | GUESS: [无可见人物]  \n\n【状态评估】  \n画面中无人，环境安静，无异常活动。  \n\n【环境检查】  \n室内温湿度适宜（20-21.5°C，52-58%），无需调整空调或加湿。  \n\n【提醒事项】  \n今天周六，19:30有英语课，建议18:50提醒家人准备。室外阴天+大风（8.2km/h），请确认窗户已关。姥姥16:53已回家，应已接回小宝，建议确认孩子是否在房间。  \n\n【建议】  \n建议检查客厅玩具收纳，避免绊倒；若小宝在卧室，请确认其安全。龙虾管家🦞已记录画面变动，持续守护中。",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-21T18:38:06.474535"
+      },
+      {
+        "dancer": "dancer",
+        "type": "speaker_played",
+        "intensity": "normal",
+        "payload": {
+          "text": "温馨提醒，今天周六，19:30有英语课，建议18:50提醒小宝准备。姥姥16:53已回家，若未见小宝"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-21T18:32:51.817975"
+      },
+      {
+        "dancer": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "🦞 18:32 巡查报告\n【在家人员】  \nPERSON_FEATURE: [无可见人物] | GUESS: [无可见人物]  \n（画面中无人，符合周末家庭活动可能外出或在其他房间）\n【状态评估】  ",
+          "target": "ou_a9ca7506b002b1be36148b97d622d551"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-21T18:32:50.636440"
+      },
+      {
+        "dancer": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】  \nPERSON_FEATURE: [无可见人物] | GUESS: [无可见人物]  \n（画面中无人，符合周末家庭活动可能外出或在其他房间）\n\n【状态评估】  \n无人员活动，环境安静，状态正常。\n\n【环境检查】  \n室内温湿度适宜（20-21.5°C / 52-58%），无需调整空调或加湿。\n\n【提醒事项】  \n今天周六，19:30有英语课，建议18:50提醒小宝准备。姥姥16:53已回家，若未见小宝，可确认是否已接回。室外风速8.2km/h，建议关窗防风。\n\n【建议】  \n可播放轻音乐营造温馨氛围；检查书包是否已备好，避免临行匆忙。龙虾管家🦞祝周末愉快！",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-21T18:32:49.100933"
+      },
+      {
+        "dancer": "dancer",
+        "type": "speaker_played",
+        "intensity": "normal",
+        "payload": {
+          "text": "温馨提醒，周六19:30有英语课，距今约1小时，请提前准备。姥姥今日多次出入，若长时间未动需关注。小"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-21T18:27:36.848538"
+      },
+      {
+        "dancer": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "🦞 18:24 巡查报告\n【在家人员】  \nPERSON_FEATURE: 穿浅色上衣、坐桌前、短发女性 | GUESS: 姥姥（符合已确认特征）  \nPERSON_FEATURE: 无可见人物 | ",
+          "target": "ou_a9ca7506b002b1be36148b97d622d551"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-21T18:27:34.699795"
+      },
+      {
+        "dancer": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】  \nPERSON_FEATURE: 穿浅色上衣、坐桌前、短发女性 | GUESS: 姥姥（符合已确认特征）  \nPERSON_FEATURE: 无可见人物 | GUESS: [暂无人员在画面中]  \n\n【状态评估】  \n姥姥坐桌前似在用餐或整理物品，状态正常。未见其他家人，可能在其他房间或刚外出。\n\n【环境检查】  \n室内温湿度舒适（20-21.5°C，52-58%），无需调整。室外阴天+大风（9.4km/h），建议关窗。\n\n【提醒事项】  \n周六19:30有英语课，距今约1小时，请提前准备。姥姥今日多次出入，若长时间未动需关注。小宝应已在家，建议确认其安全。\n\n【建议】  \n关窗防风；提醒家人准备英语课；可播放轻音乐营造温馨氛围。",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-21T18:27:33.250165"
+      },
+      {
+        "dancer": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "🦞 家庭关怀日报｜2026-03-21 周六\n\n📋 今日家里发生了什么\n\n  05:59  🚪 有人出门\n  09:41  🚪 姥姥到家\n  09:55  🚪 有人出门\n  10:03  🚪 姥姥到家",
+          "target": "ou_a9ca7506b002b1be36148b97d622d551"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-21T18:27:26.638644"
+      }
+    ]
+  },
+  "family": {
+    "today_sightings": {},
+    "week_sightings": {},
+    "daily_activity": {}
+  },
+  "system": {
+    "log_size_kb": 36.2,
+    "brain": {
+      "known_people": 8,
+      "learning_people": 20,
+      "habits_discovered": 1,
+      "total_observations": 0,
+      "log_entries": 244,
+      "devices": 117,
+      "last_device_scan": "2026-03-18T14:03:22.095522"
+    },
+    "last_patrol_lines": [
+      "   ✅ guard: ready (跑了2次)",
+      "   ✅ scout: ready (跑了1次)",
+      "   ✅ nurse: ready (跑了0次)",
+      "   ✅ builder: ready (跑了1次)",
+      "[2026-03-21 18:32:52] [hive.queen] [info] run_all 完成，全部正常"
+    ],
+    "uptime_note": "LaunchAgent 每5分钟触发"
+  },
+  "patrol_timeline": [
+    {
+      "time": "2026-03-21 17:24:31",
+      "level": "error",
+      "msg": "EOF occurred in violation of protocol (_ssl.c:1016)')))"
+    },
+    {
+      "time": "2026-03-21 17:29:42",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-21 17:29:52",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-21 17:34:55",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-21 17:40:09",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-21 17:40:12",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-21 17:45:22",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-21 17:50:36",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-21 17:55:49",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-21 18:01:06",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-21 18:06:17",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-21 18:06:23",
+      "level": "error",
+      "msg": "EOF occurred in violation of protocol (_ssl.c:1016)')))"
+    },
+    {
+      "time": "2026-03-21 18:11:34",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-21 18:15:03",
+      "level": "error",
+      "msg": "异常检测失败: 'ScoutBee' object has no attribute 'DOOR_SENSOR'"
+    },
+    {
+      "time": "2026-03-21 18:15:03",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-21 18:16:53",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-21 18:22:08",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-21 18:27:26",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-21 18:32:42",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-21 18:38:00",
+      "level": "info",
+      "msg": "开始巡查..."
+    }
+  ],
+  "error_trend": {
+    "2026-03-21": 5
+  },
+  "honey": [
+    {
+      "name": "weekly_2026-03-21.md",
+      "size": 497
+    }
+  ]
+}
