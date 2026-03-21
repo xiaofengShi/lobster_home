@@ -223,7 +223,7 @@ footer .links a:hover{color:var(--gold)}
   <span class="bee-emoji">👑🦞</span>
   <div class="bee-name">蜂后 Alan</div>
   <div class="bee-role">Queen — 总调度</div>
-  <div class="bee-desc">并行编排蜜蜂（ThreadPoolExecutor），自愈检查 + 蜂蜜周报。不亲自干活，但掌控全局。紧急事件时守卫蜂可绕过蜂后直达舞蹈蜂。</div>
+  <div class="bee-desc">并行编排蜜蜂（ThreadPoolExecutor），自愈检查 + 蜂蜜周报。RLock 死锁保护 + 原子文件锁。不亲自干活，但掌控全局。紧急事件时守卫蜂可绕过蜂后直达舞蹈蜂。</div>
   <span class="bee-tag tag-llm">并行编排</span>
 </div>
 
@@ -239,7 +239,7 @@ footer .links a:hover{color:var(--gold)}
   <span class="bee-emoji">⚔️</span>
   <div class="bee-name">守卫蜂 Guard</div>
   <div class="bee-role">安全层 — 双层检测引擎</div>
-  <div class="bee-desc">第一层关键词匹配（&lt;1ms），第二层 n-gram 语义相似度兜底。摔倒、火灾、入侵零延迟检测 + 否定语境排除。</div>
+  <div class="bee-desc">第一层中英文关键词匹配（&lt;1ms），第二层 n-gram Jaccard 语义兜底。摔倒、火灾、入侵零延迟检测 + 否定语境排除。</div>
   <span class="bee-tag tag-free">¥0 · &lt;1ms · 双层兜底</span>
 </div>
 
@@ -255,7 +255,7 @@ footer .links a:hover{color:var(--gold)}
   <span class="bee-emoji">💃</span>
   <div class="bee-name">舞蹈蜂 Dancer</div>
   <div class="bee-role">通知层 — 摇摆舞 = 事件总线</div>
-  <div class="bee-desc">所有消息的唯一出口。飞书+音箱多渠道，去重30分钟，22:00后静音。通知效果追踪（分类统计每条消息的打开率）。</div>
+  <div class="bee-desc">所有消息的唯一出口。飞书+音箱多渠道，去重30分钟，22:00后静音，周末全静音。线程安全 Token 缓存 + 通知效果追踪 + 事件消费失败 dead-letter 兜底。</div>
   <span class="bee-tag tag-free">¥0 · 效果追踪</span>
 </div>
 
@@ -361,7 +361,7 @@ footer .links a:hover{color:var(--gold)}
   <div class="compare-item"><span class="icon">🧬</span>VLM+门锁交叉验证，零配置学习</div>
   <div class="compare-item"><span class="icon">👤</span>每人独立画像，一对一关怀</div>
   <div class="compare-item"><span class="icon">🏠</span>有温度的家庭伙伴</div>
-  <div class="compare-item"><span class="icon">💰</span>只有"看"需要大模型 ¥4.35/天</div>
+  <div class="compare-item"><span class="icon">💰</span>帧差过滤+大模型 ≈¥1.50/天</div>
 </div>
 
 </div>
@@ -372,9 +372,9 @@ footer .links a:hover{color:var(--gold)}
 <section style="background:var(--bg2)">
 <div class="container">
 <h2 class="section-title">📊 关键指标</h2>
-<p class="section-sub">两轮专家审查后的工程数据</p>
+<p class="section-sub">三轮专家审查（含 Claude Code Review）后的工程数据</p>
 <div class="metrics-grid">
-  <div class="metric-card"><div class="metric-num"><span class="counter" data-target="5158">0</span></div><div class="metric-label">总代码行数</div></div>
+  <div class="metric-card"><div class="metric-num"><span class="counter" data-target="6156">0</span></div><div class="metric-label">总代码行数</div></div>
   <div class="metric-card"><div class="metric-num"><span class="counter" data-target="35">0</span></div><div class="metric-label">自动化测试项</div></div>
   <div class="metric-card"><div class="metric-num"><span class="counter" data-target="70">0</span><span class="metric-unit">%</span></div><div class="metric-label">VLM调用节省</div></div>
   <div class="metric-card"><div class="metric-num">&lt;<span class="counter" data-target="1">0</span><span class="metric-unit">ms</span></div><div class="metric-label">安全检测延迟</div></div>
