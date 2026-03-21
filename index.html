@@ -207,7 +207,7 @@ footer .links a:hover{color:var(--gold)}
   <div class="hero-stat"><div class="num"><span class="counter" data-target="5">0</span></div><div class="label">蜜蜂 Agent</div></div>
   <div class="hero-stat"><div class="num"><span class="counter" data-target="166">0</span></div><div class="label">HA 实体</div></div>
   <div class="hero-stat"><div class="num"><span class="counter" data-target="3900">0</span>+</div><div class="label">行代码</div></div>
-  <div class="hero-stat"><div class="num">¥<span class="counter" data-target="4.35" data-decimals="2">0</span></div><div class="label">日成本</div></div>
+  <div class="hero-stat"><div class="num">¥<span class="counter" data-target="1.50" data-decimals="2">0</span></div><div class="label">日成本</div></div>
   <div class="hero-stat"><div class="num"><span class="counter" data-target="9">0</span>s</div><div class="label">巡查耗时</div></div>
 </div>
 </header>
@@ -223,24 +223,24 @@ footer .links a:hover{color:var(--gold)}
   <span class="bee-emoji">👑🦞</span>
   <div class="bee-name">蜂后 Alan</div>
   <div class="bee-role">Queen — 总调度</div>
-  <div class="bee-desc">接收用户指令，理解意图，调度蜜蜂。不亲自干活，但掌控全局。紧急事件时守卫蜂可绕过蜂后直达舞蹈蜂。</div>
-  <span class="bee-tag tag-llm">Claude Opus 4.6</span>
+  <div class="bee-desc">并行编排蜜蜂（ThreadPoolExecutor），自愈检查 + 蜂蜜周报。不亲自干活，但掌控全局。紧急事件时守卫蜂可绕过蜂后直达舞蹈蜂。</div>
+  <span class="bee-tag tag-llm">并行编排</span>
 </div>
 
 <div class="bee-card">
   <span class="bee-emoji">🔭</span>
   <div class="bee-name">侦查蜂 Scout</div>
-  <div class="bee-role">感知层 — 只报告事实，不做决策</div>
-  <div class="bee-desc">摄像头截图 + VLM视觉分析 + HA传感器 + 天气API。输出标准化感知报告JSON，感知与判断完全分离。</div>
-  <span class="bee-tag tag-vlm">Qwen3-VL-235B</span>
+  <div class="bee-role">感知层 — 两级视觉策略</div>
+  <div class="bee-desc">帧差检测跳过无变化画面（节省60-80% VLM调用），传感器触发或画面变化时才深度分析。摄像头 + VLM + HA传感器 + 天气API。</div>
+  <span class="bee-tag tag-vlm">大型VLM</span>
 </div>
 
 <div class="bee-card">
   <span class="bee-emoji">⚔️</span>
   <div class="bee-name">守卫蜂 Guard</div>
-  <div class="bee-role">安全层 — 纯规则引擎</div>
-  <div class="bee-desc">关键词匹配 + 否定语境排除。摔倒、火灾、入侵零延迟检测。安全这件事不交给概率模型。</div>
-  <span class="bee-tag tag-free">¥0 · &lt;1ms · 100%确定</span>
+  <div class="bee-role">安全层 — 双层检测引擎</div>
+  <div class="bee-desc">第一层关键词匹配（&lt;1ms），第二层 n-gram 语义相似度兜底。摔倒、火灾、入侵零延迟检测 + 否定语境排除。</div>
+  <span class="bee-tag tag-free">¥0 · &lt;1ms · 双层兜底</span>
 </div>
 
 <div class="bee-card">
@@ -255,16 +255,16 @@ footer .links a:hover{color:var(--gold)}
   <span class="bee-emoji">💃</span>
   <div class="bee-name">舞蹈蜂 Dancer</div>
   <div class="bee-role">通知层 — 摇摆舞 = 事件总线</div>
-  <div class="bee-desc">所有消息的唯一出口。飞书+音箱多渠道适配，去重30分钟，22:00后静音（小冰睡眠轻），紧急事件例外。</div>
-  <span class="bee-tag tag-free">¥0 · 事件驱动</span>
+  <div class="bee-desc">所有消息的唯一出口。飞书+音箱多渠道，去重30分钟，22:00后静音。通知效果追踪（分类统计每条消息的打开率）。</div>
+  <span class="bee-tag tag-free">¥0 · 效果追踪</span>
 </div>
 
 <div class="bee-card">
   <span class="bee-emoji">📖</span>
   <div class="bee-name">筑巢蜂 Builder</div>
-  <div class="bee-role">记忆层 — 越用越聪明</div>
-  <div class="bee-desc">门锁指纹自动学习（VLM + key_id交叉验证）、作息规律发现、行为统计、知识持久化。一次学习 = 永久能力。</div>
-  <span class="bee-tag tag-llm">轻量 LLM</span>
+  <div class="bee-role">记忆层 — 贝叶斯进化</div>
+  <div class="bee-desc">门锁指纹贝叶斯身份学习（后验概率>90%自动确认）、作息规律发现、行为统计、知识持久化。一次学习 = 永久能力。</div>
+  <span class="bee-tag tag-llm">贝叶斯推理</span>
 </div>
 
 </div>
@@ -372,14 +372,14 @@ footer .links a:hover{color:var(--gold)}
 <section style="background:var(--bg2)">
 <div class="container">
 <h2 class="section-title">📊 关键指标</h2>
-<p class="section-sub">技术可行性已验证，数据说话</p>
+<p class="section-sub">两轮专家审查后的工程数据</p>
 <div class="metrics-grid">
-  <div class="metric-card"><div class="metric-num"><span class="counter" data-target="28">0</span></div><div class="metric-label">传感器接入</div></div>
+  <div class="metric-card"><div class="metric-num"><span class="counter" data-target="5158">0</span></div><div class="metric-label">总代码行数</div></div>
+  <div class="metric-card"><div class="metric-num"><span class="counter" data-target="35">0</span></div><div class="metric-label">自动化测试项</div></div>
+  <div class="metric-card"><div class="metric-num"><span class="counter" data-target="70">0</span><span class="metric-unit">%</span></div><div class="metric-label">VLM调用节省</div></div>
   <div class="metric-card"><div class="metric-num">&lt;<span class="counter" data-target="1">0</span><span class="metric-unit">ms</span></div><div class="metric-label">安全检测延迟</div></div>
-  <div class="metric-card"><div class="metric-num"><span class="counter" data-target="100">0</span><span class="metric-unit">%</span></div><div class="metric-label">守卫蜂确定性</div></div>
+  <div class="metric-card"><div class="metric-num"><span class="counter" data-target="90">0</span><span class="metric-unit">%</span></div><div class="metric-label">贝叶斯确认阈值</div></div>
   <div class="metric-card"><div class="metric-num"><span class="counter" data-target="9">0</span><span class="metric-unit">秒</span></div><div class="metric-label">完整巡查耗时</div></div>
-  <div class="metric-card"><div class="metric-num"><span class="counter" data-target="8">0</span></div><div class="metric-label">已认识家人</div></div>
-  <div class="metric-card"><div class="metric-num"><span class="counter" data-target="206">0</span></div><div class="metric-label">观察记录</div></div>
 </div>
 </div>
 </section>
