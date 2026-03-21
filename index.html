@@ -523,7 +523,7 @@ counters.forEach(c=>observer.observe(c));
 
 
 // === Dashboard password protection ===
-const DASH_HASH = '1a007ab99ef788fa1e94eed5703f05e3fa7d0edcba372a787bc9deddc458b84c';
+let DASH_HASH = '';  // 从 data.json 动态加载
 let dashUnlocked = sessionStorage.getItem('dash_unlocked') === '1';
 
 async function sha256(text) {
@@ -587,6 +587,7 @@ async function loadDashData() {
   try {
     const resp = await fetch('dashboard/data.json?'+Date.now());
     const d = await resp.json();
+    if (d.dash_hash) DASH_HASH = d.dash_hash;
     renderDash(d);
   } catch(e) { console.error('Dashboard load error:', e); }
   finally { btn.classList.remove('spinning'); }
