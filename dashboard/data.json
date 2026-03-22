@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-22T14:33:42.072207",
+  "generated_at": "2026-03-22T15:35:35.753005",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -8,9 +8,9 @@
         "name": "dancer",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-03-22T14:33:42.027154",
+        "last_run": null,
         "last_run_duration": null,
-        "total_runs": 1,
+        "total_runs": 0,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -19,9 +19,9 @@
         "name": "guard",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-03-22T14:33:39.528785",
+        "last_run": null,
         "last_run_duration": null,
-        "total_runs": 2,
+        "total_runs": 0,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-03-22T14:33:39.527041",
+        "last_run": "2026-03-22T15:35:35.730105",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -52,9 +52,9 @@
         "name": "builder",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-03-22T14:33:42.028147",
+        "last_run": null,
         "last_run_duration": null,
-        "total_runs": 1,
+        "total_runs": 0,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -70,18 +70,18 @@
   },
   "bees": {},
   "events": {
-    "total": 283,
-    "recent_500": 283,
-    "today": 168,
+    "total": 299,
+    "recent_500": 299,
+    "today": 184,
     "by_type": {
-      "feishu_sent": 138,
-      "scene_report": 113,
+      "feishu_sent": 146,
+      "scene_report": 121,
       "speaker_played": 29,
       "bee_healed": 3
     },
     "by_source": {
-      "dancer": 167,
-      "scout": 113,
+      "dancer": 175,
+      "scout": 121,
       "queen": 3
     },
     "last_10": [
@@ -90,110 +90,110 @@
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 14:28 巡查报告\n【在家人员】\nPERSON_FEATURE: 5岁男孩，短发，深色上衣，坐地玩玩具 | GUESS: 小宝  \nPERSON_FEATURE: 成年男性，短发，深色上衣，躺沙",
+          "text": "🦞 15:24 巡查报告\n【在家人员】  \nPERSON_FEATURE: 男，短发，深色连帽衫，浅色长裤，站立于门口 | GUESS: 晓峰（36岁男性，符合周末在家逻辑）\n【状态评估】  \n晓峰刚",
           "target": "ou_a9ca7506b002b1be36148b97d622d551"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-22T14:33:41.166004"
+        "timestamp": "2026-03-22T15:25:24.882270"
       },
       {
         "source": "scout",
         "type": "scene_report",
         "intensity": "normal",
         "payload": {
-          "report": "【在家人员】\nPERSON_FEATURE: 5岁男孩，短发，深色上衣，坐地玩玩具 | GUESS: 小宝  \nPERSON_FEATURE: 成年男性，短发，深色上衣，躺沙发盖毯，手捂脸 | GUESS: 晓峰（周末在家合理）\n\n【状态评估】  \n小宝专注玩耍，无危险行为；晓峰躺卧休息，状态放松，无异常。\n\n【环境检查】  \n客厅20°C/64%湿度，舒适；室外晴热有风（7.9km/h），建议关窗防尘。\n\n【提醒事项】  \n今日周日，无课外课。大风提醒：请确认窗户关闭。晓峰躺卧超30分钟，建议起身活动。\n\n【建议】  \n可开启客厅新风或加湿器微调湿度；小宝玩具散落，建议稍后整理防绊倒。",
+          "report": "【在家人员】  \nPERSON_FEATURE: 男，短发，深色连帽衫，浅色长裤，站立于门口 | GUESS: 晓峰（36岁男性，符合周末在家逻辑）\n\n【状态评估】  \n晓峰刚从门口进入客厅，状态正常，无异常行为。\n\n【环境检查】  \n客厅20°C/64%湿度，舒适；卧室22°C/59%，主卧22.6°C/53%，均适宜。无需调整空调。\n\n【提醒事项】  \n今日周日，无课外课。室外晴、风速8.4km/h，建议关窗防尘。门锁显示10:25有人用公共密码回家，未确认身份，建议留意。\n\n【建议】  \n晓峰可检查门锁记录确认10:25归家者身份。风大，建议检查阳台窗户是否关严。",
           "image_path": "/tmp/home_patrol_snapshot.jpg"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-22T14:33:39.518225"
+        "timestamp": "2026-03-22T15:25:23.261122"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 14:14 巡查报告\n【在家人员】  \nPERSON_FEATURE: 蓝色椅子上坐一幼童，穿深色衣裤，短发，身高矮 | GUESS: 小宝  \nPERSON_FEATURE: 沙发上躺一成年女性",
+          "text": "🦞 15:19 巡查报告\n【在家人员】  \nPERSON_FEATURE: 短发男性，深灰连帽衫，背对镜头站立 | GUESS: 晓峰  \nPERSON_FEATURE: 幼童，黑裤绿上衣，坐地玩玩具",
           "target": "ou_a9ca7506b002b1be36148b97d622d551"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-22T14:18:15.848141"
+        "timestamp": "2026-03-22T15:20:15.506224"
       },
       {
         "source": "scout",
         "type": "scene_report",
         "intensity": "normal",
         "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 蓝色椅子上坐一幼童，穿深色衣裤，短发，身高矮 | GUESS: 小宝  \nPERSON_FEATURE: 沙发上躺一成年女性，穿浅灰长袖，体型中等偏瘦，面部年轻 | GUESS: 小冰（妈妈）  \nPERSON_FEATURE: 桌前坐一成年男性，短发，穿深色上衣 | GUESS: 晓峰  \n\n【状态评估】  \n小宝坐椅上抬腿玩耍，状态活泼；小冰躺沙发休息，姿态放松；晓峰坐桌前似操作电脑，状态专注。均正常。\n\n【环境检查】  \n客厅20°C/64%湿度，舒适；室外晴热有风，建议关窗防尘。\n\n【提醒事项】  \n今日周日无课外课。大风提醒关窗，避免物品被吹落。\n\n【建议】  \n地面散落拖鞋、玩具，建议稍后整理；沙发区域可加防滑垫，避免小宝活动滑倒。",
+          "report": "【在家人员】  \nPERSON_FEATURE: 短发男性，深灰连帽衫，背对镜头站立 | GUESS: 晓峰  \nPERSON_FEATURE: 幼童，黑裤绿上衣，坐地玩玩具 | GUESS: 小宝  \n\n【状态评估】  \n晓峰站立看手机，小宝专注玩玩具，状态正常，无异常行为。\n\n【环境检查】  \n客厅20°C/64%湿度，体感舒适；主卧稍暖（22.6°C），建议保持通风。室外晴热有风，门窗已关，安全。\n\n【提醒事项】  \n今日周日无课外课。大风8.4km/h，已关窗，无需额外操作。\n\n【建议】  \n建议晓峰带小宝稍后户外活动（天气晴好），避免久坐；客厅玩具散落，可稍后整理。",
           "image_path": "/tmp/home_patrol_snapshot.jpg"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-22T14:18:13.999516"
+        "timestamp": "2026-03-22T15:20:13.682277"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 14:09 巡查报告\n【在家人员】  \nPERSON_FEATURE: 5岁男孩，短发，穿深色衣裤，坐蓝色椅子玩手机 | GUESS: 小宝  \nPERSON_FEATURE: 中老年女性，体型偏",
+          "text": "🦞 15:14 巡查报告\n【在家人员】  \nPERSON_FEATURE: 5岁男孩，深色上衣，坐地毯上玩玩具 | GUESS: 小宝  \nPERSON_FEATURE: 成年女性，盖毯子躺沙发，面部",
           "target": "ou_a9ca7506b002b1be36148b97d622d551"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-22T14:13:04.301112"
+        "timestamp": "2026-03-22T15:15:01.537286"
       },
       {
         "source": "scout",
         "type": "scene_report",
         "intensity": "normal",
         "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 5岁男孩，短发，穿深色衣裤，坐蓝色椅子玩手机 | GUESS: 小宝  \nPERSON_FEATURE: 中老年女性，体型偏壮实，穿浅灰家居服，躺沙发盖毯 | GUESS: 姥姥（10:07指纹确认到家）  \n\n【状态评估】  \n小宝专注玩手机，姥姥躺沙发休息，状态正常。  \n\n【环境检查】  \n客厅20°C/64%湿度，舒适；室外晴热风大，建议关窗防尘。  \n\n【提醒事项】  \n周日无课外课。姥姥躺卧超30分钟，建议轻声询问是否需要起身活动。  \n\n【建议】  \n提醒小宝控制屏幕时间；沙发区域杂物多，建议整理防绊倒。  \n\n（画面中无其他可确认活人，不臆测）",
+          "report": "【在家人员】  \nPERSON_FEATURE: 5岁男孩，深色上衣，坐地毯上玩玩具 | GUESS: 小宝  \nPERSON_FEATURE: 成年女性，盖毯子躺沙发，面部有年龄感，体型偏壮实 | GUESS: 姥姥（符合门锁10:07到家记录）  \nPERSON_FEATURE: 年轻女性，深色上衣，坐桌前低头操作 | GUESS: 小冰（周末在家合理，非晓峰）  \n\n【状态评估】  \n小宝专注玩耍，安全；姥姥躺卧休息，无异常；小冰在桌前处理事务，状态正常。  \n\n【环境检查】  \n客厅20°C/64%湿度，舒适；主卧22.8°C略高，建议空调调至22°C。  \n\n【提醒事项】  \n今日周日，无课外课。室外风速8.2km/h，建议关窗防尘。  \n\n【建议】  \n小宝玩具散落，可提醒收纳；姥姥久卧建议起身活动。",
           "image_path": "/tmp/home_patrol_snapshot.jpg"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-22T14:13:02.542637"
+        "timestamp": "2026-03-22T15:14:59.996938"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 14:04 巡查报告\n【在家人员】\nPERSON_FEATURE: 5岁男孩，短发，穿深色上衣+短裤，坐蓝色椅子 | GUESS: 小宝\nPERSON_FEATURE: 中老年女性，体型偏壮实，穿",
+          "text": "🦞 14:59 巡查报告（画面来自5分钟前）\n【在家人员】\nPERSON_FEATURE: 5岁男孩，深色上衣+黑裤，坐地毯玩玩具 | GUESS: 小宝\nPERSON_FEATURE: 成年男性，短",
           "target": "ou_a9ca7506b002b1be36148b97d622d551"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-22T14:07:51.027055"
+        "timestamp": "2026-03-22T15:04:44.729673"
       },
       {
         "source": "scout",
         "type": "scene_report",
         "intensity": "normal",
         "payload": {
-          "report": "【在家人员】\nPERSON_FEATURE: 5岁男孩，短发，穿深色上衣+短裤，坐蓝色椅子 | GUESS: 小宝\nPERSON_FEATURE: 中老年女性，体型偏壮实，穿浅灰长裤+深色上衣，躺沙发抬腿 | GUESS: 姥姥（已确认10:07到家）\n\n【状态评估】小宝坐姿放松，姥姥躺卧休息，状态正常，无异常行为。\n\n【环境检查】客厅20°C/64%湿度，舒适；室外晴热有风（8.4km/h），建议关窗防尘。\n\n【提醒事项】周日无课外课。姥姥躺卧超30分钟，建议轻声询问是否需要起身活动。\n\n【建议】地面散落拖鞋、玩具，建议稍后整理；沙发区域可加防滑垫防滑倒。",
+          "report": "【在家人员】\nPERSON_FEATURE: 5岁男孩，深色上衣+黑裤，坐地毯玩玩具 | GUESS: 小宝\nPERSON_FEATURE: 成年男性，短发，躺沙发盖毯，持手机 | GUESS: 晓峰\nPERSON_FEATURE: 年轻女性，中长发，坐沙发侧身看手机 | GUESS: 小冰（妈妈）\n\n【状态评估】\n小宝专注玩耍，安全；晓峰、小冰放松休息，状态正常。\n\n【环境检查】\n客厅20°C/64%湿度，体感舒适，无需调整。\n\n【提醒事项】\n今日周日无课外课。室外风速8.2km/h，建议关窗防尘。姥姥10:07已到家，未在画面中，建议确认其状态。\n\n【建议】\n可开启客厅新风系统改善空气流通，避免久坐疲劳。",
           "image_path": "/tmp/home_patrol_snapshot.jpg"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-22T14:07:49.384771"
+        "timestamp": "2026-03-22T15:04:43.148357"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 13:59 巡查报告\n【在家人员】\nPERSON_FEATURE: 5岁男孩，短发，穿灰白上衣，坐蓝色小椅 | GUESS: 小宝\nPERSON_FEATURE: 成年女性，长发，穿浅色上衣+灰裤",
+          "text": "🦞 14:54 巡查报告（画面来自5分钟前）\n【在家人员】  \nPERSON_FEATURE: 5岁男孩，深色上衣+深裤，坐地毯上玩玩具 | GUESS: 小宝  \nPERSON_FEATURE: 成",
           "target": "ou_a9ca7506b002b1be36148b97d622d551"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-22T14:02:40.131272"
+        "timestamp": "2026-03-22T14:59:33.914599"
       },
       {
         "source": "scout",
         "type": "scene_report",
         "intensity": "normal",
         "payload": {
-          "report": "【在家人员】\nPERSON_FEATURE: 5岁男孩，短发，穿灰白上衣，坐蓝色小椅 | GUESS: 小宝\nPERSON_FEATURE: 成年女性，长发，穿浅色上衣+灰裤，躺沙发盖毯，脚露外 | GUESS: 小冰（年轻妈妈，非姥姥）\n\n【状态评估】\n小宝安静坐桌前，状态正常；小冰躺沙发休息，无异常。\n\n【环境检查】\n客厅20°C/63%湿度，舒适无需调整；室外晴热有风，建议关窗防尘。\n\n【提醒事项】\n今日周日无课外课；小冰躺卧超30分钟，建议起身活动；姥爷/晓峰未见，可语音呼叫确认。\n\n【建议】\n地面散落玩具/拖鞋，建议整理防绊倒；沙发旁地毯可移开避免堆积杂物。",
+          "report": "【在家人员】  \nPERSON_FEATURE: 5岁男孩，深色上衣+深裤，坐地毯上玩玩具 | GUESS: 小宝  \nPERSON_FEATURE: 成年男性，短发，躺沙发盖毯，戴眼罩，脚翘起 | GUESS: 晓峰（周末在家正常）  \nPERSON_FEATURE: 年轻女性，长发，坐沙发旁地毯，陪小宝 | GUESS: 小冰（妈妈，非姥姥，体态年轻）  \n\n【状态评估】  \n小宝专注玩耍，状态正常；晓峰午休，无异常；小冰陪娃，温馨安全。  \n\n【环境检查】  \n客厅20°C/64%湿度，舒适；主卧稍暖，建议空调调至21°C平衡。  \n\n【提醒事项】  \n今日周日，无课外课。室外风速8.2km/h，建议关窗防尘。  \n\n【建议】  \n晓峰午休可调低空调至20°C；小冰陪玩时注意地面玩具防绊倒。  \n\n（注：画面中仅3人，无其他活人；沙发靠垫、桌椅、衣物均非人）",
           "image_path": "/tmp/home_patrol_snapshot.jpg"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-22T14:02:38.521868"
+        "timestamp": "2026-03-22T14:59:32.207462"
       }
     ]
   },
@@ -203,96 +203,26 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 133.6,
+    "log_size_kb": 149.0,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
       "habits_discovered": 1,
       "total_observations": 0,
-      "log_entries": 420,
+      "log_entries": 436,
       "devices": 117,
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
     "last_patrol_lines": [
-      "[2026-03-22 14:28:23] [hive.scout] [info] 开始巡查...",
-      "[2026-03-22 14:28:23] [hive.scout] [info] 截图成功: 33968 bytes",
-      "[2026-03-22 14:28:23] [hive.scout] [info] 环境: {'客厅': '20.0°C, 湿度64.0%', '卧室': '22.0°C, 湿度58.0%', '主卧': '22.8°C, 湿度54.0%', '门锁': 'close', '最近移动': '小米智能摄像机3 云台版: 14:23画面变动!'}",
-      "[2026-03-22 14:28:28] [hive.queen] [error] 核心巡查失败: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=39.9&longitude=116.4&current=temperature_2m%2Crelative_humidity_2m%2Cweather_code%2Cwind_speed_10m&hourly=precipitation_probability%2Ctemperature_2m%2Cweather_code&forecast_days=1&timezone=Asia%2FShanghai (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
-      "[2026-03-22 14:28:28] [hive.queen] [warn] run_all 完成，1步失败: ['patrol']"
+      "   ✅ guard: ready (跑了0次)",
+      "   ✅ scout: ready (跑了1次)",
+      "   ✅ nurse: ready (跑了0次)",
+      "   ✅ builder: ready (跑了0次)",
+      "[2026-03-22 15:30:32] [hive.queen] [info] run_all 完成，全部正常"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
-    {
-      "time": "2026-03-22 13:05:27",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-22 13:10:39",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-22 13:15:49",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-22 13:21:01",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-22 13:26:12",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-22 13:31:23",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-22 13:36:35",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-22 13:41:46",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-22 13:46:56",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-22 13:52:10",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-22 13:57:26",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-22 13:57:31",
-      "level": "error",
-      "msg": "EOF occurred in violation of protocol (_ssl.c:1016)')))"
-    },
-    {
-      "time": "2026-03-22 14:02:32",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-22 14:07:42",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
     {
       "time": "2026-03-22 14:12:53",
       "level": "info",
@@ -322,15 +252,89 @@
       "time": "2026-03-22 14:33:29",
       "level": "info",
       "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-22 14:38:47",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-22 14:43:58",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-22 14:44:03",
+      "level": "error",
+      "msg": "EOF occurred in violation of protocol (_ssl.c:1016)')))"
+    },
+    {
+      "time": "2026-03-22 14:49:05",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-22 14:54:15",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-22 14:59:24",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-22 15:04:36",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-22 15:09:46",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-22 15:09:52",
+      "level": "error",
+      "msg": "EOF occurred in violation of protocol (_ssl.c:1016)')))"
+    },
+    {
+      "time": "2026-03-22 15:14:53",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-22 15:20:04",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-22 15:25:17",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-22 15:30:27",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-22 15:35:33",
+      "level": "info",
+      "msg": "开始巡查..."
     }
   ],
   "error_trend": {
-    "2026-03-22": 6
+    "2026-03-22": 8
   },
   "honey": [
     {
       "name": "weekly_2026-03-21.md",
       "size": 497
+    },
+    {
+      "name": "monthly_2026-03.md",
+      "size": 1502
     }
   ]
 }
