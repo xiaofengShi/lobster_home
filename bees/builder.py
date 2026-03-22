@@ -26,7 +26,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from hive.bee_base import BeeAgent
 from hive.event_bus import event_bus
-from hive.config import HA_URL, HA_TOKEN, BRAIN_DIR
+from hive.config import HA_URL, HA_TOKEN, BRAIN_DIR, DATA_DIR
 from hive.safe_io import safe_write_json, safe_read_json, safe_append_jsonl
 
 # ===== 数据路径 =====

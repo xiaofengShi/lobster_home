@@ -942,6 +942,177 @@ def generate_weekly_honey():
     return report
 
 
+# ====================================================================
+# 🍯 8.4 蜂蜜产出 — 月报 + 门锁分析 + 成本核算
+# ====================================================================
+
+def generate_monthly_honey():
+    """生成月度蜂蜜报告（安全态势+成本分析+进化日志）
+    
+    对应文档 8.4：
+    - 蜂蜜一：家庭健康周报（已有 weekly）
+    - 蜂蜜二：安全态势报告
+    - 蜂蜜三：能耗与成本分析
+    - 蜂蜜四：进化日志
+    """
+    now = datetime.now()
+    month_start = now.replace(day=1).strftime("%Y-%m-%d")
+    month_label = now.strftime("%Y年%m月")
+    days_in_month = now.day
+
+    lines = [f"# 🍯 月度蜂蜜报告 — {month_label}\n"]
+
+    # ===== 蜂蜜二：安全态势报告 =====
+    lines.append("## 🛡️ 安全态势\n")
+    
+    events_file = DATA_DIR / "events.jsonl"
+    emergencies = []
+    total_events = 0
+    if events_file.exists():
+        try:
+            for line in events_file.read_text(encoding="utf-8").strip().split("\n"):
+                if not line.strip():
+                    continue
+                try:
+                    e = json.loads(line)
+                    ts = e.get("timestamp", "")[:10]
+                    if ts >= month_start:
+                        total_events += 1
+                        if e.get("type") == "emergency":
+                            emergencies.append(e)
+                except json.JSONDecodeError:
+                    pass
+        except (OSError, IOError):
+            pass
+    
+    lines.append(f"- 事件总线事件总数: **{total_events}**")
+    lines.append(f"- 紧急告警次数: **{len(emergencies)}**")
+    
+    if emergencies:
+        false_alarms = sum(1 for e in emergencies 
+                          if e.get("payload", {}).get("confidence_level") == "confirm"
+                          or e.get("payload", {}).get("confidence", 0) < 0.5)
+        lines.append(f"- 低置信度告警: {false_alarms}")
+        if len(emergencies) > 0:
+            lines.append(f"- 告警详情:")
+            for e in emergencies[-10:]:  # 最多显示10条
+                payload = e.get("payload", {})
+                lines.append(f"  - {e.get('timestamp', '')[:16]}: "
+                            f"{payload.get('keyword', '?')} "
+                            f"(置信度: {payload.get('confidence', 'N/A')})")
+    else:
+        lines.append("- **🟢 本月无安全告警**")
+
+    # ===== 门锁指纹学习进度 =====
+    lines.append("\n## 🔑 门锁指纹\n")
+    door_map_file = DATA_DIR / "door_key_mapping.json"
+    if door_map_file.exists():
+        try:
+            door_data = json.loads(door_map_file.read_text())
+            # 平铺结构：key_id → 描述/dict
+            known = {}
+            ambiguous = []
+            for kid, info in door_data.items():
+                if kid.startswith("_"):
+                    continue  # 跳过说明字段
+                if isinstance(info, str):
+                    if "公共" in info or "内部" in info or "所有" in info:
+                        ambiguous.append(kid)
+                    else:
+                        known[kid] = info
+                elif isinstance(info, dict):
+                    name = info.get("name", info.get("description", "?"))
+                    if info.get("ambiguous") or "公共" in name:
+                        ambiguous.append(kid)
+                    else:
+                        known[kid] = name
+            
+            lines.append(f"- 已确认指纹: **{len(known)}** 个")
+            for kid, name in known.items():
+                lines.append(f"  - `{kid}` → {name}")
+            if ambiguous:
+                lines.append(f"- 公共/模糊: {len(ambiguous)} 个")
+        except (json.JSONDecodeError, OSError):
+            lines.append("- 门锁数据读取失败")
+    
+    # ===== 蜂蜜三：成本分析 =====
+    lines.append("\n## 💰 成本分析\n")
+    
+    # 从帧差统计估算 VLM 成本
+    vlm_cost = 0
+    try:
+        from hive.frame_diff import get_stats
+        fs = get_stats()
+        vlm_calls = fs.get("vlm_calls", 0)
+        vlm_cost = vlm_calls * 0.03
+        lines.append(f"- VLM 调用: {vlm_calls} 次 → ¥{vlm_cost:.1f}")
+        lines.append(f"- VLM 跳过（帧差节省）: {fs.get('skipped', 0)} 次")
+        saved = fs.get("skipped", 0) * 0.03
+        lines.append(f"- 帧差节省: ¥{saved:.1f}")
+    except Exception:
+        lines.append("- VLM 成本数据暂无")
+    
+    # 其他成本估算
+    other_cost = days_in_month * 0.05  # LLM（关怀+记忆）≈ ¥0.05/天
+    total_cost = vlm_cost + other_cost
+    daily_avg = total_cost / max(days_in_month, 1)
+    
+    lines.append(f"- LLM 其他: ≈ ¥{other_cost:.1f}")
+    lines.append(f"- **本月总计: ¥{total_cost:.1f}**")
+    lines.append(f"- **日均: ¥{daily_avg:.2f}**")
+    
+    if daily_avg > 10:
+        lines.append("- ⚠️ 日均成本 >¥10，建议降低巡查频率")
+    elif daily_avg < 5:
+        lines.append("- ✅ 成本控制良好")
+
+    # ===== 蜂蜜四：进化日志 =====
+    lines.append("\n## 🧬 系统进化\n")
+    
+    brain_status = builder.get_brain_status()
+    lines.append(f"- 认识 {brain_status['known_people']} 人，学习中 {brain_status['learning_people']} 人")
+    lines.append(f"- 发现习惯 {brain_status['habits_discovered']} 个")
+    lines.append(f"- 累计观察 {brain_status['log_entries']} 条")
+    lines.append(f"- 已知设备 {brain_status['devices']} 个")
+    
+    # 反馈分析（如果有）
+    feedback = builder.analyze_feedback(days=days_in_month)
+    if feedback.get("notifications", {}).get("total", 0) > 0:
+        lines.append(f"\n### 📊 通知效果分析")
+        lines.append(f"- 本月通知: {feedback['notifications']['total']} 条")
+        for ntype, count in feedback["notifications"].get("by_type", {}).items():
+            lines.append(f"  - {ntype}: {count}")
+        if feedback.get("dead_letters", {}).get("total", 0) > 0:
+            lines.append(f"- 消费失败: {feedback['dead_letters']['total']} 条 "
+                        f"({feedback['dead_letters'].get('error_rate', 'N/A')})")
+        for suggestion in feedback.get("suggestions", []):
+            lines.append(f"- {suggestion}")
+
+    # ===== 蜜蜂生命周期 =====
+    lines.append("\n## 🥚 蜜蜂生命周期\n")
+    lines.append(hive_health.lifecycle_report())
+
+    report = "\n".join(lines)
+
+    # 保存
+    report_file = HONEY_DIR / f"monthly_{now.strftime('%Y-%m')}.md"
+    report_file.write_text(report, encoding="utf-8")
+    print(f"🍯 月报已生成: {report_file}")
+
+    return report
+
+
+def generate_honey_all():
+    """一键生成所有蜂蜜报告"""
+    print("🍯 生成全部蜂蜜报告...")
+    weekly = generate_weekly_honey()
+    monthly = generate_monthly_honey()
+    print(f"\n📁 报告目录: {HONEY_DIR}")
+    for f in sorted(HONEY_DIR.glob("*.md")):
+        print(f"  📄 {f.name}")
+    return {"weekly": weekly, "monthly": monthly}
+
+
 if __name__ == "__main__":
     import sys
     if len(sys.argv) > 1:
@@ -955,6 +1126,13 @@ if __name__ == "__main__":
         elif cmd == "--honey":
             report = generate_weekly_honey()
             print(report)
+        elif cmd == "--honey-monthly":
+            report = generate_monthly_honey()
+            print(report)
+        elif cmd == "--honey-all":
+            generate_honey_all()
+        elif cmd == "--lifecycle":
+            print(hive_health.lifecycle_report())
         elif cmd == "--mode":
             # 模式切换: queen.py --mode away '{"who":"晓峰"}'
             from hive.hive_state import set_hive_mode
