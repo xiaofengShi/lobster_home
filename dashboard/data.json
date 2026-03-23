@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-23T10:18:33.931301",
+  "generated_at": "2026-03-23T11:19:40.370807",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-03-23T10:18:29.368873",
+        "last_run": "2026-03-23T11:19:33.761534",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -202,7 +202,7 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 44.6,
+    "log_size_kb": 48.7,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
@@ -213,80 +213,15 @@
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
     "last_patrol_lines": [
-      "[2026-03-23 10:13:23] [hive.scout] [info] 无法获取画面，跳过巡查",
-      "  📷 摄像头休眠/关闭，跳过视觉巡查",
-      "  🌡️ 环境: {'客厅': '20.0°C, 湿度68.0%', '卧室': '21.0°C, 湿度57.0%', '主卧': '21.6°C, 湿度62.0%', '门锁': 'close', '最近移动': '小米智能摄像机3 云台版: 09:06有人移动!'}",
-      "[2026-03-23 10:13:28] [hive.queen] [error] 核心巡查失败: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=39.9&longitude=116.4&current=temperature_2m%2Crelative_humidity_2m%2Cweather_code%2Cwind_speed_10m&hourly=precipitation_probability%2Ctemperature_2m%2Cweather_code&forecast_days=1&timezone=Asia%2FShanghai (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
-      "[2026-03-23 10:13:28] [hive.queen] [warn] run_all 完成，1步失败: ['patrol']"
+      "   ✅ guard: ready (跑了0次)",
+      "   ✅ scout: ready (跑了1次)",
+      "   ✅ nurse: ready (跑了0次)",
+      "   ✅ builder: ready (跑了0次)",
+      "[2026-03-23 11:14:32] [hive.queen] [info] run_all 完成，全部正常"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
-    {
-      "time": "2026-03-23 08:51:25",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 08:56:28",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 09:01:41",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 09:06:53",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 09:06:59",
-      "level": "error",
-      "msg": "EOF occurred in violation of protocol (_ssl.c:1016)')))"
-    },
-    {
-      "time": "2026-03-23 09:12:01",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 09:17:12",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 09:22:19",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 09:27:24",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 09:32:27",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 09:37:33",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 09:42:41",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 09:47:46",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
     {
       "time": "2026-03-23 09:52:50",
       "level": "info",
@@ -321,10 +256,75 @@
       "time": "2026-03-23 10:18:29",
       "level": "info",
       "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 10:23:42",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 10:28:46",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 10:33:49",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 10:38:52",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 10:43:58",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 10:49:04",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 10:54:09",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 10:54:14",
+      "level": "error",
+      "msg": "EOF occurred in violation of protocol (_ssl.c:1016)')))"
+    },
+    {
+      "time": "2026-03-23 10:59:16",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 11:04:19",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 11:09:21",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 11:14:26",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 11:19:33",
+      "level": "info",
+      "msg": "开始巡查..."
     }
   ],
   "error_trend": {
-    "2026-03-23": 16
+    "2026-03-23": 17
   },
   "honey": [
     {
