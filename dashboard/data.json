@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-23T09:12:03.251779",
+  "generated_at": "2026-03-23T10:18:33.931301",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-03-23T09:12:01.569498",
+        "last_run": "2026-03-23T10:18:29.368873",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -70,23 +70,34 @@
   },
   "bees": {},
   "events": {
-    "total": 380,
-    "recent_500": 380,
-    "today": 44,
+    "total": 381,
+    "recent_500": 381,
+    "today": 45,
     "by_type": {
-      "feishu_sent": 177,
+      "feishu_sent": 178,
       "scene_report": 152,
       "speaker_played": 46,
       "bee_healed": 3,
       "emergency": 2
     },
     "by_source": {
-      "dancer": 223,
+      "dancer": 224,
       "scout": 152,
       "queen": 3,
       "guard": 2
     },
     "last_10": [
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "📰 今天的 AI 日报已生成：🚀 每日 AI 热点汇总｜2026-03-23\n\n🦞 感知到你不在家，飞书发你方便查看。下面还有语音摘要～",
+          "target": "ou_a9ca7506b002b1be36148b97d622d551"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-23T10:03:05.797248"
+      },
       {
         "source": "dancer",
         "type": "speaker_played",
@@ -182,16 +193,6 @@
         },
         "dance": "waggle",
         "timestamp": "2026-03-23T08:41:14.927256"
-      },
-      {
-        "source": "dancer",
-        "type": "speaker_played",
-        "intensity": "normal",
-        "payload": {
-          "text": "温馨提醒，今天周一，18:30有体能课，建议18:00提醒准备。  \n室外阴天10.3°C，风速3."
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-23T08:36:04.045424"
       }
     ]
   },
@@ -201,7 +202,7 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 39.4,
+    "log_size_kb": 44.6,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
@@ -212,85 +213,15 @@
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
     "last_patrol_lines": [
-      "[2026-03-23 09:06:54] [hive.scout] [info] 环境: {'客厅': '20.0°C, 湿度69.0%', '卧室': '21.0°C, 湿度65.0%', '主卧': '21.6°C, 湿度64.0%', '门锁': 'close', '最近移动': '小米智能摄像机3 云台版: 09:01有人移动!'}",
-      "[2026-03-23 09:06:59] [hive.queen] [error] 核心巡查失败: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=39.9&longitude=116.4&current=temperature_2m%2Crelative_humidity_2m%2Cweather_code%2Cwind_speed_10m&hourly=precipitation_probability%2Ctemperature_2m%2Cweather_code&forecast_days=1&timezone=Asia%2FShanghai (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
-      "[2026-03-23 09:06:59] [hive.dancer] [info] 飞书token已缓存",
-      "  📰 日报尚未生成",
-      "[2026-03-23 09:07:00] [hive.queen] [warn] run_all 完成，1步失败: ['patrol']"
+      "[2026-03-23 10:13:23] [hive.scout] [info] 无法获取画面，跳过巡查",
+      "  📷 摄像头休眠/关闭，跳过视觉巡查",
+      "  🌡️ 环境: {'客厅': '20.0°C, 湿度68.0%', '卧室': '21.0°C, 湿度57.0%', '主卧': '21.6°C, 湿度62.0%', '门锁': 'close', '最近移动': '小米智能摄像机3 云台版: 09:06有人移动!'}",
+      "[2026-03-23 10:13:28] [hive.queen] [error] 核心巡查失败: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=39.9&longitude=116.4&current=temperature_2m%2Crelative_humidity_2m%2Cweather_code%2Cwind_speed_10m&hourly=precipitation_probability%2Ctemperature_2m%2Cweather_code&forecast_days=1&timezone=Asia%2FShanghai (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
+      "[2026-03-23 10:13:28] [hive.queen] [warn] run_all 完成，1步失败: ['patrol']"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
-    {
-      "time": "2026-03-23 07:54:52",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 08:00:03",
-      "level": "error",
-      "msg": "早间播报失败: 'ScoutBee' object has no attribute 'CAMERA_ENTITY'"
-    },
-    {
-      "time": "2026-03-23 08:00:03",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 08:00:09",
-      "level": "error",
-      "msg": "EOF occurred in violation of protocol (_ssl.c:1016)')))"
-    },
-    {
-      "time": "2026-03-23 08:05:10",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 08:10:16",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 08:15:20",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 08:20:27",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 08:25:30",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 08:25:36",
-      "level": "error",
-      "msg": "EOF occurred in violation of protocol (_ssl.c:1016)')))"
-    },
-    {
-      "time": "2026-03-23 08:30:37",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 08:35:50",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 08:41:04",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 08:46:19",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
     {
       "time": "2026-03-23 08:51:25",
       "level": "info",
@@ -320,10 +251,80 @@
       "time": "2026-03-23 09:12:01",
       "level": "info",
       "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 09:17:12",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 09:22:19",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 09:27:24",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 09:32:27",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 09:37:33",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 09:42:41",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 09:47:46",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 09:52:50",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 09:57:54",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 10:03:01",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 10:08:17",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 10:13:23",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 10:13:28",
+      "level": "error",
+      "msg": "EOF occurred in violation of protocol (_ssl.c:1016)')))"
+    },
+    {
+      "time": "2026-03-23 10:18:29",
+      "level": "info",
+      "msg": "开始巡查..."
     }
   ],
   "error_trend": {
-    "2026-03-23": 15
+    "2026-03-23": 16
   },
   "honey": [
     {
