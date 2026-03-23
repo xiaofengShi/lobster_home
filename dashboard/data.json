@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-23T11:19:40.370807",
+  "generated_at": "2026-03-23T12:25:54.598849",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-03-23T11:19:33.761534",
+        "last_run": "2026-03-23T12:25:52.312632",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -202,7 +202,7 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 48.7,
+    "log_size_kb": 53.1,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
@@ -213,85 +213,15 @@
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
     "last_patrol_lines": [
-      "   ✅ guard: ready (跑了0次)",
       "   ✅ scout: ready (跑了1次)",
       "   ✅ nurse: ready (跑了0次)",
       "   ✅ builder: ready (跑了0次)",
-      "[2026-03-23 11:14:32] [hive.queen] [info] run_all 完成，全部正常"
+      "  ❌ 同步失败: 422",
+      "[2026-03-23 12:20:50] [hive.queen] [info] run_all 完成，全部正常"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
-    {
-      "time": "2026-03-23 09:52:50",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 09:57:54",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 10:03:01",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 10:08:17",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 10:13:23",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 10:13:28",
-      "level": "error",
-      "msg": "EOF occurred in violation of protocol (_ssl.c:1016)')))"
-    },
-    {
-      "time": "2026-03-23 10:18:29",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 10:23:42",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 10:28:46",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 10:33:49",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 10:38:52",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 10:43:58",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 10:49:04",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 10:54:09",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
     {
       "time": "2026-03-23 10:54:14",
       "level": "error",
@@ -321,10 +251,80 @@
       "time": "2026-03-23 11:19:33",
       "level": "info",
       "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 11:24:50",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 11:29:55",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 11:34:58",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 11:40:03",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 11:45:11",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 11:50:18",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 11:55:22",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 12:00:24",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 12:05:30",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 12:10:33",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 12:15:36",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 12:15:41",
+      "level": "error",
+      "msg": "EOF occurred in violation of protocol (_ssl.c:1016)')))"
+    },
+    {
+      "time": "2026-03-23 12:20:42",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 12:25:52",
+      "level": "info",
+      "msg": "开始巡查..."
     }
   ],
   "error_trend": {
-    "2026-03-23": 17
+    "2026-03-23": 18
   },
   "honey": [
     {
