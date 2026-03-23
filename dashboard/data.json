@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-23T07:03:36.223182",
+  "generated_at": "2026-03-23T08:05:12.417768",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -8,9 +8,9 @@
         "name": "dancer",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-03-23T07:03:36.153681",
+        "last_run": null,
         "last_run_duration": null,
-        "total_runs": 1,
+        "total_runs": 0,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -19,9 +19,9 @@
         "name": "guard",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-03-23T07:03:33.585554",
+        "last_run": null,
         "last_run_duration": null,
-        "total_runs": 2,
+        "total_runs": 0,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-03-23T07:03:33.584238",
+        "last_run": "2026-03-23T08:05:12.351136",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -52,9 +52,9 @@
         "name": "builder",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-03-23T07:03:36.154072",
+        "last_run": null,
         "last_run_duration": null,
-        "total_runs": 1,
+        "total_runs": 0,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -70,19 +70,19 @@
   },
   "bees": {},
   "events": {
-    "total": 344,
-    "recent_500": 344,
-    "today": 8,
+    "total": 365,
+    "recent_500": 365,
+    "today": 29,
     "by_type": {
-      "feishu_sent": 165,
-      "scene_report": 140,
-      "speaker_played": 34,
+      "feishu_sent": 172,
+      "scene_report": 147,
+      "speaker_played": 41,
       "bee_healed": 3,
       "emergency": 2
     },
     "by_source": {
-      "dancer": 199,
-      "scout": 140,
+      "dancer": 213,
+      "scout": 147,
       "queen": 3,
       "guard": 2
     },
@@ -92,107 +92,106 @@
         "type": "speaker_played",
         "intensity": "normal",
         "payload": {
-          "text": "温馨提醒，今日周一，18:30有小宝体能课，建议18:00前提醒小冰/姥姥准备。晓峰已00:00到家"
+          "text": "温馨提醒，今日周一，18:30有体能课，建议18:00前提醒小宝准备；姥姥17:00需接小宝，距今尚"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-23T07:03:36.152957"
+        "timestamp": "2026-03-23T07:55:01.773170"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 06:57 巡查报告（画面来自5分钟前）\n【在家人员】  \n画面中无人。沙发上的衣物、椅子上的背包、地毯上的玩具均为非生命体，无可见真实活人。\n【状态评估】  \n环境静止，无异常活动，符合清晨6:",
+          "text": "🦞 07:52 巡查报告\n【在家人员】  \n画面中无人。门口模糊人影因背影+距离过远，无法确认性别年龄，按规则不计入。\n【状态评估】  \n无人员活动，环境静止，无异常。\n【环境检查】  \n客厅21.0",
           "target": "ou_a9ca7506b002b1be36148b97d622d551"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-23T07:03:35.098363"
+        "timestamp": "2026-03-23T07:55:00.556505"
       },
       {
         "source": "scout",
         "type": "scene_report",
         "intensity": "normal",
         "payload": {
-          "report": "【在家人员】  \n画面中无人。沙发上的衣物、椅子上的背包、地毯上的玩具均为非生命体，无可见真实活人。\n\n【状态评估】  \n环境静止，无异常活动，符合清晨6:57全家尚未起身的常态。\n\n【环境检查】  \n客厅20.0°C/61%湿度，舒适；卧室略潮（68%），建议开窗通风或启用除湿。室外阴冷（9.2°C），注意保暖。\n\n【提醒事项】  \n今日周一，18:30有小宝体能课，建议18:00前提醒小冰/姥姥准备。晓峰已00:00到家，无需重复确认。\n\n【建议】  \n可开启客厅新风系统降低湿度；检查玄关鞋柜是否整洁，为7:30出门做准备。龙虾管家🦞已守护全家安眠。",
+          "report": "【在家人员】  \n画面中无人。门口模糊人影因背影+距离过远，无法确认性别年龄，按规则不计入。\n\n【状态评估】  \n无人员活动，环境静止，无异常。\n\n【环境检查】  \n客厅21.0°C/76%湿度，体感微潮但尚可；室外阴天9.6°C，建议关闭门窗防湿冷入侵。\n\n【提醒事项】  \n今日周一，18:30有体能课，建议18:00前提醒小宝准备；姥姥17:00需接小宝，距今尚早无需提醒；无降雨/大风预警，暂无需特殊操作。\n\n【建议】  \n可开启除湿模式降低客厅湿度；若小宝即将到家，建议提前整理玄关杂物，方便姥姥带娃进门。\n\n（注：严格遵守“宁缺毋滥”原则，未确认人影不报告。）",
           "image_path": "/tmp/home_patrol_snapshot.jpg"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-23T07:03:33.557373"
+        "timestamp": "2026-03-23T07:54:58.981871"
       },
       {
         "source": "dancer",
         "type": "speaker_played",
         "intensity": "normal",
         "payload": {
-          "text": "温馨提醒，周一18:30有体能课，建议18:00前提醒小宝准备；07:30小宝需出门上幼儿园，建议0"
+          "text": "温馨提醒，今日周一，18:30有体能课，建议18:00提醒小宝准备；室外阴天9.4°C，风速低，无需"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-23T06:03:04.293371"
+        "timestamp": "2026-03-23T07:44:48.121296"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 06:01 巡查报告\n【在家人员】  \n画面中无人。沙发、椅子上衣物及地面杂物非活人，无可见真实人物。\n【状态评估】  \n环境静止，无异常活动，符合清晨6:01全家可能尚未起身的常态。\n【环境检查",
+          "text": "🦞 07:41 巡查报告\n【在家人员】  \nPERSON_FEATURE: 深色上衣、短发、男性、中青年 | GUESS: 晓峰（⚠️当前07:41，晓峰应已出门上班，画面中疑似人物需谨慎判断，暂不确",
           "target": "ou_a9ca7506b002b1be36148b97d622d551"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-23T06:03:03.266452"
+        "timestamp": "2026-03-23T07:44:47.157411"
       },
       {
         "source": "scout",
         "type": "scene_report",
         "intensity": "normal",
         "payload": {
-          "report": "【在家人员】  \n画面中无人。沙发、椅子上衣物及地面杂物非活人，无可见真实人物。\n\n【状态评估】  \n环境静止，无异常活动，符合清晨6:01全家可能尚未起身的常态。\n\n【环境检查】  \n室内温湿度正常（21°C/68-70%），舒适无需调整；室外阴天9.3°C，建议关窗防潮。\n\n【提醒事项】  \n周一18:30有体能课，建议18:00前提醒小宝准备；07:30小宝需出门上幼儿园，建议07:00唤醒。\n\n【建议】  \n可开启窗帘或轻柔唤醒音乐，协助家庭进入晨间节奏；确认门锁状态正常（已close），安全无虞。",
+          "report": "【在家人员】  \nPERSON_FEATURE: 深色上衣、短发、男性、中青年 | GUESS: 晓峰（⚠️当前07:41，晓峰应已出门上班，画面中疑似人物需谨慎判断，暂不确认为本人）\n\n【状态评估】  \n画面中仅见一人站立于玄关处，姿态正常，无异常行为。\n\n【环境检查】  \n客厅湿度80%偏高，建议开启除湿或通风；卧室湿度适中，温度21°C舒适。\n\n【提醒事项】  \n今日周一，18:30有体能课，建议18:00提醒小宝准备；室外阴天9.4°C，风速低，无需关窗。\n\n【建议】  \n若确认晓峰未离家，建议催促其出门上班；可开启客厅除湿功能改善湿度。",
           "image_path": "/tmp/home_patrol_snapshot.jpg"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-23T06:03:01.837008"
+        "timestamp": "2026-03-23T07:44:45.501853"
       },
       {
         "source": "dancer",
         "type": "speaker_played",
         "intensity": "normal",
         "payload": {
-          "text": "温馨提醒，今天周一，18:30有小宝体能课，距今仅13分钟，建议提醒小宝准备出门。室外阴天9.3°C"
+          "text": "温馨提醒，小宝应于7:30出门，现超时6分钟，建议联系确认。  \n今日18:30有体能课，提前30分"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-23T05:52:55.421467"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \n画面中无人。走廊尽头有模糊人影，但因距离远、背光、无清晰体貌特征，按规则不确认为活人。\n\n【状态评估】  \n无人员活动，环境静止，无异常。\n\n【环境检查】  \n客厅21.0°C/70%湿度，主卧21.6°C/62%，体感舒适，无需调整空调或加湿。\n\n【提醒事项】  \n今天周一，18:30有小宝体能课，距今仅13分钟，建议提醒小宝准备出门。室外阴天9.3°C，需添衣防寒。\n\n【建议】  \n建议小宝出门前检查书包与运动鞋；若姥姥尚未带小宝出门，可语音提醒“体能课快到了”。  \n\n（注：门锁记录晓峰00:00已到家，但当前画面未见其身影，不重复报告。）",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-23T05:52:54.399312"
+        "timestamp": "2026-03-23T07:39:38.883697"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 18:47 巡查报告\n【在家人员】  \n画面中无人。未见任何可确认的真实活人（家具、衣物、玩具、阴影均不计入）。\n【状态评估】  \n无人员活动，环境静止，无异常。\n【环境检查】  \n客厅20.0°",
+          "text": "🦞 07:36 巡查报告\n【在家人员】  \n画面中无人。未发现任何可确认的真实活人。衣物、背包、椅子均为静物，不构成人员。\n【状态评估】  \n环境静止，无异常活动。小宝尚未出门，按日程应于7:30离家",
           "target": "ou_a9ca7506b002b1be36148b97d622d551"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-22T18:50:41.752740"
+        "timestamp": "2026-03-23T07:39:37.875767"
       },
       {
         "source": "scout",
         "type": "scene_report",
         "intensity": "normal",
         "payload": {
-          "report": "【在家人员】  \n画面中无人。未见任何可确认的真实活人（家具、衣物、玩具、阴影均不计入）。\n\n【状态评估】  \n无人员活动，环境静止，无异常。\n\n【环境检查】  \n客厅20.0°C/60%湿度，舒适；卧室21.0°C/57%，主卧21.8°C/52%，均在宜人范围，无需调整。\n\n【提醒事项】  \n今日周日，无课外课。姥姥18:45刚到家（门锁确认），建议关注其是否需协助。室外阴天18.5°C，风速4.5km/h，无降雨，无需关窗。\n\n【建议】  \n可开启轻柔背景音乐营造温馨氛围；若小宝在其他房间活动，建议10分钟后巡查确保安全。",
+          "report": "【在家人员】  \n画面中无人。未发现任何可确认的真实活人。衣物、背包、椅子均为静物，不构成人员。\n\n【状态评估】  \n环境静止，无异常活动。小宝尚未出门，按日程应于7:30离家，当前时间07:36，略超时，建议确认是否已出发。\n\n【环境检查】  \n客厅湿度78%偏高，建议开启除湿或通风；卧室湿度正常。室外阴冷（9.4°C），注意保暖。\n\n【提醒事项】  \n⚠️ 小宝应于7:30出门，现超时6分钟，建议联系确认。  \n今日18:30有体能课，提前30分钟提醒准备。\n\n【建议】  \n开启客厅除湿或开窗通风；确认小宝是否已离家，避免迟到。",
           "image_path": "/tmp/home_patrol_snapshot.jpg"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-22T18:50:40.223405"
+        "timestamp": "2026-03-23T07:39:36.378347"
+      },
+      {
+        "source": "dancer",
+        "type": "speaker_played",
+        "intensity": "normal",
+        "payload": {
+          "text": "温馨提醒，今日周一，小宝7:30应出门上幼儿园。当前07:31，若小宝尚未离家，建议催促。18:30"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-23T07:34:29.935439"
       }
     ]
   },
@@ -202,99 +201,129 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 10.6,
+    "log_size_kb": 26.3,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
       "habits_discovered": 1,
-      "total_observations": 0,
-      "log_entries": 474,
+      "total_observations": 2,
+      "log_entries": 488,
       "devices": 117,
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
     "last_patrol_lines": [
-      "   ✅ builder: ready (跑了0次)",
-      "[2026-03-23 06:53:26] [hive.queen] [info] run_all 完成，全部正常",
-      "",
-      "[06:58] 距上次5分钟，间隔10分钟，跳过",
-      "  跳过本次巡查"
+      "[2026-03-23 08:00:03] [hive.scout] [info] 开始巡查...",
+      "[2026-03-23 08:00:03] [hive.scout] [info] 截图成功: 31322 bytes",
+      "[2026-03-23 08:00:03] [hive.scout] [info] 环境: {'客厅': '21.0°C, 湿度75.0%', '卧室': '21.0°C, 湿度68.0%', '主卧': '21.6°C, 湿度66.0%', '门锁': 'close', '最近移动': '小米智能摄像机3 云台版: 07:52画面变动!'}",
+      "[2026-03-23 08:00:09] [hive.queen] [error] 核心巡查失败: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=39.9&longitude=116.4&current=temperature_2m%2Crelative_humidity_2m%2Cweather_code%2Cwind_speed_10m&hourly=precipitation_probability%2Ctemperature_2m%2Cweather_code&forecast_days=1&timezone=Asia%2FShanghai (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
+      "[2026-03-23 08:00:09] [hive.queen] [warn] run_all 完成，2步失败: ['morning', 'patrol']"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
     {
-      "time": "2026-03-23 05:02:25",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 05:12:32",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 05:22:36",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 05:32:40",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 05:42:43",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 05:52:47",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 06:02:56",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 06:13:08",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 06:23:12",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 06:33:16",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 06:43:20",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 06:53:24",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-23 07:03:27",
+      "time": "2026-03-23 07:19:04",
       "level": "error",
       "msg": "早间播报失败: 'ScoutBee' object has no attribute 'CAMERA_ENTITY'"
     },
     {
-      "time": "2026-03-23 07:03:27",
+      "time": "2026-03-23 07:19:04",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 07:24:15",
+      "level": "error",
+      "msg": "早间播报失败: 'ScoutBee' object has no attribute 'CAMERA_ENTITY'"
+    },
+    {
+      "time": "2026-03-23 07:24:15",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 07:29:19",
+      "level": "error",
+      "msg": "早间播报失败: 'ScoutBee' object has no attribute 'CAMERA_ENTITY'"
+    },
+    {
+      "time": "2026-03-23 07:29:19",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 07:34:21",
+      "level": "error",
+      "msg": "早间播报失败: 'ScoutBee' object has no attribute 'CAMERA_ENTITY'"
+    },
+    {
+      "time": "2026-03-23 07:34:21",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 07:39:30",
+      "level": "error",
+      "msg": "早间播报失败: 'ScoutBee' object has no attribute 'CAMERA_ENTITY'"
+    },
+    {
+      "time": "2026-03-23 07:39:30",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 07:44:39",
+      "level": "error",
+      "msg": "早间播报失败: 'ScoutBee' object has no attribute 'CAMERA_ENTITY'"
+    },
+    {
+      "time": "2026-03-23 07:44:39",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 07:49:48",
+      "level": "error",
+      "msg": "早间播报失败: 'ScoutBee' object has no attribute 'CAMERA_ENTITY'"
+    },
+    {
+      "time": "2026-03-23 07:49:48",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 07:54:52",
+      "level": "error",
+      "msg": "早间播报失败: 'ScoutBee' object has no attribute 'CAMERA_ENTITY'"
+    },
+    {
+      "time": "2026-03-23 07:54:52",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 08:00:03",
+      "level": "error",
+      "msg": "早间播报失败: 'ScoutBee' object has no attribute 'CAMERA_ENTITY'"
+    },
+    {
+      "time": "2026-03-23 08:00:03",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-23 08:00:09",
+      "level": "error",
+      "msg": "EOF occurred in violation of protocol (_ssl.c:1016)')))"
+    },
+    {
+      "time": "2026-03-23 08:05:10",
       "level": "info",
       "msg": "开始巡查..."
     }
   ],
   "error_trend": {
-    "2026-03-23": 1
+    "2026-03-23": 13
   },
   "honey": [
     {
