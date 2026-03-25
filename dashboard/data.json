@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-25T19:46:55.218513",
+  "generated_at": "2026-03-25T20:51:17.615587",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-03-25T19:46:50.628055",
+        "last_run": "2026-03-25T20:51:15.795314",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -70,21 +70,32 @@
   },
   "bees": {},
   "events": {
-    "total": 723,
+    "total": 724,
     "recent_500": 500,
-    "today": 192,
+    "today": 193,
     "by_type": {
-      "scene_report": 241,
-      "feishu_sent": 240,
+      "feishu_sent": 241,
+      "scene_report": 240,
       "speaker_played": 17,
       "emergency": 2
     },
     "by_source": {
-      "dancer": 257,
-      "scout": 241,
+      "dancer": 258,
+      "scout": 240,
       "guard": 2
     },
     "last_10": [
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "🐝 蜂巢晚报 20:19\n\n🚪 **到家提醒**：20:19 姥姥指静脉开锁入户，今天周三英语课（19:30），接小宝下课回家，一切正常 ✅\n\n🏠 家庭环境\n• 客厅：21.0°C，湿度60%\n• 卧",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-25T20:20:35.867309"
+      },
       {
         "source": "dancer",
         "type": "feishu_sent",
@@ -183,17 +194,6 @@
         },
         "dance": "waggle",
         "timestamp": "2026-03-25T18:13:17.230317"
-      },
-      {
-        "source": "dancer",
-        "type": "feishu_sent",
-        "intensity": "normal",
-        "payload": {
-          "text": "🦞 18:09 巡查报告\n【在家人员】  \nPERSON_FEATURE: 穿浅色上衣、深色裤子的幼童，身高矮，背对镜头在走廊玩耍 | GUESS: 小宝（5岁）  \n（画面中无其他可确认活人，沙发/",
-          "target": "oc_0d05b57b946873e545decd16231e6dc7"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-25T18:12:38.795105"
       }
     ]
   },
@@ -203,7 +203,7 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 258.1,
+    "log_size_kb": 260.6,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
@@ -215,44 +215,14 @@
     },
     "last_patrol_lines": [
       "  跳过本次巡查",
-      "[19:38] 休息时段，跳过",
+      "[20:43] 休息时段，跳过",
       "  跳过本次巡查",
-      "[19:43] 休息时段，跳过",
+      "[20:48] 休息时段，跳过",
       "  跳过本次巡查"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
-    {
-      "time": "2026-03-25 18:27:32",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-25 18:32:38",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-25 18:33:48",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-25 18:37:50",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-25 18:43:06",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-25 18:43:49",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
     {
       "time": "2026-03-25 18:48:11",
       "level": "info",
@@ -320,6 +290,36 @@
     },
     {
       "time": "2026-03-25 19:46:50",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-25 19:58:14",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-25 20:10:13",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-25 20:20:17",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-25 20:30:20",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-25 20:41:06",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-25 20:51:15",
       "level": "info",
       "msg": "开始巡查..."
     }
