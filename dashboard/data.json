@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-25T18:37:59.066179",
+  "generated_at": "2026-03-25T19:46:55.218513",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -8,9 +8,9 @@
         "name": "dancer",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-03-25T18:37:59.021581",
+        "last_run": null,
         "last_run_duration": null,
-        "total_runs": 1,
+        "total_runs": 0,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -19,9 +19,9 @@
         "name": "guard",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-03-25T18:37:57.960773",
+        "last_run": null,
         "last_run_duration": null,
-        "total_runs": 2,
+        "total_runs": 0,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-03-25T18:37:57.956887",
+        "last_run": "2026-03-25T19:46:50.628055",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -52,9 +52,9 @@
         "name": "builder",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-03-25T18:37:59.022093",
+        "last_run": null,
         "last_run_duration": null,
-        "total_runs": 1,
+        "total_runs": 0,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -70,21 +70,76 @@
   },
   "bees": {},
   "events": {
-    "total": 718,
+    "total": 723,
     "recent_500": 500,
-    "today": 187,
+    "today": 192,
     "by_type": {
-      "scene_report": 242,
-      "feishu_sent": 239,
+      "scene_report": 241,
+      "feishu_sent": 240,
       "speaker_played": 17,
       "emergency": 2
     },
     "by_source": {
-      "dancer": 256,
-      "scout": 242,
+      "dancer": 257,
+      "scout": 241,
       "guard": 2
     },
     "last_10": [
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "🐝 课前提醒\n\n📚 小宝今天周三有英语课，19:30开始，出发时间到了哦～",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-25T19:37:02.444331"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "🐝 蜂巢巡查 18:57\n\n🏠 家庭环境\n• 客厅：21.0°C，湿度60%\n• 卧室：21.0°C，湿度53%\n• 主卧：22.1°C，湿度49%\n• 门锁：🔒 关闭\n\n👶 小宝状态：走廊站立，状态",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-25T18:57:47.868173"
+      },
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】  \nPERSON_FEATURE: 穿浅色带帽外套、红色裤子的幼童，身高矮，正站在走廊地毯上 | GUESS: 小宝（5岁男孩）  \n\n【状态评估】  \n小宝独自站立于走廊，无明显哭闹或异常动作，状态正常。  \n\n【环境检查】  \n室内温湿度适宜（21°C/60%），无调整需求。  \n\n【提醒事项】  \n⚠️ 今日周三18:30有体能课，距上课仅21分钟，建议催促小宝准备出门。姥姥应已接小宝回家（门锁17:16确认到家），但画面未见其身影，建议语音呼叫确认看护状态。  \n\n【建议】  \n请确认姥姥是否在屋内其他区域，避免小宝独自活动时无人看护。可开启语音提醒：“小宝，体能课要迟到啦！”  \n\n（画面中仅确认1人，无其他活人可见）",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-25T18:57:25.604689"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "🐝 课外课提醒\n\n📚 小宝今天有英语课，19:30 开始，还有约 37 分钟，请注意准备出发时间。\n\n🏠 家庭环境\n• 客厅：21.0°C，湿度60%\n• 门锁：🔒 关闭\n• 最近动态：18:09 有",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-25T18:54:20.234662"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "🐝 蜂巢巡查 18:43\n\n📚 课程提醒：今天周三，小宝 19:30 有英语课，距开课约 47 分钟，请准备出发！\n\n🏠 家庭环境\n• 客厅：21.0°C，湿度60%\n• 卧室：21.0°C，湿度53",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-25T18:44:19.325039"
+      },
       {
         "source": "scout",
         "type": "scene_report",
@@ -139,61 +194,6 @@
         },
         "dance": "waggle",
         "timestamp": "2026-03-25T18:12:38.795105"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 穿浅色上衣、深色裤子的幼童，身高矮，背对镜头在走廊玩耍 | GUESS: 小宝（5岁）  \n（画面中无其他可确认活人，沙发/椅子/靠垫等非人物体不计入）\n\n【状态评估】  \n小宝独自在走廊活动，状态正常，无哭闹或异常行为。\n\n【环境检查】  \n室内温湿度舒适（客厅21°C/59%），无需调整空调或加湿。\n\n【提醒事项】  \n⚠️ 今日周三18:30有体能课，距上课仅21分钟，建议提醒家人准备出门。  \n⚠️ 姥姥17:16已到家（门锁记录），但画面未见其身影，建议确认是否在房间休息或忙碌中。\n\n【建议】  \n请家长检查小宝是否已换好运动服，提前10分钟出发以免迟到。风速10.2km/h，出门注意关窗。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-25T18:12:37.193112"
-      },
-      {
-        "source": "dancer",
-        "type": "feishu_sent",
-        "intensity": "normal",
-        "payload": {
-          "text": "🦞 18:09 巡查报告\n【在家人员】  \nPERSON_FEATURE: 穿花色外套、红色裤子的幼童，身高矮，正站在走廊地毯上 | GUESS: 小宝（5岁）  \n（画面中无其他清晰可辨活人，沙发/",
-          "target": "oc_0d05b57b946873e545decd16231e6dc7"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-25T18:12:13.979769"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 穿花色外套、红色裤子的幼童，身高矮，正站在走廊地毯上 | GUESS: 小宝（5岁）  \n（画面中无其他清晰可辨活人，沙发/椅子/靠垫等非人物体不计入）\n\n【状态评估】  \n小宝独自站立于走廊，无哭闹或异常动作，状态正常。\n\n【环境检查】  \n室内温湿度舒适（客厅21°C/59%），无需调整空调或加湿。\n\n【提醒事项】  \n⚠️ 18:09已过17:30，姥姥应已接小宝回家（门锁17:16确认到家），但画面未见成人，建议语音确认小宝是否安全。  \n⚠️ 今日周三18:30有体能课，距上课仅21分钟，需提醒准备出门。\n\n【建议】  \n请语音呼叫“小宝，妈妈/姥姥在哪？”确认监护人位置；立即准备体能课用品，避免迟到。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-25T18:12:12.414391"
-      },
-      {
-        "source": "dancer",
-        "type": "feishu_sent",
-        "intensity": "normal",
-        "payload": {
-          "text": "🦞 18:09 巡查报告\n【在家人员】  \nPERSON_FEATURE: 穿红裤幼童，身高矮，背对镜头在走廊 | GUESS: 小宝（5岁）  \n（画面中仅1人，无其他活人可见，沙发/靠垫/衣物均非",
-          "target": "oc_0d05b57b946873e545decd16231e6dc7"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-25T18:11:49.721543"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 穿红裤幼童，身高矮，背对镜头在走廊 | GUESS: 小宝（5岁）  \n（画面中仅1人，无其他活人可见，沙发/靠垫/衣物均非人）\n\n【状态评估】  \n小宝独自在走廊活动，无哭闹或异常，状态正常。\n\n【环境检查】  \n客厅21.0°C/59%湿度，舒适；卧室略干（48%），建议主卧加湿。\n\n【提醒事项】  \n今天周三，18:30体能课，距上课仅21分钟，需提醒小宝准备出门。  \n姥姥17:16已到家（门锁记录），应已接回小宝，但画面未见其人，建议确认是否在其他房间。\n\n【建议】  \n提醒小宝换鞋准备体能课；若姥姥未在客厅，可语音呼叫确认位置。  \n室外风速10.2km/h，建议关窗防尘。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-25T18:11:48.065753"
       }
     ]
   },
@@ -203,106 +203,26 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 247.5,
+    "log_size_kb": 258.1,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
       "habits_discovered": 1,
       "total_observations": 2,
-      "log_entries": 839,
+      "log_entries": 841,
       "devices": 117,
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
     "last_patrol_lines": [
-      "   ✅ guard: ready (跑了0次)",
-      "   ✅ scout: ready (跑了1次)",
-      "   ✅ nurse: ready (跑了0次)",
-      "   ✅ builder: ready (跑了0次)",
-      "[2026-03-25 18:32:49] [hive.queen] [info] run_all 完成，全部正常"
+      "  跳过本次巡查",
+      "[19:38] 休息时段，跳过",
+      "  跳过本次巡查",
+      "[19:43] 休息时段，跳过",
+      "  跳过本次巡查"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
-    {
-      "time": "2026-03-25 17:56:23",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-25 17:57:03",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-25 17:57:43",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-25 17:58:25",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-25 17:59:02",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-25 18:00:43",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-25 18:01:32",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-25 18:06:40",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-25 18:10:46",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-25 18:11:39",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-25 18:11:54",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-25 18:12:27",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-25 18:13:09",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-25 18:17:15",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-25 18:22:25",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-25 18:23:50",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
     {
       "time": "2026-03-25 18:27:32",
       "level": "info",
@@ -322,10 +242,90 @@
       "time": "2026-03-25 18:37:50",
       "level": "info",
       "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-25 18:43:06",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-25 18:43:49",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-25 18:48:11",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-25 18:53:19",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-25 18:53:47",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-25 18:54:58",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-25 18:57:18",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-25 18:58:28",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-25 19:00:47",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-25 19:00:49",
+      "level": "error",
+      "msg": "arrivals 失败: can't subtract offset-naive and offset-aware datetimes"
+    },
+    {
+      "time": "2026-03-25 19:16:43",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-25 19:16:46",
+      "level": "error",
+      "msg": "arrivals 失败: can't subtract offset-naive and offset-aware datetimes"
+    },
+    {
+      "time": "2026-03-25 19:27:04",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-25 19:27:06",
+      "level": "error",
+      "msg": "arrivals 失败: can't subtract offset-naive and offset-aware datetimes"
+    },
+    {
+      "time": "2026-03-25 19:36:47",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-25 19:46:50",
+      "level": "info",
+      "msg": "开始巡查..."
     }
   ],
   "error_trend": {
-    "2026-03-25": 1
+    "2026-03-25": 4
   },
   "honey": [
     {
