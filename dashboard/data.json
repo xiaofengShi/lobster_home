@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-26T11:39:18.495441",
+  "generated_at": "2026-03-26T12:41:44.472384",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-03-26T11:39:18.493964",
+        "last_run": "2026-03-26T12:41:44.449226",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -70,21 +70,54 @@
   },
   "bees": {},
   "events": {
-    "total": 118,
-    "recent_500": 118,
-    "today": 3,
+    "total": 121,
+    "recent_500": 121,
+    "today": 6,
     "by_type": {
       "feishu_sent": 55,
-      "scene_report": 31,
+      "scene_report": 34,
       "speaker_played": 29,
       "bee_healed": 3
     },
     "by_source": {
       "dancer": 84,
-      "scout": 31,
+      "scout": 34,
       "queen": 3
     },
     "last_10": [
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】  \nPERSON_FEATURE: 穿深绿色连帽衫、浅色裤子、男性、短发、面部可见 | GUESS: 晓峰（36岁男性，符合周四上午在家可能性低⚠️，但画面中仅此一人，门锁无其他到家记录）  \n\n【状态评估】  \n站立移动中，动作自然，无异常行为。  \n\n【环境检查】  \n客厅21.0°C/64%湿度，舒适；卧室略暖，可微调空调。  \n\n【提醒事项】  \n今日周四，19:30有英语课，提前30分钟提醒。室外晴朗无风险，无需关窗。  \n\n【建议】  \n晓峰若非临时回家，建议确认其行程；可开启“离家模式”节能。  \n\n（画面中仅1人，无小宝/姥姥，符合07:30-17:00姥姥独在家时段，但当前画面人物为男性，与姥姥不符⚠️）",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-26T12:35:26.322822"
+      },
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】  \nPERSON_FEATURE: 穿深绿色连帽衫、浅色裤子、戴兜帽的成年男性，面部部分可见，短发轮廓 | GUESS: 晓峰（36岁男性，符合工作日白天在家可能性，门锁无其到家记录，但可能未触发或在家未出门）\n\n【状态评估】  \n该男性正站立移动，姿态自然，无异常行为，状态正常。\n\n【环境检查】  \n客厅21°C/65%湿度，体感舒适；室外晴朗20.8°C，风速6.6km/h，建议关窗防风。\n\n【提醒事项】  \n今天周四，19:30有英语课，建议19:00前提醒；姥姥08:38已到家，当前未见其活动，建议关注其状态。\n\n【建议】  \n可开启客厅新风系统保持空气流通；若晓峰需工作，建议调暗吊灯减少眩光。",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-26T12:10:40.873583"
+      },
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】  \nPERSON_FEATURE: 穿绿色连帽衫、浅色裤子、戴兜帽的成年男性，面部部分可见 | GUESS: 晓峰（36岁男性，符合工作日在家可能性）  \n\n【状态评估】  \n该人员站立于客厅中央，动作略显匆忙，无异常行为，状态正常。  \n\n【环境检查】  \n客厅21.0°C/65%湿度，体感舒适；主卧略暖（22.6°C），建议可微调空调至22°C。  \n\n【提醒事项】  \n今天周四，19:30有英语课，建议提前30分钟（19:00）提醒晓峰/小冰准备。室外晴、风速6.9km/h，无需关窗。  \n\n【建议】  \n晓峰若在准备出门，建议检查门锁状态；若居家办公，可开启窗帘增加采光。  \n\n（画面中仅1人，无其他活人可见，沙发靠垫、桌椅等均非人）",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-26T11:49:54.364511"
+      },
       {
         "source": "scout",
         "type": "scene_report",
@@ -159,38 +192,6 @@
         },
         "dance": "waggle",
         "timestamp": "2026-03-21T18:53:46.214309"
-      },
-      {
-        "dancer": "dancer",
-        "type": "feishu_sent",
-        "intensity": "normal",
-        "payload": {
-          "text": "🦞 18:49 巡查报告\n【在家人员】  \nPERSON_FEATURE: 短发、浅色上衣、坐桌前操作电脑 | GUESS: 晓峰（周末在家正常）  \nPERSON_FEATURE: 无可见人物 | ",
-          "target": "ou_a9ca7506b002b1be36148b97d622d551"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-21T18:53:45.106179"
-      },
-      {
-        "dancer": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 短发、浅色上衣、坐桌前操作电脑 | GUESS: 晓峰（周末在家正常）  \nPERSON_FEATURE: 无可见人物 | GUESS: [暂无人员在画面中]  \n\n【状态评估】  \n晓峰在书桌前专注工作，状态正常。未见小宝、姥姥或小冰，可能在其他房间或刚外出。\n\n【环境检查】  \n室内温湿度舒适（20-21.5°C / 52-59%），无需调整。室外阴天微风，无极端天气。\n\n【提醒事项】  \n周六19:30有英语课，建议18:55提醒准备。姥姥18:39刚到家，若未见小宝，建议确认是否已接回。\n\n【建议】  \n可开启客厅灯提升亮度；若小宝在房间，建议19:00前引导收拾书包准备上课。保持门锁关闭，安全无虞。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-21T18:53:43.365547"
-      },
-      {
-        "dancer": "dancer",
-        "type": "speaker_played",
-        "intensity": "normal",
-        "payload": {
-          "text": "温馨提醒，周六19:30有英语课，建议18:50提醒姥姥准备出发。姥爷预计20:00后到家，无需预警"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-21T18:48:34.434303"
       }
     ]
   },
@@ -200,123 +201,123 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 32.8,
+    "log_size_kb": 48.7,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
       "habits_discovered": 1,
       "total_observations": 0,
-      "log_entries": 256,
+      "log_entries": 262,
       "devices": 117,
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
     "last_patrol_lines": [
-      "   ✅ guard: ready (跑了0次)",
       "   ✅ scout: ready (跑了1次)",
       "   ✅ nurse: ready (跑了0次)",
       "   ✅ builder: ready (跑了0次)",
-      "[2026-03-26 11:34:14] [hive.queen] [info] run_all 完成，全部正常"
+      "  ❌ 同步异常: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/xiaofengShi/lobster_home/contents/dashboard/data.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
+      "[2026-03-26 12:41:25] [hive.queen] [info] run_all 完成，全部正常"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
     {
-      "time": "2026-03-26 10:32:47",
-      "level": "error",
-      "msg": "核心巡查失败: ScoutBee.ha_get() got an unexpected keyword argument 'params'"
-    },
-    {
-      "time": "2026-03-26 10:37:49",
+      "time": "2026-03-26 11:40:09",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-26 10:42:54",
+      "time": "2026-03-26 11:44:26",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-26 10:43:07",
+      "time": "2026-03-26 11:49:45",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-26 10:46:08",
+      "time": "2026-03-26 11:50:21",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-26 10:48:13",
+      "time": "2026-03-26 11:54:56",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-26 10:53:17",
+      "time": "2026-03-26 12:00:04",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-26 10:58:25",
+      "time": "2026-03-26 12:00:25",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-26 11:03:50",
+      "time": "2026-03-26 12:05:15",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-26 11:09:01",
+      "time": "2026-03-26 12:10:21",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-26 11:14:09",
+      "time": "2026-03-26 12:10:25",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-26 11:18:28",
+      "time": "2026-03-26 12:15:28",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-26 11:19:11",
+      "time": "2026-03-26 12:15:33",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-26 11:23:51",
+      "time": "2026-03-26 12:16:16",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-26 11:27:25",
+      "time": "2026-03-26 12:20:34",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-26 11:28:58",
+      "time": "2026-03-26 12:25:41",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-26 11:30:48",
+      "time": "2026-03-26 12:30:56",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-26 11:34:11",
+      "time": "2026-03-26 12:35:16",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-26 11:39:00",
+      "time": "2026-03-26 12:36:07",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-26 11:39:15",
+      "time": "2026-03-26 12:41:11",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-26 12:41:42",
       "level": "info",
       "msg": "开始巡查..."
     }
