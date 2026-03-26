@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-27T06:00:45.770430",
+  "generated_at": "2026-03-27T07:01:24.795182",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-03-27T06:00:45.723083",
+        "last_run": "2026-03-27T07:01:24.748303",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -70,21 +70,54 @@
   },
   "bees": {},
   "events": {
-    "total": 187,
-    "recent_500": 187,
-    "today": 0,
+    "total": 190,
+    "recent_500": 190,
+    "today": 3,
     "by_type": {
-      "feishu_sent": 85,
-      "scene_report": 70,
+      "feishu_sent": 86,
+      "scene_report": 72,
       "speaker_played": 29,
       "bee_healed": 3
     },
     "by_source": {
-      "dancer": 114,
-      "scout": 70,
+      "dancer": 115,
+      "scout": 72,
       "queen": 3
     },
     "last_10": [
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "🦞 06:30 巡查报告\n【在家人员】  \n画面中无人。未见任何可确认的活人轮廓，沙发、衣物、玩具等均非人物。\n【状态评估】  \n无人员活动，环境静止，无异常。\n【环境检查】  \n客厅22.0°C/5",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-27T06:31:11.558215"
+      },
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】  \n画面中无人。未见任何可确认的活人轮廓，沙发、衣物、玩具等均非人物。\n\n【状态评估】  \n无人员活动，环境静止，无异常。\n\n【环境检查】  \n客厅22.0°C/58%湿度，舒适；卧室70%湿度略高，建议开窗通风；主卧42%湿度偏低，可考虑加湿。室外晴朗，风速4.3km/h，无极端天气。\n\n【提醒事项】  \n今日周五，无课外课。07:30小宝需出门上幼儿园，建议07:00前唤醒准备。岳父约06:30已出门，门锁记录确认。\n\n【建议】  \n可开启客厅新风系统调节湿度，避免卧室过潮。06:45可轻柔唤醒小宝，预留洗漱时间。\n\n——龙虾管家🦞 晨间巡查完毕",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-27T06:31:10.034495"
+      },
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】  \n画面中无人。走廊尽头模糊人影因背影+距离过远，无法确认性别/年龄，按规则不计入。\n\n【状态评估】  \n无人员活动，环境静止，无异常。\n\n【环境检查】  \n客厅22°C/61%湿度舒适；卧室略湿（69%），主卧偏干（42%）。建议主卧加湿，卧室可开窗通风。\n\n【提醒事项】  \n今日周五无课外课。室外晴朗微风，无需关窗。岳父约20:19到家，可提前准备。\n\n【建议】  \n保持当前温湿度设置。若后续发现小宝独自在客厅，无需干预，属正常活动范围。",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-27T06:10:56.739829"
+      },
       {
         "source": "dancer",
         "type": "feishu_sent",
@@ -161,39 +194,6 @@
         },
         "dance": "waggle",
         "timestamp": "2026-03-26T18:26:30.169927"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 绿色上衣、黑裤、幼童、短发、身高矮 | GUESS: 小宝  \n\n【状态评估】  \n小宝独自站在玄关，面向门外，状态正常，无哭闹或异常行为。  \n\n【环境检查】  \n室内温度22°C、湿度65%，体感舒适；室外23.3°C、干燥，建议保持通风。  \n\n【提醒事项】  \n今天周四，19:30有英语课，距上课剩约48分钟，建议提醒小宝准备。姥姥17:16已到家，应已在场看护，但画面未见其身影，建议确认是否在其他房间。  \n\n【建议】  \n可开启儿童模式提醒小宝收玩具，避免玄关拥堵；若姥姥未在画面，建议语音呼叫确认安全。  \n\n（画面中仅确认1人，无其他活人可见，严格遵守不幻觉原则）",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-26T18:26:28.497163"
-      },
-      {
-        "source": "dancer",
-        "type": "feishu_sent",
-        "intensity": "normal",
-        "payload": {
-          "text": "🦞 18:17 巡查报告（画面来自5分钟前）\n【在家人员】  \nPERSON_FEATURE: 绿色上衣、黑裤、短发幼童，背对镜头坐在彩色地垫上 | GUESS: 小宝（5岁男孩）  \n【状态评估】 ",
-          "target": "oc_0d05b57b946873e545decd16231e6dc7"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-26T18:22:48.618469"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 绿色上衣、黑裤、短发幼童，背对镜头坐在彩色地垫上 | GUESS: 小宝（5岁男孩）  \n\n【状态评估】  \n小宝独自在客厅地垫上活动，状态正常，无危险行为。  \n\n【环境检查】  \n客厅22.0°C/65%湿度，体感舒适；卧室/主卧温湿度正常，无需调整空调。  \n\n【提醒事项】  \n✅ 姥姥17:16已到家（门锁确认），小宝应已安全接回。  \n⚠️ 今日周四，19:30有英语课，建议19:00提醒准备。  \n⚠️ 小宝独自活动，建议家长10分钟内确认看护状态。  \n\n【建议】  \n可开启“儿童看护模式”定时提醒，或让姥姥/小冰就近陪伴。室外晴朗，无需关窗。  \n\n（画面中仅确认1人，无其他活人迹象）",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-26T18:22:46.959820"
       }
     ]
   },
@@ -203,21 +203,21 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 4.6,
+    "log_size_kb": 10.4,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
       "habits_discovered": 1,
       "total_observations": 0,
-      "log_entries": 334,
+      "log_entries": 338,
       "devices": 117,
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
     "last_patrol_lines": [
       "   ✅ builder: ready (跑了0次)",
-      "[2026-03-27 05:50:41] [hive.queen] [info] run_all 完成，全部正常",
+      "[2026-03-27 06:51:20] [hive.queen] [info] run_all 完成，全部正常",
       "",
-      "[05:55] 距上次5分钟，间隔10分钟，跳过",
+      "[06:56] 距上次5分钟，间隔10分钟，跳过",
       "  跳过本次巡查"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
@@ -255,6 +255,36 @@
     },
     {
       "time": "2026-03-27 06:00:43",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-27 06:10:51",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-27 06:21:00",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-27 06:31:04",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-27 06:41:13",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-27 06:51:18",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-27 07:01:22",
       "level": "info",
       "msg": "开始巡查..."
     }
