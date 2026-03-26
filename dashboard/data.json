@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-26T20:38:09.874514",
+  "generated_at": "2026-03-26T21:45:06.463621",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-03-26T20:38:07.684160",
+        "last_run": "2026-03-26T21:45:04.603935",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -203,7 +203,7 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 157.8,
+    "log_size_kb": 159.7,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
@@ -215,39 +215,14 @@
     },
     "last_patrol_lines": [
       "  跳过本次巡查",
-      "[20:29] 休息时段，跳过",
+      "[21:39] 休息时段，跳过",
       "  跳过本次巡查",
-      "[20:34] 休息时段，跳过",
+      "[21:44] 休息时段，跳过",
       "  跳过本次巡查"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
-    {
-      "time": "2026-03-26 18:22:39",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-26 18:26:21",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-26 18:27:51",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-26 18:32:56",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-26 18:36:20",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
     {
       "time": "2026-03-26 18:38:03",
       "level": "info",
@@ -320,6 +295,31 @@
     },
     {
       "time": "2026-03-26 20:38:07",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-26 20:48:08",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-26 21:15:08",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-26 21:25:07",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-26 21:35:07",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-26 21:45:04",
       "level": "info",
       "msg": "开始巡查..."
     }
