@@ -529,7 +529,8 @@ class NurseBee(BeeAgent):
 
     def check_family_arrivals(self):
         """检查门锁记录，检测家人到家并通知"""
-        now = datetime.now()
+        from datetime import timezone as _tz
+        now = datetime.now(_tz(timedelta(hours=8)))
         hour = now.hour
         today_str = now.strftime("%Y-%m-%d")
 

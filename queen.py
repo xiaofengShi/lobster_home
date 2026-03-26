@@ -40,7 +40,7 @@ from bees.nurse import nurse
 from bees.builder import builder
 from hive.hive_health import hive_health
 from hive.event_bus import event_bus
-from hive.config import XIAOFENG_OPEN_ID, DATA_DIR, KIDS_SCHEDULE, WEEKDAY_NAMES, DOOR_SENSOR, MOTION_SENSOR
+from hive.config import XIAOFENG_OPEN_ID, DATA_DIR, KIDS_SCHEDULE, WEEKDAY_NAMES, DOOR_SENSOR, MOTION_SENSOR, CAMERA_ENTITY
 from hive.safe_io import safe_write_json, safe_read_json
 from hive.logger import get_logger
 
@@ -267,11 +267,26 @@ def _full_patrol_classic():
         
         if vlm_skipped:
             print(f"  ⏭️ VLM 跳过（帧差无变化）")
-            # VLM 跳过时：不做守卫/舞蹈/筑巢（没有 VLM 报告可分析）
-            # 但仍然发布环境数据事件
+            # VLM 跳过时仍然发送截图（让晓峰看到家里情况）
             from hive.frame_diff import get_stats
             stats = get_stats()
             print(f"  📊 帧差统计: 跳过率{stats['skip_rate_pct']}%，已省{stats['skipped']}次VLM")
+            # 发截图（检查 motion_time 是否新鲜，超过15分钟不发避免发旧图）
+            if image_path:
+                snap_fresh = True
+                if motion_time:
+                    try:
+                        from datetime import datetime as _dt, timedelta
+                        mt = _dt.strptime(motion_time[:19], "%Y-%m-%d %H:%M:%S")
+                        age_min = (_dt.now() - mt).total_seconds() / 60
+                        if age_min > 15:
+                            snap_fresh = False
+                            print(f"  ⏸️ 截图已过时{int(age_min)}分钟，跳过发送")
+                    except Exception:
+                        pass
+                if snap_fresh:
+                    dancer.notify_feishu_with_image(image_path)
+                    print(f"  📸 截图已发送")
         else:
             print(f"  ✅ 侦查完成")
 
@@ -331,6 +346,7 @@ def _get_digest_summary(token, today):
             headers={"Authorization": f"Bearer {token}"}, timeout=10
         )
         if resp.status_code != 200:
+            print(f"  ⚠️ 日报摘要: 列表文件失败 ({resp.status_code})")
             return None
         doc_token = None
         for f_item in resp.json().get("data", {}).get("files", []):
@@ -338,6 +354,7 @@ def _get_digest_summary(token, today):
                 doc_token = f_item.get("token", "")
                 break
         if not doc_token:
+            print(f"  ⚠️ 日报摘要: 找不到今天的文档")
             return None
 
         resp2 = requests.get(
@@ -345,13 +362,19 @@ def _get_digest_summary(token, today):
             headers={"Authorization": f"Bearer {token}"}, timeout=10
         )
         if resp2.status_code != 200:
+            print(f"  ⚠️ 日报摘要: 读文档内容失败 ({resp2.status_code})")
             return None
         content = resp2.json().get("data", {}).get("content", "")
+        if not content:
+            print(f"  ⚠️ 日报摘要: 文档内容为空")
+            return None
         lines = [l.strip() for l in content.split("\n")
                  if l.strip() and not l.strip().startswith("🔗") and not l.strip().startswith("http") and len(l.strip()) > 5]
         full_text = "。".join(lines[:15])[:1500]
+        print(f"  📝 日报摘要获取成功: {len(full_text)}字")
         return chinese_ify_for_tts(full_text)
-    except (requests.RequestException, ConnectionError, TimeoutError, OSError):
+    except (requests.RequestException, ConnectionError, TimeoutError, OSError) as e:
+        print(f"  ⚠️ 日报摘要异常: {e}")
         return None
 
 
@@ -399,12 +422,16 @@ def check_daily_digest_broadcast(report):
                 "expires": (now + timedelta(hours=2)).isoformat()
             }, ensure_ascii=False))
     else:
-        print("  📰 晓峰不在家 → 📱 飞书发送")
+        print("  📰 晓峰不在家 → 📱 飞书私信发送")
         msg = f"📰 今天的 AI 日报已生成：{doc_name}\n\n🦞 感知到你不在家，飞书发你方便查看。下面还有语音摘要～"
-        dancer.notify_feishu(msg, skip_dedup=True)
+        dancer.notify_feishu(msg, target=XIAOFENG_OPEN_ID, skip_dedup=True)
         digest_text = _get_digest_summary(token, today)
         if digest_text:
-            send_feishu_voice(f"晓峰，飞书给你发日报了。简单说一下：{digest_text}")
+            print(f"  🎙️ 生成语音摘要... ({len(digest_text)}字)")
+            voice_ok = send_feishu_voice(f"晓峰，飞书给你发日报了。简单说一下：{digest_text}")
+            print(f"  🎙️ 语音摘要发送: {'✅' if voice_ok else '❌'}")
+        else:
+            print("  ⚠️ 日报摘要获取失败，跳过语音")
 
     try:
         DIGEST_ASK_STATE.write_text(json.dumps({
@@ -438,7 +465,7 @@ def check_morning_broadcast():
 
     # 检查最近活动
     try:
-        resp = scout.ha_get(f"states/{scout.CAMERA_ENTITY}")
+        resp = scout.ha_get(f"states/{CAMERA_ENTITY}")
         attrs = resp.json().get("attributes", {})
         motion_time = attrs.get("motion_time", "")
         if not motion_time:
@@ -584,7 +611,7 @@ def check_evening_wrapup(force=False):
 
     # 摄像头
     try:
-        r = scout.ha_get(f"states/{scout.CAMERA_ENTITY}")
+        r = scout.ha_get(f"states/{CAMERA_ENTITY}")
         cam_state = r.json().get("state", "unknown")
         if cam_state in ("unavailable", "off", "unknown"):
             msg_parts.append("📷 摄像头：已关闭 ✅")

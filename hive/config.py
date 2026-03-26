@@ -28,12 +28,37 @@ HA_HEADERS = {"Authorization": f"Bearer {HA_TOKEN}"}
 FEISHU_APP_ID = os.getenv("FEISHU_APP_ID", "")
 FEISHU_APP_SECRET = os.getenv("FEISHU_APP_SECRET", "")
 XIAOFENG_OPEN_ID = os.getenv("XIAOFENG_OPEN_ID", "")
+LOBSTERHIVE_GROUP_CHAT_ID = "oc_0d05b57b946873e545decd16231e6dc7"  # 蜂后通知群
 
 # ===== 设备实体 =====
 CAMERA_ENTITY = "camera.chuangmi_069a01_a9d3_camera_control"
 CAMERA_SWITCH = "switch.chuangmi_069a01_a9d3_switch_status"
 DOOR_SENSOR = "sensor.loock_fvl109_559c_door_state"
 MOTION_SENSOR = "sensor.mi_95329875_message"
+
+# ===== 运行时设置（data/settings.json）=====
+import json as _json
+
+SETTINGS_FILE = DATA_DIR / "settings.json"
+
+def _load_settings():
+    """读取运行时设置，缺失则返回默认值"""
+    try:
+        return _json.loads(SETTINGS_FILE.read_text()) if SETTINGS_FILE.exists() else {}
+    except (ValueError, OSError):
+        return {}
+
+def get_setting(*keys, default=None):
+    """读取嵌套设置，如 get_setting('speaker', 'enabled', default=True)"""
+    d = _load_settings()
+    for k in keys:
+        if isinstance(d, dict):
+            d = d.get(k)
+        else:
+            return default
+    return d if d is not None else default
+
+SPEAKER_ENABLED = get_setting("speaker", "enabled", default=True)
 
 SPEAKER_ENTITIES = {
     "execute": "text.xiaomi_lx06_ef64_execute_text_directive",

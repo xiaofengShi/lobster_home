@@ -30,7 +30,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from hive.bee_base import BeeAgent
 from hive.event_bus import event_bus
 from hive.config import (HA_URL, HA_TOKEN, FEISHU_APP_ID, FEISHU_APP_SECRET,
-                          XIAOFENG_OPEN_ID, SPEAKER_ENTITIES, DATA_DIR)
+                          XIAOFENG_OPEN_ID, LOBSTERHIVE_GROUP_CHAT_ID, SPEAKER_ENTITIES, SPEAKER_ENABLED, DATA_DIR)
 from hive.safe_io import safe_write_json, safe_read_json, safe_append_jsonl
 
 # 音箱实体（从统一配置）
@@ -118,16 +118,24 @@ class DancerBee(BeeAgent):
                 return None
 
     def notify_feishu(self, text, target=None, skip_dedup=False):
-        """发送飞书私信（含降级链：飞书→音箱→纯日志）
+        """发送飞书消息（含降级链：飞书→音箱→纯日志）
 
         Args:
             text: 消息内容
-            target: 接收者 open_id，默认晓峰
+            target: 接收者 open_id 或 chat_id，默认群聊
             skip_dedup: 是否跳过去重检查
         Returns:
             bool: 是否发送成功
         """
-        target = target or XIAOFENG_OPEN_ID
+        target = target or LOBSTERHIVE_GROUP_CHAT_ID  # 默认发送到群聊
+
+        # 根据 target 类型选择 receive_id_type
+        if target.startswith("oc_"):
+            id_type = "chat_id"
+        elif target.startswith("ou_"):
+            id_type = "open_id"
+        else:
+            id_type = "chat_id"  # 默认 chat_id
 
         # 去重检查
         if not skip_dedup and self._is_duplicate(text):
@@ -143,7 +151,7 @@ class DancerBee(BeeAgent):
             from hive.retry import resilient_request
             resp = resilient_request(
                 "post",
-                "https://open.feishu.cn/open-apis/im/v1/messages?receive_id_type=open_id",
+                f"https://open.feishu.cn/open-apis/im/v1/messages?receive_id_type={id_type}",
                 max_retries=2,
                 headers={
                     "Authorization": f"Bearer {token}",
@@ -247,7 +255,7 @@ class DancerBee(BeeAgent):
             text: 可选的文字说明
             target: 接收者
         """
-        target = target or XIAOFENG_OPEN_ID
+        target = target or LOBSTERHIVE_GROUP_CHAT_ID  # 默认发送到群聊
         token = self._get_feishu_token()
         if not token:
             return False
@@ -273,7 +281,7 @@ class DancerBee(BeeAgent):
                 "Content-Type": "application/json",
             }
             requests.post(
-                "https://open.feishu.cn/open-apis/im/v1/messages?receive_id_type=open_id",
+                "https://open.feishu.cn/open-apis/im/v1/messages?receive_id_type=chat_id",
                 headers=headers,
                 json={
                     "receive_id": target,
@@ -328,7 +336,7 @@ class DancerBee(BeeAgent):
 
         # 先发图片
         if image_path and os.path.exists(image_path):
-            self.notify_feishu_with_image(image_path, target=XIAOFENG_OPEN_ID)
+            self.notify_feishu_with_image(image_path)  # 默认发群聊
             self._log("info", "摄像头截图已发送")
 
         # 再发文字报告
@@ -348,6 +356,11 @@ class DancerBee(BeeAgent):
         小冰睡眠轻，22:00后不播报（除非 force=True 紧急情况）
         双重保险：先 execute_text_directive，失败用 play_text
         """
+        # 🔇 全局音箱开关（2026-03-23 晓峰要求关闭）
+        if not SPEAKER_ENABLED:
+            self._log("info", "🔇 音箱已全局关闭 (SPEAKER_ENABLED=False)，跳过播报")
+            return True
+        
         hour = datetime.now().hour
         weekday = datetime.now().weekday()
         if not force and weekday >= 5:
@@ -622,14 +635,26 @@ asyncio.run(gen())
 
         file_key = upload_resp.json()['data']['file_key']
         target_id = target or XIAOFENG_OPEN_ID
+        # 根据 target 类型选择 receive_id_type
+        if target_id.startswith("oc_"):
+            id_type = "chat_id"
+        elif target_id.startswith("ou_"):
+            id_type = "open_id"
+        else:
+            id_type = "open_id"  # 默认 open_id（私信）
         send_resp = requests.post(
-            'https://open.feishu.cn/open-apis/im/v1/messages?receive_id_type=open_id',
+            f'https://open.feishu.cn/open-apis/im/v1/messages?receive_id_type={id_type}',
             headers={'Authorization': f'Bearer {token}', 'Content-Type': 'application/json'},
             json={'receive_id': target_id, 'msg_type': 'audio',
                   'content': json.dumps({'file_key': file_key})},
             timeout=10
         )
-        return send_resp.status_code == 200 and send_resp.json().get('code') == 0
+        ok = send_resp.status_code == 200 and send_resp.json().get('code') == 0
+        if ok:
+            print(f"[飞书语音] 发送成功 → {id_type}:{target_id[:20]}...")
+        else:
+            print(f"[飞书语音] 发送失败: {send_resp.status_code} {send_resp.text[:200]}")
+        return ok
     finally:
         for f in [mp3_path, opus_path]:
             try: os.unlink(f)

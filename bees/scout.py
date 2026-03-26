@@ -124,13 +124,13 @@ class ScoutBee(BeeAgent):
 
     # ===== HA 通信 =====
 
-    def ha_get(self, endpoint):
+    def ha_get(self, endpoint, params=None):
         """调用 HA API（带自动重试）"""
         from hive.retry import resilient_request
         return resilient_request(
             "get", f"{HA_URL}/api/{endpoint}",
             headers={"Authorization": f"Bearer {HA_TOKEN}"},
-            timeout=10, max_retries=2,
+            timeout=10, max_retries=2, params=params,
         )
 
     def ha_history(self, entity_id, hours=24):
@@ -188,7 +188,7 @@ class ScoutBee(BeeAgent):
             return None, None
 
         # 截图
-        resp = self.ha_get(f"camera_proxy/{CAMERA_ENTITY}")
+        resp = self.ha_get(f"camera_proxy/{CAMERA_ENTITY}", params={"t": int(datetime.now().timestamp())})
         if resp.status_code == 200 and len(resp.content) > 1000:
             path = "/tmp/home_patrol_snapshot.jpg"
             with open(path, "wb") as f:
@@ -226,57 +226,87 @@ class ScoutBee(BeeAgent):
 
         return env
 
+    _weather_cache = None
+    _weather_cache_time = None
+    _WEATHER_CACHE_SECONDS = 6 * 3600  # 6小时刷新一次
+    _WEATHER_MAX_RETRIES = 3
+
     def get_weather(self):
-        """获取北京当前天气"""
-        try:
-            resp = requests.get(
-                "https://api.open-meteo.com/v1/forecast",
-                params={
-                    "latitude": 39.9, "longitude": 116.4,
-                    "current": "temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m",
-                    "hourly": "precipitation_probability,temperature_2m,weather_code",
-                    "forecast_days": 1,
-                    "timezone": "Asia/Shanghai",
-                },
-                timeout=10,
-            )
-            data = resp.json()
-            current = data["current"]
+        """获取北京当前天气（6小时缓存，无缓存时最多重试3次）"""
+        now = datetime.now()
+        # 有缓存且未过期 → 直接返回
+        if (self._weather_cache is not None
+                and self._weather_cache_time is not None
+                and (now - self._weather_cache_time).total_seconds() < self._WEATHER_CACHE_SECONDS):
+            return self._weather_cache
 
-            weather_names = {
-                0: "晴", 1: "大部晴", 2: "多云", 3: "阴天",
-                45: "雾", 48: "霜雾", 51: "小毛毛雨", 53: "毛毛雨", 55: "大毛毛雨",
-                61: "小雨", 63: "中雨", 65: "大雨", 71: "小雪", 73: "中雪", 75: "大雪",
-                80: "阵雨", 81: "中阵雨", 82: "大阵雨", 95: "雷暴", 96: "冰雹雷暴",
-            }
+        # 需要刷新：最多重试 _WEATHER_MAX_RETRIES 次
+        last_err = None
+        for attempt in range(1, self._WEATHER_MAX_RETRIES + 1):
+            try:
+                weather = self._fetch_weather_api()
+                # 成功 → 缓存并返回
+                ScoutBee._weather_cache = weather
+                ScoutBee._weather_cache_time = datetime.now()
+                self._log("info", f"天气API刷新(第{attempt}次): {weather['weather']} {weather['current_temp']}°C")
+                return weather
+            except Exception as e:
+                last_err = e
+                if attempt < self._WEATHER_MAX_RETRIES:
+                    import time
+                    time.sleep(2 * attempt)  # 退避：2s, 4s
 
-            weather = {
-                "current_temp": current["temperature_2m"],
-                "humidity": current["relative_humidity_2m"],
-                "wind_speed": current["wind_speed_10m"],
-                "weather": weather_names.get(current["weather_code"], f"天气码{current['weather_code']}"),
-                "weather_code": current["weather_code"],
-            }
+        self._log("warn", f"天气获取失败({self._WEATHER_MAX_RETRIES}次重试): {last_err}")
+        return self._weather_cache  # 全部失败 → 返回旧缓存（可能是 None）
 
-            # 未来6小时降水预警
-            hourly = data.get("hourly", {})
-            now_hour = datetime.now().hour
-            rain_alerts = []
-            for t, prob, code in zip(
-                hourly.get("time", []),
-                hourly.get("precipitation_probability", []),
-                hourly.get("weather_code", []),
-            ):
-                hour = int(t[11:13])
-                if now_hour <= hour <= now_hour + 6:
-                    if prob and prob > 40:
-                        rain_alerts.append(f"{hour}点降水概率{prob}%")
+    def _fetch_weather_api(self):
+        """实际调用天气API（内部方法）"""
+        resp = requests.get(
+            "https://api.open-meteo.com/v1/forecast",
+            params={
+                "latitude": 39.9, "longitude": 116.4,
+                "current": "temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m",
+                "hourly": "precipitation_probability,temperature_2m,weather_code",
+                "forecast_days": 1,
+                "timezone": "Asia/Shanghai",
+            },
+            timeout=10,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        current = data["current"]
 
-            weather["rain_alerts"] = rain_alerts
-            return weather
-        except (KeyError, IndexError, TypeError, ValueError) as e:
-            self._log("warn", f"天气获取失败: {e}")
-            return None
+        weather_names = {
+            0: "晴", 1: "大部晴", 2: "多云", 3: "阴天",
+            45: "雾", 48: "霜雾", 51: "小毛毛雨", 53: "毛毛雨", 55: "大毛毛雨",
+            61: "小雨", 63: "中雨", 65: "大雨", 71: "小雪", 73: "中雪", 75: "大雪",
+            80: "阵雨", 81: "中阵雨", 82: "大阵雨", 95: "雷暴", 96: "冰雹雷暴",
+        }
+
+        weather = {
+            "current_temp": current["temperature_2m"],
+            "humidity": current["relative_humidity_2m"],
+            "wind_speed": current["wind_speed_10m"],
+            "weather": weather_names.get(current["weather_code"], f"天气码{current['weather_code']}"),
+            "weather_code": current["weather_code"],
+        }
+
+        # 未来6小时降水预警
+        hourly = data.get("hourly", {})
+        now_hour = datetime.now().hour
+        rain_alerts = []
+        for t, prob, code in zip(
+            hourly.get("time", []),
+            hourly.get("precipitation_probability", []),
+            hourly.get("weather_code", []),
+        ):
+            hour = int(t[11:13])
+            if now_hour <= hour <= now_hour + 6:
+                if prob and prob > 40:
+                    rain_alerts.append(f"{hour}点降水概率{prob}%")
+
+        weather["rain_alerts"] = rain_alerts
+        return weather
 
     # ===== 门锁事实 =====
 
