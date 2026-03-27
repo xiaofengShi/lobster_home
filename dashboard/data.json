@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-28T06:00:58.624972",
+  "generated_at": "2026-03-28T07:01:34.719025",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-03-28T06:00:58.107094",
+        "last_run": "2026-03-28T07:01:34.114612",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -70,21 +70,87 @@
   },
   "bees": {},
   "events": {
-    "total": 295,
-    "recent_500": 295,
-    "today": 6,
+    "total": 301,
+    "recent_500": 301,
+    "today": 12,
     "by_type": {
-      "feishu_sent": 137,
-      "scene_report": 126,
+      "feishu_sent": 142,
+      "scene_report": 127,
       "speaker_played": 29,
       "bee_healed": 3
     },
     "by_source": {
-      "dancer": 166,
-      "scout": 126,
+      "dancer": 171,
+      "scout": 127,
       "queen": 3
     },
     "last_10": [
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "帧差无变化，家里一切正常",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-28T07:01:34.712734"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "帧差无变化，家里一切正常",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-28T06:51:30.817682"
+      },
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】  \nPERSON_FEATURE: 绿色上衣、黑裤、幼童身高 | GUESS: 小宝（5岁男孩）  \n\n【状态评估】  \n小宝独自站在玄关处，无明显哭闹或异常，状态正常。未见其他活人，沙发/椅子上无坐人，无大人陪同迹象，符合5岁儿童独立短时活动常态。\n\n【环境检查】  \n客厅/卧室温湿度舒适（22°C±0.9°C，湿度63%-66%），主卧略干（49%），建议主卧加湿。室外晴朗微风，无需关窗。\n\n【提醒事项】  \n周六19:30有英语课，距今1小时30分，建议提前准备书包、水杯。小宝若未进食，可提醒晚餐安排。\n\n【建议】  \n确认小宝安全范围，避免靠近厨房/阳台。主卧可开启加湿器或放盆水调节湿度。",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-28T06:41:24.624468"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "帧差无变化，家里一切正常",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-28T06:31:15.390897"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "帧差无变化，家里一切正常",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-28T06:21:09.996921"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "帧差无变化，家里一切正常",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-28T06:11:05.303458"
+      },
       {
         "source": "dancer",
         "type": "feishu_sent",
@@ -128,72 +194,6 @@
         },
         "dance": "waggle",
         "timestamp": "2026-03-28T05:30:42.690119"
-      },
-      {
-        "source": "dancer",
-        "type": "feishu_sent",
-        "intensity": "normal",
-        "payload": {
-          "text": "帧差无变化，家里一切正常",
-          "target": "oc_0d05b57b946873e545decd16231e6dc7"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-28T05:20:35.670686"
-      },
-      {
-        "source": "dancer",
-        "type": "feishu_sent",
-        "intensity": "normal",
-        "payload": {
-          "text": "帧差无变化，家里一切正常",
-          "target": "oc_0d05b57b946873e545decd16231e6dc7"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-28T05:10:31.145367"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 绿色上衣、黑裤、幼童身高 | GUESS: 小宝（5岁男孩）  \n（画面中仅确认1名真实活人，无其他可辨识成人）\n\n【状态评估】  \n小宝独自站在玄关处，状态平静，无哭闹或异常行为，符合放学后在家活动常态。\n\n【环境检查】  \n室内温湿度舒适（22°C/59%），无需调整空调或加湿器。\n\n【提醒事项】  \n⚠️ 18:00已过，小宝应已到家（17:30），但画面中无成人陪同。根据门锁记录，晓峰17:32已到家，推测其可能在未入镜区域。建议语音呼叫确认小宝是否有人看护。\n\n【建议】  \n开启“儿童安全守护”模式，若3分钟内无成人入镜，自动推送提醒至晓峰/小冰手机。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-27T18:38:29.172877"
-      },
-      {
-        "source": "dancer",
-        "type": "feishu_sent",
-        "intensity": "normal",
-        "payload": {
-          "text": "🦞 18:00 巡查报告\n【在家人员】  \nPERSON_FEATURE: 绿色上衣、黑裤、幼童身高、短发男孩 | GUESS: 小宝（5岁）  \n（画面中仅确认1名真实活人，无其他可见人物）\n【状态",
-          "target": "oc_0d05b57b946873e545decd16231e6dc7"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-27T18:02:13.540170"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 绿色上衣、黑裤、幼童身高、短发男孩 | GUESS: 小宝（5岁）  \n（画面中仅确认1名真实活人，无其他可见人物）\n\n【状态评估】  \n小宝独自站在玄关处，状态正常，无哭闹或异常行为。\n\n【环境检查】  \n室内温湿度舒适（22°C/59%），无需调整空调或加湿。\n\n【提醒事项】  \n⚠️ 姥姥应已接小宝回家（17:30到家），但画面中未见成人，建议确认姥姥是否在其他房间或短暂离开视线。  \n今日周五无课外课，无需课程提醒。  \n室外阴天+大风（8.9km/h），建议关窗防风。\n\n【建议】  \n可语音呼叫“小宝，妈妈/姥姥在哪？”确认看护状态；若持续无人出现，建议远程查看其他摄像头或拨打电话确认安全。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-27T18:02:11.692045"
-      },
-      {
-        "source": "dancer",
-        "type": "feishu_sent",
-        "intensity": "normal",
-        "payload": {
-          "text": "🦞 17:55 巡查报告\n【在家人员】  \n画面中无人。沙发、椅子、地毯上物品均为静物，无真实活人活动迹象。\n【状态评估】  \n环境安静，无异常活动。小宝未在画面中，可能在房间或尚未到家。\n【环境检查",
-          "target": "oc_0d05b57b946873e545decd16231e6dc7"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-27T17:57:03.446056"
       }
     ]
   },
@@ -203,21 +203,21 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 6.2,
+    "log_size_kb": 12.1,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
       "habits_discovered": 1,
       "total_observations": 0,
-      "log_entries": 446,
+      "log_entries": 448,
       "devices": 117,
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
     "last_patrol_lines": [
       "   ✅ builder: ready (跑了0次)",
-      "[2026-03-28 05:50:53] [hive.queen] [info] run_all 完成，全部正常",
+      "[2026-03-28 06:51:31] [hive.queen] [info] run_all 完成，全部正常",
       "",
-      "[05:55] 距上次5分钟，间隔10分钟，跳过",
+      "[06:56] 距上次5分钟，间隔10分钟，跳过",
       "  跳过本次巡查"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
@@ -255,6 +255,36 @@
     },
     {
       "time": "2026-03-28 06:00:55",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-28 06:11:02",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-28 06:21:07",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-28 06:31:11",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-28 06:41:18",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-28 06:51:27",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-28 07:01:31",
       "level": "info",
       "msg": "开始巡查..."
     }
