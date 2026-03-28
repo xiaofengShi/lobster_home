@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-28T12:24:01.079508",
+  "generated_at": "2026-03-28T13:26:10.609393",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -8,7 +8,7 @@
         "name": "dancer",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-03-28T12:24:01.031765",
+        "last_run": "2026-03-28T13:26:10.542687",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -19,9 +19,9 @@
         "name": "guard",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-03-28T12:23:58.497560",
+        "last_run": "2026-03-28T13:26:09.005057",
         "last_run_duration": null,
-        "total_runs": 2,
+        "total_runs": 1,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-03-28T12:23:58.495125",
+        "last_run": "2026-03-28T13:26:09.004037",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -52,7 +52,7 @@
         "name": "builder",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-03-28T12:24:01.032342",
+        "last_run": "2026-03-28T13:26:10.564215",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -70,18 +70,18 @@
   },
   "bees": {},
   "events": {
-    "total": 419,
-    "recent_500": 419,
-    "today": 130,
+    "total": 439,
+    "recent_500": 439,
+    "today": 150,
     "by_type": {
-      "feishu_sent": 205,
-      "scene_report": 182,
+      "feishu_sent": 217,
+      "scene_report": 190,
       "speaker_played": 29,
       "bee_healed": 3
     },
     "by_source": {
-      "dancer": 234,
-      "scout": 182,
+      "dancer": 246,
+      "scout": 190,
       "queen": 3
     },
     "last_10": [
@@ -90,110 +90,110 @@
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 12:20 巡查报告\n【在家人员】  \nPERSON_FEATURE: 男，短发，深色上衣，躺沙发看手机 | GUESS: 晓峰  \nPERSON_FEATURE: 男童，约5岁，坐沙发玩玩具 |",
+          "text": "🦞 13:21 巡查报告\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T12:24:00.144415"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 男，短发，深色上衣，躺沙发看手机 | GUESS: 晓峰  \nPERSON_FEATURE: 男童，约5岁，坐沙发玩玩具 | GUESS: 小宝  \nPERSON_FEATURE: 女，长发，深色上衣，坐桌前操作电脑 | GUESS: 小冰（妈妈）  \n\n【状态评估】  \n三人状态正常，晓峰放松休息，小宝安静玩耍，小冰专注工作/学习，无异常行为。  \n\n【环境检查】  \n室内温湿度舒适（22°C/59%），无需调整空调。室外阴天微风，无极端天气风险。  \n\n【提醒事项】  \n今天周六，19:30有英语课，建议18:50提醒准备。姥姥10:20已回家，未在画面中，建议确认其动向。  \n\n【建议】  \n客厅略乱，可稍后整理；小宝玩具散落，注意防绊倒。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-28T12:23:58.423119"
+        "timestamp": "2026-03-28T13:26:10.469661"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 12:15 巡查报告\n【在家人员】\nPERSON_FEATURE: 男，36岁左右，短发，戴眼镜，穿深灰上衣+黑短裤，躺沙发玩手机 | GUESS: 晓峰  \nPERSON_FEATURE: 男，",
+          "text": "🦞 13:16 巡查报告\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T12:18:42.598658"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】\nPERSON_FEATURE: 男，36岁左右，短发，戴眼镜，穿深灰上衣+黑短裤，躺沙发玩手机 | GUESS: 晓峰  \nPERSON_FEATURE: 男，约5岁，穿印花上衣，坐沙发旁小椅子，手拿玩具 | GUESS: 小宝  \n\n【状态评估】  \n晓峰放松休息，小宝安静玩耍，状态正常，无危险行为。\n\n【环境检查】  \n室内22-24°C，湿度53-58%，体感舒适，无需调整空调。\n\n【提醒事项】  \n今天周六，19:30有英语课，建议18:50提醒准备。室外风速7km/h，建议关窗防尘。\n\n【建议】  \n地面散落玩具和拖鞋，建议稍后整理防绊倒。小宝独自活动安全，可定时查看。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-28T12:18:41.084625"
+        "timestamp": "2026-03-28T13:21:02.362883"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 12:10 巡查报告\n【在家人员】  \nPERSON_FEATURE: 深色上衣、短发、男性、中青年 | GUESS: 晓峰  \nPERSON_FEATURE: 年轻女性、浅色上衣、长发、坐桌前 ",
+          "text": "🦞 13:11 巡查报告\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T12:13:30.691189"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 深色上衣、短发、男性、中青年 | GUESS: 晓峰  \nPERSON_FEATURE: 年轻女性、浅色上衣、长发、坐桌前 | GUESS: 小冰  \nPERSON_FEATURE: 5岁男孩、深色衣裤、坐沙发 | GUESS: 小宝  \n\n【状态评估】  \n晓峰与小宝同坐沙发，似在互动；小冰在餐桌用餐，状态放松，无异常。\n\n【环境检查】  \n客厅22°C/58%湿度，舒适；室外阴天18°C，风速6km/h，建议关窗防风。\n\n【提醒事项】  \n周六19:30英语课，提前30分钟提醒准备。姥姥10:20已到家，未见画面，建议确认其位置。\n\n【建议】  \n可调低客厅空调1°C，避免午后闷热；提醒收好地面拖鞋，防绊倒。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-28T12:13:29.174543"
+        "timestamp": "2026-03-28T13:15:53.832005"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 12:05 巡查报告\n【在家人员】  \nPERSON_FEATURE: 36岁男性，短发，戴眼镜，深灰连帽衫，坐沙发 | GUESS: 晓峰  \nPERSON_FEATURE: 5岁男孩，短发，深",
+          "text": "🦞 13:06 巡查报告\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T12:08:17.673578"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 36岁男性，短发，戴眼镜，深灰连帽衫，坐沙发 | GUESS: 晓峰  \nPERSON_FEATURE: 5岁男孩，短发，深色上衣，坐沙发依偎男性 | GUESS: 小宝  \n\n【状态评估】  \n晓峰与小宝在沙发休息，状态放松正常，无异常行为。\n\n【环境检查】  \n客厅22°C/58%湿度，舒适无需调整；室外阴天18°C，风速6km/h，建议关窗防风。\n\n【提醒事项】  \n周六19:30有英语课，提前30分钟提醒准备。姥姥10:20已到家，若长时间未见活动可关注。\n\n【建议】  \n保持客厅通风，避免地毯积尘；建议18:00前准备英语课用品。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-28T12:08:16.045036"
+        "timestamp": "2026-03-28T13:10:48.000820"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 12:00 巡查报告\n【在家人员】\nPERSON_FEATURE: 36岁男性，短发，戴眼镜，深灰上衣+黑短裤，坐沙发 | GUESS: 晓峰  \nPERSON_FEATURE: 5岁男孩，短发，",
+          "text": "🦞 13:01 巡查报告\n【在家人员】  \nPERSON_FEATURE: 穿灰色连帽衫、黑色短裤、拖鞋，短发男性，低头看手机 | GUESS: 晓峰（36岁男主人）  \n【状态评估】  \n晓峰站立于",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T12:03:08.293562"
+        "timestamp": "2026-03-28T13:05:38.303977"
       },
       {
         "source": "scout",
         "type": "scene_report",
         "intensity": "normal",
         "payload": {
-          "report": "【在家人员】\nPERSON_FEATURE: 36岁男性，短发，戴眼镜，深灰上衣+黑短裤，坐沙发 | GUESS: 晓峰  \nPERSON_FEATURE: 5岁男孩，短发，浅色上衣，坐沙发旁，手持平板 | GUESS: 小宝  \n\n【状态评估】  \n晓峰与小宝同坐沙发，状态放松，无异常。小宝专注平板，晓峰陪伴，亲子互动正常。\n\n【环境检查】  \n客厅22°C/58%湿度，舒适；室外阴天18°C，风速5.5km/h，建议关窗防风。\n\n【提醒事项】  \n今天周六，19:30有英语课，建议18:50提醒准备。姥姥10:20已回家，未在画面中，属正常。\n\n【建议】  \n建议18:30前整理书包，提前准备英语课用品。沙发旁杂物可稍作收纳，避免绊倒。",
+          "report": "【在家人员】  \nPERSON_FEATURE: 穿灰色连帽衫、黑色短裤、拖鞋，短发男性，低头看手机 | GUESS: 晓峰（36岁男主人）  \n\n【状态评估】  \n晓峰站立于客厅，专注使用手机，状态正常，无异常行为。  \n\n【环境检查】  \n室内温度22-24.5°C，湿度51-60%，体感舒适；室外阴天19.2°C，风速9.7km/h，建议关窗防风。  \n\n【提醒事项】  \n今天周六，19:30有小宝英语课，建议18:50提醒准备。姥姥10:20已到家，暂未在画面中，可稍后确认动向。  \n\n【建议】  \n风大，建议检查窗户是否关严；晓峰久站看手机，可提醒起身活动。",
           "image_path": "/tmp/home_patrol_snapshot.jpg"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T12:03:06.667114"
+        "timestamp": "2026-03-28T13:05:36.827911"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "🦞 12:56 巡查报告\n【在家人员】\nPERSON_FEATURE: 男，短发，戴眼镜，穿灰色连帽衫+黑短裤，站立微笑 | GUESS: 晓峰\nPERSON_FEATURE: 女，长发，穿浅色上衣，",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-28T13:00:27.975818"
+      },
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】\nPERSON_FEATURE: 男，短发，戴眼镜，穿灰色连帽衫+黑短裤，站立微笑 | GUESS: 晓峰\nPERSON_FEATURE: 女，长发，穿浅色上衣，坐书桌前用电脑 | GUESS: 小冰（年轻女性，非姥姥）\n\n【状态评估】\n晓峰站立活动，状态轻松；小冰专注工作/学习，状态正常。无异常行为。\n\n【环境检查】\n室内温湿度舒适（22-24.5°C，51-60%），无需调整。室外阴天微风，建议关窗防尘。\n\n【提醒事项】\n周六19:30有英语课，提前30分钟（19:00）提醒小宝准备。姥姥10:20已回家，未见活动，建议稍后确认状态。\n\n【建议】\n保持通风，避免久坐，可提醒小冰休息。龙虾管家🦞已记录。",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-28T13:00:26.405246"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "🦞 12:51 巡查报告\n【在家人员】  \nPERSON_FEATURE: 男性，短发，穿深灰连帽衫+黑色短裤，站立看手机 | GUESS: 晓峰  \nPERSON_FEATURE: 女性，长发，穿浅",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-28T12:55:09.938690"
+      },
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】  \nPERSON_FEATURE: 男性，短发，穿深灰连帽衫+黑色短裤，站立看手机 | GUESS: 晓峰  \nPERSON_FEATURE: 女性，长发，穿浅色上衣，坐桌前用电脑 | GUESS: 小冰（年轻女性，非姥姥）  \n\n【状态评估】  \n两人均正常活动，无异常。晓峰看手机，小冰专注工作/学习。  \n\n【环境检查】  \n客厅22°C/60%湿度舒适，卧室略暖（24.5°C），建议主卧空调调至23°C。  \n\n【提醒事项】  \n今天周六19:30有英语课，提前30分钟提醒准备。室外风速9km/h，建议关窗。  \n\n【建议】  \n小宝未在画面中，建议确认其安全位置；晓峰可提醒小冰休息，避免久坐。  \n\n（画面中仅确认2人，无其他活人，沙发靠垫、衣物等不计入）",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-28T12:55:08.322334"
       }
     ]
   },
@@ -203,128 +203,130 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 105.8,
+    "log_size_kb": 123.3,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
       "habits_discovered": 1,
       "total_observations": 0,
-      "log_entries": 558,
+      "log_entries": 578,
       "devices": 117,
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
     "last_patrol_lines": [
+      "   ✅ guard: ready (跑了1次)",
       "   ✅ scout: ready (跑了1次)",
       "   ✅ nurse: ready (跑了0次)",
       "   ✅ builder: ready (跑了1次)",
-      "  ❌ 同步异常: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/xiaofengShi/lobster_home/contents/dashboard/data.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
-      "[2026-03-28 12:18:50] [hive.queen] [info] run_all 完成，全部正常"
+      "[2026-03-28 13:21:02] [hive.queen] [info] run_all 完成，全部正常"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
     {
-      "time": "2026-03-28 10:44:54",
+      "time": "2026-03-28 12:29:05",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-28 10:50:09",
+      "time": "2026-03-28 12:34:15",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-28 10:55:22",
+      "time": "2026-03-28 12:39:25",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-28 11:00:32",
+      "time": "2026-03-28 12:44:36",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-28 11:05:46",
+      "time": "2026-03-28 12:49:46",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-28 11:10:57",
+      "time": "2026-03-28 12:54:57",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-28 11:16:07",
+      "time": "2026-03-28 13:00:12",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-28 11:21:27",
+      "time": "2026-03-28 13:05:29",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-28 11:26:40",
+      "time": "2026-03-28 13:10:40",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-28 11:31:50",
+      "time": "2026-03-28 13:10:46",
+      "level": "error",
+      "msg": "VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"error\"}"
+    },
+    {
+      "time": "2026-03-28 13:10:46",
+      "level": "error",
+      "msg": "VLM 报告 (传感器事件触发): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"typ"
+    },
+    {
+      "time": "2026-03-28 13:15:49",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-28 11:37:00",
+      "time": "2026-03-28 13:15:52",
+      "level": "error",
+      "msg": "VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"error\"}"
+    },
+    {
+      "time": "2026-03-28 13:15:52",
+      "level": "error",
+      "msg": "VLM 报告 (传感器事件触发): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"typ"
+    },
+    {
+      "time": "2026-03-28 13:20:55",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-28 11:42:11",
+      "time": "2026-03-28 13:21:00",
+      "level": "error",
+      "msg": "VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"error\"}"
+    },
+    {
+      "time": "2026-03-28 13:21:00",
+      "level": "error",
+      "msg": "VLM 报告 (传感器事件触发): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"typ"
+    },
+    {
+      "time": "2026-03-28 13:26:03",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-28 11:47:21",
-      "level": "info",
-      "msg": "开始巡查..."
+      "time": "2026-03-28 13:26:09",
+      "level": "error",
+      "msg": "VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"error\"}"
     },
     {
-      "time": "2026-03-28 11:52:34",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-28 11:57:48",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-28 12:02:59",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-28 12:08:10",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-28 12:13:20",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-28 12:18:32",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-28 12:23:52",
-      "level": "info",
-      "msg": "开始巡查..."
+      "time": "2026-03-28 13:26:09",
+      "level": "error",
+      "msg": "VLM 报告 (传感器事件触发): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"typ"
     }
   ],
-  "error_trend": {},
+  "error_trend": {
+    "2026-03-28": 8
+  },
   "honey": [
     {
       "name": "weekly_2026-03-21.md",
