@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-28T14:27:57.154563",
+  "generated_at": "2026-03-28T15:29:29.596177",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-03-28T14:27:56.557572",
+        "last_run": "2026-03-28T15:29:28.673017",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -70,17 +70,17 @@
   },
   "bees": {},
   "events": {
-    "total": 451,
-    "recent_500": 451,
-    "today": 162,
+    "total": 462,
+    "recent_500": 462,
+    "today": 173,
     "by_type": {
-      "feishu_sent": 229,
+      "feishu_sent": 240,
       "scene_report": 190,
       "speaker_played": 29,
       "bee_healed": 3
     },
     "by_source": {
-      "dancer": 258,
+      "dancer": 269,
       "scout": 190,
       "queen": 3
     },
@@ -94,106 +94,106 @@
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T14:27:57.146874"
+        "timestamp": "2026-03-28T15:29:29.465468"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 14:21 巡查报告\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"",
+          "text": "帧差无变化，家里一切正常",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T14:22:49.456376"
+        "timestamp": "2026-03-28T15:19:17.610945"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 14:11 巡查报告（画面来自6分钟前）\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"},",
+          "text": "帧差无变化，家里一切正常",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T14:17:43.690885"
+        "timestamp": "2026-03-28T15:14:11.828286"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 14:06 巡查报告（画面来自5分钟前）\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"},",
+          "text": "帧差无变化，家里一切正常",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T14:12:38.042786"
+        "timestamp": "2026-03-28T15:09:06.119379"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 14:01 巡查报告（画面来自5分钟前）\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"},",
+          "text": "帧差无变化，家里一切正常",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T14:07:32.199200"
+        "timestamp": "2026-03-28T15:03:57.915406"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 13:56 巡查报告（画面来自5分钟前）\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"},",
+          "text": "帧差无变化，家里一切正常",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T14:02:22.638303"
+        "timestamp": "2026-03-28T14:58:53.755613"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 13:51 巡查报告（画面来自5分钟前）\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"},",
+          "text": "帧差无变化，家里一切正常",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T13:57:16.385100"
+        "timestamp": "2026-03-28T14:53:49.967385"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 13:46 巡查报告（画面来自5分钟前）\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"},",
+          "text": "🦞 14:43 巡查报告（画面来自5分钟前）\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"},",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T13:52:10.559728"
+        "timestamp": "2026-03-28T14:48:41.117070"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 13:41 巡查报告（画面来自5分钟前）\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"},",
+          "text": "帧差无变化，家里一切正常",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T13:47:04.983286"
+        "timestamp": "2026-03-28T14:43:33.350624"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 13:36 巡查报告（画面来自5分钟前）\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"},",
+          "text": "🦞 14:36 巡查报告\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T13:41:59.704363"
+        "timestamp": "2026-03-28T14:38:26.561729"
       }
     ]
   },
@@ -203,13 +203,13 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 138.6,
+    "log_size_kb": 150.6,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
       "habits_discovered": 1,
       "total_observations": 0,
-      "log_entries": 589,
+      "log_entries": 593,
       "devices": 117,
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
@@ -218,114 +218,114 @@
       "   ✅ scout: ready (跑了1次)",
       "   ✅ nurse: ready (跑了0次)",
       "   ✅ builder: ready (跑了1次)",
-      "[2026-03-28 14:22:49] [hive.queen] [info] run_all 完成，全部正常"
+      "[2026-03-28 15:24:24] [hive.queen] [info] run_all 完成，全部正常"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
     {
-      "time": "2026-03-28 13:52:09",
-      "level": "error",
-      "msg": "VLM 报告 (帧差检测（diff=0.842）): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disable"
-    },
-    {
-      "time": "2026-03-28 13:57:12",
+      "time": "2026-03-28 14:33:04",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-28 13:57:14",
+      "time": "2026-03-28 14:33:17",
       "level": "error",
       "msg": "VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"error\"}"
     },
     {
-      "time": "2026-03-28 13:57:14",
+      "time": "2026-03-28 14:33:17",
       "level": "error",
-      "msg": "VLM 报告 (帧差检测（diff=0.831）): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disable"
+      "msg": "VLM 报告 (帧差检测（diff=0.216）): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disable"
     },
     {
-      "time": "2026-03-28 14:02:18",
+      "time": "2026-03-28 14:38:22",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-28 14:02:21",
+      "time": "2026-03-28 14:38:25",
       "level": "error",
       "msg": "VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"error\"}"
     },
     {
-      "time": "2026-03-28 14:02:21",
-      "level": "error",
-      "msg": "VLM 报告 (帧差检测（diff=0.291）): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disable"
-    },
-    {
-      "time": "2026-03-28 14:07:24",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-28 14:07:30",
-      "level": "error",
-      "msg": "VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"error\"}"
-    },
-    {
-      "time": "2026-03-28 14:07:30",
-      "level": "error",
-      "msg": "VLM 报告 (帧差检测（diff=0.842）): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disable"
-    },
-    {
-      "time": "2026-03-28 14:12:34",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-28 14:12:36",
-      "level": "error",
-      "msg": "VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"error\"}"
-    },
-    {
-      "time": "2026-03-28 14:12:36",
-      "level": "error",
-      "msg": "VLM 报告 (帧差检测（diff=0.368）): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disable"
-    },
-    {
-      "time": "2026-03-28 14:17:39",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-28 14:17:42",
-      "level": "error",
-      "msg": "VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"error\"}"
-    },
-    {
-      "time": "2026-03-28 14:17:42",
-      "level": "error",
-      "msg": "VLM 报告 (帧差检测（diff=0.838）): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disable"
-    },
-    {
-      "time": "2026-03-28 14:22:44",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-28 14:22:47",
-      "level": "error",
-      "msg": "VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"error\"}"
-    },
-    {
-      "time": "2026-03-28 14:22:47",
+      "time": "2026-03-28 14:38:25",
       "level": "error",
       "msg": "VLM 报告 (传感器事件触发): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"typ"
     },
     {
-      "time": "2026-03-28 14:27:50",
+      "time": "2026-03-28 14:43:28",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-28 14:48:35",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-28 14:48:39",
+      "level": "error",
+      "msg": "VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"error\"}"
+    },
+    {
+      "time": "2026-03-28 14:48:39",
+      "level": "error",
+      "msg": "VLM 报告 (帧差检测（diff=0.844）): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disable"
+    },
+    {
+      "time": "2026-03-28 14:53:42",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-28 14:58:50",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-28 15:03:54",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-28 15:08:59",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-28 15:14:07",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-28 15:19:13",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-28 15:24:19",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-28 15:24:24",
+      "level": "error",
+      "msg": "VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"error\"}"
+    },
+    {
+      "time": "2026-03-28 15:24:24",
+      "level": "error",
+      "msg": "VLM 报告 (兜底触发（已跳过6次）): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, "
+    },
+    {
+      "time": "2026-03-28 15:29:25",
       "level": "info",
       "msg": "开始巡查..."
     }
   ],
   "error_trend": {
-    "2026-03-28": 30
+    "2026-03-28": 38
   },
   "honey": [
     {
