@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-28T13:26:10.609393",
+  "generated_at": "2026-03-28T14:27:57.154563",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -8,9 +8,9 @@
         "name": "dancer",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-03-28T13:26:10.542687",
+        "last_run": null,
         "last_run_duration": null,
-        "total_runs": 1,
+        "total_runs": 0,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -19,9 +19,9 @@
         "name": "guard",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-03-28T13:26:09.005057",
+        "last_run": null,
         "last_run_duration": null,
-        "total_runs": 1,
+        "total_runs": 0,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-03-28T13:26:09.004037",
+        "last_run": "2026-03-28T14:27:56.557572",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -52,9 +52,9 @@
         "name": "builder",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-03-28T13:26:10.564215",
+        "last_run": null,
         "last_run_duration": null,
-        "total_runs": 1,
+        "total_runs": 0,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -70,17 +70,17 @@
   },
   "bees": {},
   "events": {
-    "total": 439,
-    "recent_500": 439,
-    "today": 150,
+    "total": 451,
+    "recent_500": 451,
+    "today": 162,
     "by_type": {
-      "feishu_sent": 217,
+      "feishu_sent": 229,
       "scene_report": 190,
       "speaker_played": 29,
       "bee_healed": 3
     },
     "by_source": {
-      "dancer": 246,
+      "dancer": 258,
       "scout": 190,
       "queen": 3
     },
@@ -90,110 +90,110 @@
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 13:21 巡查报告\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"",
+          "text": "帧差无变化，家里一切正常",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T13:26:10.469661"
+        "timestamp": "2026-03-28T14:27:57.146874"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 13:16 巡查报告\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"",
+          "text": "🦞 14:21 巡查报告\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T13:21:02.362883"
+        "timestamp": "2026-03-28T14:22:49.456376"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 13:11 巡查报告\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"",
+          "text": "🦞 14:11 巡查报告（画面来自6分钟前）\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"},",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T13:15:53.832005"
+        "timestamp": "2026-03-28T14:17:43.690885"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 13:06 巡查报告\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"",
+          "text": "🦞 14:06 巡查报告（画面来自5分钟前）\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"},",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T13:10:48.000820"
+        "timestamp": "2026-03-28T14:12:38.042786"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 13:01 巡查报告\n【在家人员】  \nPERSON_FEATURE: 穿灰色连帽衫、黑色短裤、拖鞋，短发男性，低头看手机 | GUESS: 晓峰（36岁男主人）  \n【状态评估】  \n晓峰站立于",
+          "text": "🦞 14:01 巡查报告（画面来自5分钟前）\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"},",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T13:05:38.303977"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 穿灰色连帽衫、黑色短裤、拖鞋，短发男性，低头看手机 | GUESS: 晓峰（36岁男主人）  \n\n【状态评估】  \n晓峰站立于客厅，专注使用手机，状态正常，无异常行为。  \n\n【环境检查】  \n室内温度22-24.5°C，湿度51-60%，体感舒适；室外阴天19.2°C，风速9.7km/h，建议关窗防风。  \n\n【提醒事项】  \n今天周六，19:30有小宝英语课，建议18:50提醒准备。姥姥10:20已到家，暂未在画面中，可稍后确认动向。  \n\n【建议】  \n风大，建议检查窗户是否关严；晓峰久站看手机，可提醒起身活动。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-28T13:05:36.827911"
+        "timestamp": "2026-03-28T14:07:32.199200"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 12:56 巡查报告\n【在家人员】\nPERSON_FEATURE: 男，短发，戴眼镜，穿灰色连帽衫+黑短裤，站立微笑 | GUESS: 晓峰\nPERSON_FEATURE: 女，长发，穿浅色上衣，",
+          "text": "🦞 13:56 巡查报告（画面来自5分钟前）\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"},",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T13:00:27.975818"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】\nPERSON_FEATURE: 男，短发，戴眼镜，穿灰色连帽衫+黑短裤，站立微笑 | GUESS: 晓峰\nPERSON_FEATURE: 女，长发，穿浅色上衣，坐书桌前用电脑 | GUESS: 小冰（年轻女性，非姥姥）\n\n【状态评估】\n晓峰站立活动，状态轻松；小冰专注工作/学习，状态正常。无异常行为。\n\n【环境检查】\n室内温湿度舒适（22-24.5°C，51-60%），无需调整。室外阴天微风，建议关窗防尘。\n\n【提醒事项】\n周六19:30有英语课，提前30分钟（19:00）提醒小宝准备。姥姥10:20已回家，未见活动，建议稍后确认状态。\n\n【建议】\n保持通风，避免久坐，可提醒小冰休息。龙虾管家🦞已记录。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-28T13:00:26.405246"
+        "timestamp": "2026-03-28T14:02:22.638303"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 12:51 巡查报告\n【在家人员】  \nPERSON_FEATURE: 男性，短发，穿深灰连帽衫+黑色短裤，站立看手机 | GUESS: 晓峰  \nPERSON_FEATURE: 女性，长发，穿浅",
+          "text": "🦞 13:51 巡查报告（画面来自5分钟前）\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"},",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T12:55:09.938690"
+        "timestamp": "2026-03-28T13:57:16.385100"
       },
       {
-        "source": "scout",
-        "type": "scene_report",
+        "source": "dancer",
+        "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 男性，短发，穿深灰连帽衫+黑色短裤，站立看手机 | GUESS: 晓峰  \nPERSON_FEATURE: 女性，长发，穿浅色上衣，坐桌前用电脑 | GUESS: 小冰（年轻女性，非姥姥）  \n\n【状态评估】  \n两人均正常活动，无异常。晓峰看手机，小冰专注工作/学习。  \n\n【环境检查】  \n客厅22°C/60%湿度舒适，卧室略暖（24.5°C），建议主卧空调调至23°C。  \n\n【提醒事项】  \n今天周六19:30有英语课，提前30分钟提醒准备。室外风速9km/h，建议关窗。  \n\n【建议】  \n小宝未在画面中，建议确认其安全位置；晓峰可提醒小冰休息，避免久坐。  \n\n（画面中仅确认2人，无其他活人，沙发靠垫、衣物等不计入）",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
+          "text": "🦞 13:46 巡查报告（画面来自5分钟前）\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"},",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-28T12:55:08.322334"
+        "timestamp": "2026-03-28T13:52:10.559728"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "🦞 13:41 巡查报告（画面来自5分钟前）\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"},",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-28T13:47:04.983286"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "🦞 13:36 巡查报告（画面来自5分钟前）\nVLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"},",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-28T13:41:59.704363"
       }
     ]
   },
@@ -203,13 +203,13 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 123.3,
+    "log_size_kb": 138.6,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
       "habits_discovered": 1,
       "total_observations": 0,
-      "log_entries": 578,
+      "log_entries": 589,
       "devices": 117,
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
@@ -218,114 +218,114 @@
       "   ✅ scout: ready (跑了1次)",
       "   ✅ nurse: ready (跑了0次)",
       "   ✅ builder: ready (跑了1次)",
-      "[2026-03-28 13:21:02] [hive.queen] [info] run_all 完成，全部正常"
+      "[2026-03-28 14:22:49] [hive.queen] [info] run_all 完成，全部正常"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
     {
-      "time": "2026-03-28 12:29:05",
+      "time": "2026-03-28 13:52:09",
+      "level": "error",
+      "msg": "VLM 报告 (帧差检测（diff=0.842）): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disable"
+    },
+    {
+      "time": "2026-03-28 13:57:12",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-28 12:34:15",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-28 12:39:25",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-28 12:44:36",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-28 12:49:46",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-28 12:54:57",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-28 13:00:12",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-28 13:05:29",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-28 13:10:40",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-28 13:10:46",
+      "time": "2026-03-28 13:57:14",
       "level": "error",
       "msg": "VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"error\"}"
     },
     {
-      "time": "2026-03-28 13:10:46",
+      "time": "2026-03-28 13:57:14",
       "level": "error",
-      "msg": "VLM 报告 (传感器事件触发): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"typ"
+      "msg": "VLM 报告 (帧差检测（diff=0.831）): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disable"
     },
     {
-      "time": "2026-03-28 13:15:49",
+      "time": "2026-03-28 14:02:18",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-28 13:15:52",
+      "time": "2026-03-28 14:02:21",
       "level": "error",
       "msg": "VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"error\"}"
     },
     {
-      "time": "2026-03-28 13:15:52",
+      "time": "2026-03-28 14:02:21",
       "level": "error",
-      "msg": "VLM 报告 (传感器事件触发): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"typ"
+      "msg": "VLM 报告 (帧差检测（diff=0.291）): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disable"
     },
     {
-      "time": "2026-03-28 13:20:55",
+      "time": "2026-03-28 14:07:24",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-28 13:21:00",
+      "time": "2026-03-28 14:07:30",
       "level": "error",
       "msg": "VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"error\"}"
     },
     {
-      "time": "2026-03-28 13:21:00",
+      "time": "2026-03-28 14:07:30",
       "level": "error",
-      "msg": "VLM 报告 (传感器事件触发): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"typ"
+      "msg": "VLM 报告 (帧差检测（diff=0.842）): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disable"
     },
     {
-      "time": "2026-03-28 13:26:03",
+      "time": "2026-03-28 14:12:34",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-28 13:26:09",
+      "time": "2026-03-28 14:12:36",
       "level": "error",
       "msg": "VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"error\"}"
     },
     {
-      "time": "2026-03-28 13:26:09",
+      "time": "2026-03-28 14:12:36",
+      "level": "error",
+      "msg": "VLM 报告 (帧差检测（diff=0.368）): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disable"
+    },
+    {
+      "time": "2026-03-28 14:17:39",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-28 14:17:42",
+      "level": "error",
+      "msg": "VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"error\"}"
+    },
+    {
+      "time": "2026-03-28 14:17:42",
+      "level": "error",
+      "msg": "VLM 报告 (帧差检测（diff=0.838）): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disable"
+    },
+    {
+      "time": "2026-03-28 14:22:44",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-28 14:22:47",
+      "level": "error",
+      "msg": "VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"type\": \"error\"}"
+    },
+    {
+      "time": "2026-03-28 14:22:47",
       "level": "error",
       "msg": "VLM 报告 (传感器事件触发): VLM 分析失败: {\"error\": {\"type\": \"Forbidden\", \"message\": \"consumer is disabled\"}, \"typ"
+    },
+    {
+      "time": "2026-03-28 14:27:50",
+      "level": "info",
+      "msg": "开始巡查..."
     }
   ],
   "error_trend": {
-    "2026-03-28": 8
+    "2026-03-28": 30
   },
   "honey": [
     {
