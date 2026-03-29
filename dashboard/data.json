@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-30T05:11:45.807563",
+  "generated_at": "2026-03-30T06:12:21.822328",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -8,9 +8,9 @@
         "name": "dancer",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": null,
+        "last_run": "2026-03-30T06:12:21.752620",
         "last_run_duration": null,
-        "total_runs": 0,
+        "total_runs": 1,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -19,9 +19,9 @@
         "name": "guard",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": null,
+        "last_run": "2026-03-30T06:12:20.587680",
         "last_run_duration": null,
-        "total_runs": 0,
+        "total_runs": 2,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-03-30T05:11:45.254473",
+        "last_run": "2026-03-30T06:12:20.586520",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -52,9 +52,9 @@
         "name": "builder",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": null,
+        "last_run": "2026-03-30T06:12:21.753327",
         "last_run_duration": null,
-        "total_runs": 0,
+        "total_runs": 1,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -70,20 +70,86 @@
   },
   "bees": {},
   "events": {
-    "total": 727,
+    "total": 733,
     "recent_500": 500,
-    "today": 1,
+    "today": 7,
     "by_type": {
-      "feishu_sent": 329,
-      "scene_report": 169,
+      "feishu_sent": 331,
+      "scene_report": 167,
       "emergency": 2
     },
     "by_source": {
-      "dancer": 329,
-      "scout": 169,
+      "dancer": 331,
+      "scout": 167,
       "guard": 2
     },
     "last_10": [
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】  \n画面中无人。未见任何真实活人，沙发靠垫、椅上衣物、书架阴影等均非人物。\n\n【状态评估】  \n无人员活动，环境静止，无异常。\n\n【环境检查】  \n客厅/卧室温湿度舒适（23°C/68%），主卧略干（57%），建议主卧加湿。室外阴冷（9.8°C），需注意保暖。\n\n【提醒事项】  \n周一18:30体能课，距今仅2分钟，小宝应已到家，建议催促准备出门。门锁显示20:56有人开锁，暂无需操作。\n\n【建议】  \n确认小宝是否已由姥姥接回并准备上课；若无人在家，建议检查门窗安全；主卧可开启加湿器。  \n\n（注：严格遵循“宁漏勿错”原则，画面无明确人形，故不臆测。）",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-30T06:12:20.513332"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "帧差无变化，家里一切正常",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-30T06:02:12.483151"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "帧差无变化，家里一切正常",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-30T05:52:08.326849"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "帧差无变化，家里一切正常",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-30T05:42:04.366946"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "帧差无变化，家里一切正常",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-30T05:32:00.174232"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "帧差无变化，家里一切正常",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-30T05:21:56.272937"
+      },
       {
         "source": "dancer",
         "type": "feishu_sent",
@@ -127,72 +193,6 @@
         },
         "dance": "waggle",
         "timestamp": "2026-03-29T18:54:43.794261"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 深色上衣、长发女性背影，坐于地毯前 | GUESS: 小冰（妈妈）  \nPERSON_FEATURE: 深色上衣、短发男性，坐于书桌前 | GUESS: 晓峰（爸爸）  \n（画面中仅2人，沙发靠垫、椅上衣物、玩偶非人，不计入）\n\n【状态评估】  \n小冰陪小宝在地毯活动，晓峰在书桌工作，状态正常，无异常行为。\n\n【环境检查】  \n客厅/卧室温湿度舒适（22°C/62%），主卧略暖（23.5°C），建议主卧空调调至22°C。\n\n【提醒事项】  \n⚠️ 21点降雨概率43%，风速16.2km/h，提醒关窗、收阳台衣物。  \n今日周日，无课外课，无需课程提醒。\n\n【建议】  \n可开启客厅加湿器维持湿度，小宝活动区建议清理散落玩具防绊倒。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-29T18:54:42.325824"
-      },
-      {
-        "source": "dancer",
-        "type": "feishu_sent",
-        "intensity": "normal",
-        "payload": {
-          "text": "🦞 18:47 巡查报告\n【巡查报告】  \n1. 【在家人员】画面中无人。沙发靠垫、椅子衣物、地毯玩具均为非生命体，无真实活人可见。  \n2. 【状态评估】无人员活动，环境静止，无异常。  \n3. 【",
-          "target": "oc_0d05b57b946873e545decd16231e6dc7"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-29T18:49:33.022545"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【巡查报告】  \n1. 【在家人员】画面中无人。沙发靠垫、椅子衣物、地毯玩具均为非生命体，无真实活人可见。  \n2. 【状态评估】无人员活动，环境静止，无异常。  \n3. 【环境检查】客厅/卧室温湿度22°C/62%，舒适；主卧23.5°C/55%，略干，可酌情加湿。  \n4. 【提醒事项】周日无课外课；21点降水概率43%，建议关窗；室外风速16.2km/h，注意关窗防风。  \n5. 【建议】小宝可能在其他房间，建议主动呼叫确认；主卧可开启加湿器优化舒适度。  \n\n——龙虾管家🦞 2026/03/29 18:47",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-29T18:49:31.511175"
-      },
-      {
-        "source": "dancer",
-        "type": "feishu_sent",
-        "intensity": "normal",
-        "payload": {
-          "text": "🦞 18:42 巡查报告\n【在家人员】\nPERSON_FEATURE: 穿白色上衣、深色裤子的成年女性，跪地整理地面物品，中长发，体态年轻 | GUESS: 小冰\nPERSON_FEATURE: 穿深",
-          "target": "oc_0d05b57b946873e545decd16231e6dc7"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-29T18:44:23.174649"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】\nPERSON_FEATURE: 穿白色上衣、深色裤子的成年女性，跪地整理地面物品，中长发，体态年轻 | GUESS: 小冰\nPERSON_FEATURE: 穿深色上衣的5岁男孩，蹲在彩色地垫上玩玩具 | GUESS: 小宝\n\n【状态评估】小冰在整理地面，小宝专注玩耍，状态正常。\n\n【环境检查】室内温湿度舒适（22°C/62%），无需调整。\n\n【提醒事项】21点降水概率43%，建议关窗；今晚无课外课，无需提醒课程。\n\n【建议】大风18km/h，建议检查窗户是否关严；小宝独自玩耍，可适时陪伴互动。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-29T18:44:21.694348"
-      },
-      {
-        "source": "dancer",
-        "type": "feishu_sent",
-        "intensity": "normal",
-        "payload": {
-          "text": "🦞 18:37 巡查报告\n【在家人员】  \nPERSON_FEATURE: 深色上衣、深色长裤、短发、男性背影 | GUESS: 晓峰  \nPERSON_FEATURE: 浅色上衣、中年女性、短发、坐",
-          "target": "oc_0d05b57b946873e545decd16231e6dc7"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-29T18:39:13.252247"
       }
     ]
   },
@@ -202,21 +202,21 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 1.6,
+    "log_size_kb": 7.2,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
       "habits_discovered": 1,
       "total_observations": 0,
-      "log_entries": 803,
+      "log_entries": 805,
       "devices": 117,
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
     "last_patrol_lines": [
-      "  ❌ 同步异常: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/xiaofengShi/lobster_home/contents/dashboard/data.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10faa2810>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))",
-      "[2026-03-30 05:01:41] [hive.queen] [info] run_all 完成，全部正常",
+      "   ✅ builder: ready (跑了0次)",
+      "[2026-03-30 06:02:12] [hive.queen] [info] run_all 完成，全部正常",
       "",
-      "[05:06] 距上次5分钟，间隔10分钟，跳过",
+      "[06:07] 距上次5分钟，间隔10分钟，跳过",
       "  跳过本次巡查"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
@@ -234,6 +234,36 @@
     },
     {
       "time": "2026-03-30 05:11:42",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-30 05:21:53",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-30 05:31:57",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-30 05:42:01",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-30 05:52:05",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-30 06:02:09",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-30 06:12:14",
       "level": "info",
       "msg": "开始巡查..."
     }
