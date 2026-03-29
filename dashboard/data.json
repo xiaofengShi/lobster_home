@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-29T21:40:44.193428",
+  "generated_at": "2026-03-30T05:11:45.807563",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-03-29T21:40:42.227121",
+        "last_run": "2026-03-30T05:11:45.254473",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -70,9 +70,9 @@
   },
   "bees": {},
   "events": {
-    "total": 726,
+    "total": 727,
     "recent_500": 500,
-    "today": 224,
+    "today": 1,
     "by_type": {
       "feishu_sent": 329,
       "scene_report": 169,
@@ -84,6 +84,17 @@
       "guard": 2
     },
     "last_10": [
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "帧差无变化，家里一切正常",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-30T05:11:45.804604"
+      },
       {
         "source": "dancer",
         "type": "feishu_sent",
@@ -182,17 +193,6 @@
         },
         "dance": "waggle",
         "timestamp": "2026-03-29T18:39:13.252247"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 深色上衣、深色长裤、短发、男性背影 | GUESS: 晓峰  \nPERSON_FEATURE: 浅色上衣、中年女性、短发、坐桌前 | GUESS: 姥姥（⚠️需注意：小冰也可能坐桌前，但体型偏瘦年轻者为小冰，此处体型偏壮实更符合姥姥特征）  \n\n【状态评估】  \n两人在书桌前互动，疑似辅导或整理物品，状态正常，无异常行为。  \n\n【环境检查】  \n室内温湿度舒适（22°C/63%），无需调整空调。  \n\n【提醒事项】  \n21点降水概率43%，建议关窗；风速18km/h，建议检查阳台门窗。  \n\n【建议】  \n周末可安排家庭活动；若小宝在旁玩耍，建议确认其安全距离。  \n\n（画面中未见小宝、小冰、姥爷，不强行推断）",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-29T18:39:11.873631"
       }
     ]
   },
@@ -202,7 +202,7 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 229.6,
+    "log_size_kb": 1.6,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
@@ -213,118 +213,33 @@
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
     "last_patrol_lines": [
-      "  跳过本次巡查",
-      "[21:35] 休息时段，跳过",
-      "  跳过本次巡查",
-      "[21:40] 休息时段，跳过",
+      "  ❌ 同步异常: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/xiaofengShi/lobster_home/contents/dashboard/data.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10faa2810>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))",
+      "[2026-03-30 05:01:41] [hive.queen] [info] run_all 完成，全部正常",
+      "",
+      "[05:06] 距上次5分钟，间隔10分钟，跳过",
       "  跳过本次巡查"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
     {
-      "time": "2026-03-29 17:53:09",
+      "time": "2026-03-30 05:01:35",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-03-29 17:58:13",
-      "level": "info",
-      "msg": "开始巡查..."
+      "time": "2026-03-30 05:01:41",
+      "level": "error",
+      "msg": "nodename nor servname provided, or not known'))"
     },
     {
-      "time": "2026-03-29 18:03:17",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-29 18:08:21",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-29 18:13:26",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-29 18:18:30",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-29 18:23:39",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-29 18:28:43",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-29 18:33:55",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-29 18:38:48",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-29 18:39:06",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-29 18:44:15",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-29 18:49:25",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-29 18:54:35",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-29 18:59:46",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-29 20:29:23",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-29 21:00:00",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-29 21:10:44",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-29 21:20:44",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-29 21:40:42",
+      "time": "2026-03-30 05:11:42",
       "level": "info",
       "msg": "开始巡查..."
     }
   ],
   "error_trend": {
-    "2026-03-29": 97
+    "2026-03-30": 1
   },
   "honey": [
     {
