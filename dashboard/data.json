@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-30T13:25:12.794359",
+  "generated_at": "2026-03-30T14:26:51.125707",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-03-30T13:25:12.018779",
+        "last_run": "2026-03-30T14:26:50.205462",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -70,17 +70,17 @@
   },
   "bees": {},
   "events": {
-    "total": 855,
+    "total": 868,
     "recent_500": 500,
-    "today": 129,
+    "today": 142,
     "by_type": {
-      "feishu_sent": 345,
-      "scene_report": 153,
+      "feishu_sent": 350,
+      "scene_report": 148,
       "emergency": 2
     },
     "by_source": {
-      "dancer": 345,
-      "scout": 153,
+      "dancer": 350,
+      "scout": 148,
       "guard": 2
     },
     "last_10": [
@@ -93,7 +93,7 @@
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-30T13:25:12.657099"
+        "timestamp": "2026-03-30T14:26:50.987798"
       },
       {
         "source": "dancer",
@@ -104,7 +104,29 @@
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-30T13:20:05.843087"
+        "timestamp": "2026-03-30T14:21:43.612241"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "🦞 14:13 巡查报告\n【在家人员】  \n画面中无人。沙发上的靠垫、地毯、玩具箱、桌椅均为静物，无真实活人活动迹象。\n【状态评估】  \n环境安静，无异常活动，符合工作日午后姥姥可能外出采购或处理事务",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-30T14:16:38.501579"
+      },
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】  \n画面中无人。沙发上的靠垫、地毯、玩具箱、桌椅均为静物，无真实活人活动迹象。\n\n【状态评估】  \n环境安静，无异常活动，符合工作日午后姥姥可能外出采购或处理事务的常态。\n\n【环境检查】  \n客厅22.0°C/56%湿度，舒适；卧室略干（47%），主卧更干（40%），建议开启加湿器。室外阴天17.6°C，风速7km/h，建议关窗防风。\n\n【提醒事项】  \n17:00姥姥需接小宝，距今2小时43分，暂无需提醒。周一18:30有体能课，可提前30分钟提醒准备。\n\n【建议】  \n确认姥姥外出时门锁已关闭（当前门锁close，安全）。若小宝17:30到家前无人，建议提前开启客厅灯光或播放轻音乐营造温馨氛围。",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-30T14:16:36.581052"
       },
       {
         "source": "dancer",
@@ -115,7 +137,7 @@
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-30T13:14:55.739352"
+        "timestamp": "2026-03-30T14:11:28.686237"
       },
       {
         "source": "dancer",
@@ -126,73 +148,51 @@
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-30T13:09:51.490562"
+        "timestamp": "2026-03-30T14:06:24.361845"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 13:02 巡查报告\n【在家人员】  \n画面中无人。沙发上的靠垫、地毯、玩具、桌椅均为静物，无任何可确认的活人轮廓。\n【状态评估】  \n环境安静，无异常活动。小宝尚未放学（17:30到家），姥姥暂",
+          "text": "帧差无变化，家里一切正常",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-30T13:04:45.812036"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \n画面中无人。沙发上的靠垫、地毯、玩具、桌椅均为静物，无任何可确认的活人轮廓。\n\n【状态评估】  \n环境安静，无异常活动。小宝尚未放学（17:30到家），姥姥暂未出门接人（17:00），当前时段符合“家中无人”预期。\n\n【环境检查】  \n客厅22°C/60%湿度，体感舒适；卧室略干（43%），建议开启加湿器。室外阴天微风，无需关窗。\n\n【提醒事项】  \n17:00姥姥需接小宝，距今3h55m，暂无需提醒。今日周一有18:30体能课，建议18:00提醒准备。\n\n【建议】  \n可启动扫地机器人清洁地板，避免小宝回家后玩耍沾灰。保持客厅整洁，预防绊倒风险。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-30T13:04:44.094252"
+        "timestamp": "2026-03-30T14:01:10.166444"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 12:57 巡查报告\n【在家人员】  \nPERSON_FEATURE: 粉色格子上衣、短发、中年女性，坐于白色书桌前操作物品 | GUESS: 姥姥（符合门锁记录+年龄体态特征）\n【状态评估】  ",
+          "text": "帧差无变化，家里一切正常",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-30T12:59:32.514170"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 粉色格子上衣、短发、中年女性，坐于白色书桌前操作物品 | GUESS: 姥姥（符合门锁记录+年龄体态特征）\n\n【状态评估】  \n姥姥正专注处理桌面物品，状态正常，无异常行为。\n\n【环境检查】  \n客厅22°C/62%湿度，舒适；卧室稍干（42%），建议加湿。室外阴天17°C，风速5.2km/h，无需关窗。\n\n【提醒事项】  \n17:00姥姥需接小宝，距今4小时，暂无需提醒。周一18:30有体能课，可提前30分钟提醒准备。\n\n【建议】  \n可开启卧室加湿器；姥姥久坐建议每小时起身活动。画面中无其他人，无需额外关注。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-30T12:59:30.922658"
+        "timestamp": "2026-03-30T13:56:05.607435"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 12:52 巡查报告\n【在家人员】  \n画面中无人。未见任何可确认的活人，沙发靠垫、玩具、衣物等均非人物。\n【状态评估】  \n无人员活动，环境静止，状态正常。\n【环境检查】  \n客厅22.0°C/",
+          "text": "帧差无变化，家里一切正常",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-30T12:54:18.942322"
+        "timestamp": "2026-03-30T13:51:01.300561"
       },
       {
-        "source": "scout",
-        "type": "scene_report",
+        "source": "dancer",
+        "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "report": "【在家人员】  \n画面中无人。未见任何可确认的活人，沙发靠垫、玩具、衣物等均非人物。\n\n【状态评估】  \n无人员活动，环境静止，状态正常。\n\n【环境检查】  \n客厅22.0°C/65%湿度，舒适；卧室23.0°C/42%湿度，略干，建议加湿；主卧23.1°C/45%，正常。无需立即调整。\n\n【提醒事项】  \n17:00姥姥需接小宝，距今4小时5分，暂不提醒。今日周一有18:30体能课，建议18:00提醒准备。室外阴天17°C，风速5.2km/h，无降雨，无需关窗。\n\n【建议】  \n可开启客厅加湿器提升舒适度；确认小宝放学路线安全，提前10分钟提醒姥姥出门。\n\n（注：门锁记录显示姥姥今日多次出入，但当前画面未见其身影，属正常活动间隙。）",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
+          "text": "帧差无变化，家里一切正常",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-30T12:54:17.319771"
+        "timestamp": "2026-03-30T13:45:53.635638"
       }
     ]
   },
@@ -202,13 +202,13 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 106.9,
+    "log_size_kb": 118.4,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
       "habits_discovered": 1,
       "total_observations": 0,
-      "log_entries": 889,
+      "log_entries": 893,
       "devices": 117,
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
@@ -217,71 +217,11 @@
       "   ✅ scout: ready (跑了1次)",
       "   ✅ nurse: ready (跑了0次)",
       "   ✅ builder: ready (跑了0次)",
-      "[2026-03-30 13:20:05] [hive.queen] [info] run_all 完成，全部正常"
+      "[2026-03-30 14:21:44] [hive.queen] [info] run_all 完成，全部正常"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
-    {
-      "time": "2026-03-30 11:47:06",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-30 11:52:19",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-30 11:57:29",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-30 12:02:35",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-30 12:07:39",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-30 12:12:49",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-30 12:17:52",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-30 12:23:01",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-30 12:28:17",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-30 12:33:39",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-30 12:38:45",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-30 12:43:49",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
     {
       "time": "2026-03-30 12:48:59",
       "level": "info",
@@ -319,6 +259,66 @@
     },
     {
       "time": "2026-03-30 13:25:07",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-30 13:30:19",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-30 13:35:31",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-30 13:40:35",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-30 13:45:46",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-30 13:50:54",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-30 13:56:02",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-30 14:01:06",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-30 14:06:10",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-30 14:11:25",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-30 14:16:29",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-30 14:21:40",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-30 14:26:45",
       "level": "info",
       "msg": "开始巡查..."
     }
