@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-31T08:03:55.382223",
+  "generated_at": "2026-03-31T09:06:44.162285",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -8,7 +8,7 @@
         "name": "dancer",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-03-31T08:03:55.378766",
+        "last_run": "2026-03-31T09:06:44.094292",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -19,7 +19,7 @@
         "name": "guard",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-03-31T08:03:52.487466",
+        "last_run": "2026-03-31T09:06:41.592789",
         "last_run_duration": null,
         "total_runs": 2,
         "error_count": 0,
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-03-31T08:03:52.484750",
+        "last_run": "2026-03-31T09:06:41.590616",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -52,7 +52,7 @@
         "name": "builder",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-03-31T08:03:55.379411",
+        "last_run": "2026-03-31T09:06:44.095023",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -70,17 +70,17 @@
   },
   "bees": {},
   "events": {
-    "total": 969,
+    "total": 992,
     "recent_500": 500,
-    "today": 34,
+    "today": 57,
     "by_type": {
-      "feishu_sent": 355,
-      "scene_report": 143,
+      "feishu_sent": 345,
+      "scene_report": 153,
       "emergency": 2
     },
     "by_source": {
-      "dancer": 355,
-      "scout": 143,
+      "dancer": 345,
+      "scout": 153,
       "guard": 2
     },
     "last_10": [
@@ -89,110 +89,110 @@
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 08:02 巡查报告\n【在家人员】  \nPERSON_FEATURE: 短发男性，穿浅色上衣+牛仔裤，弯腰在书桌前整理物品 | GUESS: 晓峰（36岁男主人，符合工作日早晨在家特征）\n【状态评",
+          "text": "🦞 09:02 巡查报告\n【在家人员】  \nPERSON_FEATURE: 深色短裤+赤脚，站在玄关地垫上，背对镜头，身形偏瘦 | GUESS: 姥姥（根据08:12门锁记录已确认到家，体型符合中老年",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-31T08:03:54.022275"
+        "timestamp": "2026-03-31T09:06:43.232304"
+      },
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】  \nPERSON_FEATURE: 深色短裤+赤脚，站在玄关地垫上，背对镜头，身形偏瘦 | GUESS: 姥姥（根据08:12门锁记录已确认到家，体型符合中老年女性特征，非小冰或晓峰）  \n\n【状态评估】  \n姥姥刚到家不久，正在玄关换鞋或整理，状态正常，无异常动作。  \n\n【环境检查】  \n客厅/卧室温湿度舒适（22°C/59%），主卧略干（49%），可考虑加湿；室外多云微凉，无需开窗。  \n\n【提醒事项】  \n今天周二，19:30有英语课，建议18:30提醒准备；小宝17:00放学，姥姥需准时出门接，当前时间尚早，暂无需提醒。  \n\n【建议】  \n玄关区域玩具散落，建议稍后整理以防绊倒；主卧可开启加湿器提升舒适度。  \n\n（画面中仅1人，无其他活人，沙发靠垫/衣物/玩具均未误判）",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-31T09:06:41.580781"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 08:02 巡查报告\n【在家人员】  \nPERSON_FEATURE: 短发男性，穿浅色上衣、深色裤，弯腰在书桌前整理物品 | GUESS: 晓峰（符合36岁男性特征，且周二早8点在家合理）  \n",
+          "text": "帧差无变化，家里一切正常",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-31T08:03:54.007274"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 短发男性，穿浅色上衣、深色裤，弯腰在书桌前整理物品 | GUESS: 晓峰（符合36岁男性特征，且周二早8点在家合理）  \n\n【状态评估】  \n晓峰在书桌前整理物品，动作正常，无异常行为。  \n\n【环境检查】  \n客厅22°C/70%湿度，略潮湿；卧室22°C/57%湿度，舒适；主卧23°C/50%湿度，适宜。建议客厅开窗或除湿机除湿。  \n\n【提醒事项】  \n今天周二，19:30有英语课，建议18:30提醒家人准备。室外阴天8.4°C，建议出门添衣。  \n\n【建议】  \n客厅湿度偏高，建议开启除湿或通风；书桌区域略杂乱，可协助整理。  \n\n（画面中仅1人，无小宝、无女性，符合周二上午仅晓峰在家的推断）",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-31T08:03:52.446701"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 短发男性，穿浅色上衣+牛仔裤，弯腰在书桌前整理物品 | GUESS: 晓峰（36岁男主人，符合工作日早晨在家特征）\n\n【状态评估】  \n晓峰正在整理书桌，动作自然，无异常。\n\n【环境检查】  \n客厅湿度70%偏高，建议开窗或除湿；卧室/主卧温湿度正常，舒适。\n\n【提醒事项】  \n今日周二，19:30有英语课，建议18:30提醒准备。室外阴天8.4°C，较凉，出门需添衣。\n\n【建议】  \n建议开启客厅除湿或通风；晓峰若需出门，可检查门锁状态（当前已锁）。沙发衣物建议收纳，避免绊倒。\n\n（画面中仅1人，无小宝/姥姥/小冰，符合07:30-17:00仅姥姥在家的推断，但姥姥未出现在画面，不报告）",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-31T08:03:52.388837"
+        "timestamp": "2026-03-31T09:01:32.811732"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 07:57 巡查报告\n【在家人员】  \nPERSON_FEATURE: 绿色上衣、深色裤子、短发幼童，体型矮小 | GUESS: 小宝（5岁）  \n（画面深处门口处可见1人，背影+衣着模糊，无法确",
+          "text": "帧差无变化，家里一切正常",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-31T07:59:43.775256"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 绿色上衣、深色裤子、短发幼童，体型矮小 | GUESS: 小宝（5岁）  \n（画面深处门口处可见1人，背影+衣着模糊，无法确认性别年龄，暂不报告）\n\n【状态评估】  \n小宝在客厅活动，状态正常。门口人影未确认身份，无异常行为。\n\n【环境检查】  \n客厅22°C/67%湿度舒适，卧室/主卧温湿度正常，无需调整。\n\n【提醒事项】  \n今天周二，19:30有英语课，建议18:30提醒准备。室外小雨8.3°C，若无人在家需关窗，但当前小宝在内，暂安全。\n\n【建议】  \n建议确认门口人员身份（如为姥姥可放心），并检查小宝是否已准备出门上幼儿园（7:30应出发，现7:57略晚）。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-31T07:59:42.311271"
+        "timestamp": "2026-03-31T08:56:28.556343"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 07:52 巡查报告\n【在家人员】\nPERSON_FEATURE: 男性，短发，深色T恤短裤，背对镜头看手机 | GUESS: 晓峰\nPERSON_FEATURE: 男性，浅灰卫衣牛仔裤，正整理头",
+          "text": "帧差无变化，家里一切正常",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-31T07:54:34.234005"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】\nPERSON_FEATURE: 男性，短发，深色T恤短裤，背对镜头看手机 | GUESS: 晓峰\nPERSON_FEATURE: 男性，浅灰卫衣牛仔裤，正整理头发 | GUESS: 晓峰（⚠️ 重复？或另一男性？但画面仅2男，无女性/幼童清晰可见）\nPERSON_FEATURE: 门口处女性，中老年体型，穿黄衣抱幼童 | GUESS: 姥姥 + 小宝（⚠️ 小宝身高矮，符合；姥姥体型偏壮，符合）\n\n【状态评估】全员活动正常，无异常行为。\n\n【环境检查】室内温湿度舒适，无需调整。\n\n【提醒事项】今日周二19:30有英语课，建议18:50提醒准备。室外小雨，若有人外出请带伞。\n\n【建议】请确认门口幼童是否为小宝，若属实，建议7:30前出门上幼儿园，当前已超时2分钟。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-31T07:54:32.645895"
+        "timestamp": "2026-03-31T08:51:24.832817"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 07:47 巡查报告\n【在家人员】  \nPERSON_FEATURE: 年轻女性，中长发，浅色上衣，弯腰抱幼童 | GUESS: 小冰（妈妈）  \nPERSON_FEATURE: 5岁男孩，深色衣",
+          "text": "🦞 08:43 巡查报告\n【在家人员】  \nPERSON_FEATURE: 女性，长发，穿浅色上衣，坐书桌前进食 | GUESS: 小冰（30多岁年轻女性，符合坐桌前特征，且门锁显示姥姥08:12到家",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-31T07:49:23.206845"
+        "timestamp": "2026-03-31T08:46:20.316038"
       },
       {
         "source": "scout",
         "type": "scene_report",
         "intensity": "normal",
         "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 年轻女性，中长发，浅色上衣，弯腰抱幼童 | GUESS: 小冰（妈妈）  \nPERSON_FEATURE: 5岁男孩，深色衣裤，被抱着 | GUESS: 小宝  \n\n【状态评估】  \n小冰正抱小宝在玄关处，疑似准备出门，状态正常。  \n\n【环境检查】  \n室内温湿度舒适（22°C/56%），无需调整。室外小雨8.3°C，建议出门带伞。  \n\n【提醒事项】  \n今天周二，19:30有英语课，建议18:30提醒准备。小宝7:30应出门上幼儿园，当前7:47略晚，建议催促。  \n\n【建议】  \n出门前检查门锁（当前已关），带雨具。小宝若未吃早餐，建议先补充能量再出门。",
+          "report": "【在家人员】  \nPERSON_FEATURE: 女性，长发，穿浅色上衣，坐书桌前进食 | GUESS: 小冰（30多岁年轻女性，符合坐桌前特征，且门锁显示姥姥08:12到家，小冰可能在家）\n\n【状态评估】  \n小冰在桌前安静进食，状态正常，无异常行为。\n\n【环境检查】  \n室内22°C/59%湿度，舒适；室外阴天9.3°C，温差较大，建议关闭窗户防寒。\n\n【提醒事项】  \n今天周二，19:30有英语课，建议18:30提醒准备。姥姥08:12已到家，当前未见其身影，可稍后确认动向。\n\n【建议】  \n建议小冰用餐后整理桌面杂物，避免堆积；空调可维持当前温度，无需调整。",
           "image_path": "/tmp/home_patrol_snapshot.jpg"
         },
         "dance": "waggle",
-        "timestamp": "2026-03-31T07:49:21.651630"
+        "timestamp": "2026-03-31T08:46:18.716557"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "🦞 08:38 巡查报告\n【在家人员】  \nPERSON_FEATURE: 穿浅色上衣、深色裤子，短发中年女性，背对镜头站在玄关 | GUESS: 姥姥（门锁08:12确认到家，符合07:30-17:",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-31T08:41:10.127872"
+      },
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】  \nPERSON_FEATURE: 穿浅色上衣、深色裤子，短发中年女性，背对镜头站在玄关 | GUESS: 姥姥（门锁08:12确认到家，符合07:30-17:00独在家时段）\n\n【状态评估】  \n姥姥刚到家，正整理玄关物品，状态正常，无异常行为。\n\n【环境检查】  \n室内温湿度舒适（22°C/58-59%），无需调整空调或加湿。\n\n【提醒事项】  \n今日周二，19:30有英语课，建议18:50提醒准备。室外阴天9°C，风小，无需关窗。\n\n【建议】  \n姥姥独处期间可开启“静音巡查”模式，每30分钟自动确认活动状态，保障安全。",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-31T08:41:08.548319"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "🦞 08:33 巡查报告\n【在家人员】  \nPERSON_FEATURE: 女性，长发，穿白色上衣、牛仔裤，坐桌前照镜化妆 | GUESS: 小冰（30多岁年轻女性，符合外貌+活动特征）  \n【状态评",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-03-31T08:35:59.494516"
       }
     ]
   },
@@ -202,91 +202,26 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 29.8,
+    "log_size_kb": 48.3,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
       "habits_discovered": 1,
       "total_observations": 0,
-      "log_entries": 949,
+      "log_entries": 969,
       "devices": 117,
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
     "last_patrol_lines": [
-      "   ✅ guard: ready (跑了2次)",
       "   ✅ scout: ready (跑了1次)",
       "   ✅ nurse: ready (跑了0次)",
-      "   ✅ builder: ready (跑了1次)",
-      "[2026-03-31 07:59:45] [hive.queen] [info] run_all 完成，全部正常"
+      "   ✅ builder: ready (跑了0次)",
+      "  📰 日报尚未生成",
+      "[2026-03-31 09:01:33] [hive.queen] [info] run_all 完成，全部正常"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
-    {
-      "time": "2026-03-31 06:02:38",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-31 06:12:46",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-31 06:22:55",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-31 06:33:01",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-31 06:43:05",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-31 06:53:10",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-31 07:03:14",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-31 07:08:21",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-31 07:13:25",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-31 07:18:33",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-31 07:23:36",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-31 07:28:41",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-03-31 07:33:51",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
     {
       "time": "2026-03-31 07:38:55",
       "level": "info",
@@ -319,6 +254,71 @@
     },
     {
       "time": "2026-03-31 08:03:39",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-31 08:04:45",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-31 08:09:56",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-31 08:15:06",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-31 08:20:16",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-31 08:25:26",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-31 08:30:36",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-31 08:35:50",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-31 08:41:01",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-31 08:46:12",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-31 08:51:22",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-31 08:56:25",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-31 09:01:29",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-03-31 09:06:34",
       "level": "info",
       "msg": "开始巡查..."
     }
