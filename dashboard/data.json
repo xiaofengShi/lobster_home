@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-02T10:06:14.225145",
+  "generated_at": "2026-04-02T11:13:30.272840",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-04-02T10:06:12.871185",
+        "last_run": "2026-04-02T11:13:28.025421",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -70,20 +70,31 @@
   },
   "bees": {},
   "events": {
-    "total": 1155,
+    "total": 1156,
     "recent_500": 500,
-    "today": 0,
+    "today": 1,
     "by_type": {
-      "feishu_sent": 346,
-      "scene_report": 152,
+      "feishu_sent": 347,
+      "scene_report": 151,
       "emergency": 2
     },
     "by_source": {
-      "dancer": 346,
-      "scout": 152,
+      "dancer": 347,
+      "scout": 151,
       "guard": 2
     },
     "last_10": [
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "📰 今天的 AI 日报已生成：🚀 每日 AI 热点汇总｜2026-04-02\n\n🦞 感知到你不在家，飞书发你方便查看。下面还有语音摘要～",
+          "target": "ou_a9ca7506b002b1be36148b97d622d551"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-04-02T10:06:18.550793"
+      },
       {
         "source": "dancer",
         "type": "feishu_sent",
@@ -182,17 +193,6 @@
         },
         "dance": "waggle",
         "timestamp": "2026-03-31T18:32:14.182894"
-      },
-      {
-        "source": "dancer",
-        "type": "feishu_sent",
-        "intensity": "normal",
-        "payload": {
-          "text": "帧差无变化，家里一切正常",
-          "target": "oc_0d05b57b946873e545decd16231e6dc7"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-31T18:27:08.475824"
       }
     ]
   },
@@ -202,7 +202,7 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 25.7,
+    "log_size_kb": 32.9,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
@@ -213,118 +213,118 @@
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
     "last_patrol_lines": [
+      "   ✅ scout: ready (跑了1次)",
       "   ✅ nurse: ready (跑了0次)",
       "   ✅ builder: ready (跑了0次)",
-      "[2026-04-02 10:01:11] [hive.dancer] [info] 飞书token已缓存",
-      "  📰 日报尚未生成",
-      "[2026-04-02 10:01:11] [hive.queen] [warn] run_all 完成，1步失败: ['anomalies']"
+      "  ❌ 同步异常: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/xiaofengShi/lobster_home/contents/dashboard/data.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
+      "[2026-04-02 11:08:27] [hive.queen] [warn] run_all 完成，1步失败: ['anomalies']"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
     {
-      "time": "2026-04-02 09:20:32",
-      "level": "error",
-      "msg": "异常检测失败: could not convert string to float: 'unavailable'"
-    },
-    {
-      "time": "2026-04-02 09:20:32",
+      "time": "2026-04-02 10:27:34",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-02 09:25:35",
+      "time": "2026-04-02 10:32:37",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-02 09:25:35",
+      "time": "2026-04-02 10:32:37",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-02 09:30:47",
+      "time": "2026-04-02 10:37:39",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-02 09:30:47",
+      "time": "2026-04-02 10:37:39",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-02 09:35:50",
+      "time": "2026-04-02 10:42:42",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-02 09:35:50",
+      "time": "2026-04-02 10:42:42",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-02 09:40:57",
+      "time": "2026-04-02 10:47:45",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-02 09:40:57",
+      "time": "2026-04-02 10:47:45",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-02 09:46:00",
+      "time": "2026-04-02 10:52:48",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-02 09:46:00",
+      "time": "2026-04-02 10:52:48",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-02 09:51:03",
+      "time": "2026-04-02 10:57:51",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-02 09:51:03",
+      "time": "2026-04-02 10:57:51",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-02 09:56:06",
+      "time": "2026-04-02 11:02:53",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-02 09:56:06",
+      "time": "2026-04-02 11:02:53",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-02 10:01:09",
+      "time": "2026-04-02 11:07:55",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-02 10:01:09",
+      "time": "2026-04-02 11:07:55",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-02 10:06:12",
+      "time": "2026-04-02 11:08:17",
+      "level": "error",
+      "msg": "EOF occurred in violation of protocol (_ssl.c:1016)')))"
+    },
+    {
+      "time": "2026-04-02 11:13:28",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-02 10:06:12",
+      "time": "2026-04-02 11:13:28",
       "level": "info",
       "msg": "开始巡查..."
     }
   ],
   "error_trend": {
-    "2026-04-02": 49
+    "2026-04-02": 63
   },
   "honey": [
     {
