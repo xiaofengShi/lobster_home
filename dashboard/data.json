@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-06T09:03:17.551601",
+  "generated_at": "2026-04-06T10:03:58.889002",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-04-06T09:03:16.296817",
+        "last_run": "2026-04-06T10:03:57.759615",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -202,7 +202,7 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 18.8,
+    "log_size_kb": 25.7,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
@@ -213,118 +213,118 @@
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
     "last_patrol_lines": [
-      "   ✅ guard: ready (跑了0次)",
-      "   ✅ scout: ready (跑了1次)",
       "   ✅ nurse: ready (跑了0次)",
       "   ✅ builder: ready (跑了0次)",
-      "[2026-04-06 08:58:14] [hive.queen] [warn] run_all 完成，1步失败: ['anomalies']"
+      "[2026-04-06 09:58:55] [hive.dancer] [info] 飞书token已缓存",
+      "  📰 日报尚未生成",
+      "[2026-04-06 09:58:56] [hive.queen] [warn] run_all 完成，1步失败: ['anomalies']"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
     {
-      "time": "2026-04-06 08:17:55",
+      "time": "2026-04-06 09:18:28",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-06 08:17:55",
+      "time": "2026-04-06 09:18:28",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-06 08:22:58",
+      "time": "2026-04-06 09:23:32",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-06 08:22:58",
+      "time": "2026-04-06 09:23:32",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-06 08:28:00",
+      "time": "2026-04-06 09:28:36",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-06 08:28:00",
+      "time": "2026-04-06 09:28:36",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-06 08:33:01",
+      "time": "2026-04-06 09:33:39",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-06 08:33:01",
+      "time": "2026-04-06 09:33:39",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-06 08:38:03",
+      "time": "2026-04-06 09:38:41",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-06 08:38:03",
+      "time": "2026-04-06 09:38:41",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-06 08:43:07",
+      "time": "2026-04-06 09:43:44",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-06 08:43:07",
+      "time": "2026-04-06 09:43:44",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-06 08:48:09",
+      "time": "2026-04-06 09:48:48",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-06 08:48:09",
+      "time": "2026-04-06 09:48:48",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-06 08:53:11",
+      "time": "2026-04-06 09:53:51",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-06 08:53:11",
+      "time": "2026-04-06 09:53:51",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-06 08:58:13",
+      "time": "2026-04-06 09:58:53",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-06 08:58:13",
+      "time": "2026-04-06 09:58:53",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-06 09:03:16",
+      "time": "2026-04-06 10:03:57",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-06 09:03:16",
+      "time": "2026-04-06 10:03:57",
       "level": "info",
       "msg": "开始巡查..."
     }
   ],
   "error_trend": {
-    "2026-04-06": 37
+    "2026-04-06": 49
   },
   "honey": [
     {
