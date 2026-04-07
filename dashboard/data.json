@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-07T11:06:04.042653",
+  "generated_at": "2026-04-07T12:07:17.826596",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-04-07T11:06:02.872501",
+        "last_run": "2026-04-07T12:06:48.823621",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -202,7 +202,7 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 42.3,
+    "log_size_kb": 51.9,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
@@ -217,114 +217,114 @@
       "   ✅ scout: ready (跑了1次)",
       "   ✅ nurse: ready (跑了0次)",
       "   ✅ builder: ready (跑了0次)",
-      "[2026-04-07 11:01:02] [hive.queen] [warn] run_all 完成，1步失败: ['anomalies']"
+      "[2026-04-07 12:01:48] [hive.queen] [warn] run_all 完成，1步失败: ['anomalies']"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
     {
-      "time": "2026-04-07 10:20:39",
-      "level": "error",
-      "msg": "异常检测失败: could not convert string to float: 'unavailable'"
-    },
-    {
-      "time": "2026-04-07 10:20:39",
+      "time": "2026-04-07 11:46:22",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-07 10:25:42",
+      "time": "2026-04-07 11:51:25",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-07 10:25:42",
+      "time": "2026-04-07 11:51:25",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-07 10:30:44",
+      "time": "2026-04-07 11:56:27",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-07 10:30:44",
+      "time": "2026-04-07 11:56:27",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-07 10:35:47",
+      "time": "2026-04-07 12:00:15",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-07 10:35:47",
+      "time": "2026-04-07 12:00:15",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-07 10:40:50",
+      "time": "2026-04-07 12:00:51",
+      "level": "error",
+      "msg": "天气获取失败(3次重试): 502 Server Error: Bad Gateway for url: https://api.open-meteo.com/v1/forecast?latitude"
+    },
+    {
+      "time": "2026-04-07 12:01:22",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-07 10:40:50",
+      "time": "2026-04-07 12:01:22",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-07 10:45:52",
+      "time": "2026-04-07 12:01:28",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-07 10:45:52",
+      "time": "2026-04-07 12:01:28",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-07 10:50:54",
+      "time": "2026-04-07 12:01:48",
+      "level": "error",
+      "msg": "天气获取失败(3次重试): 429 Client Error: Too Many Requests for url: https://api.open-meteo.com/v1/forecast?la"
+    },
+    {
+      "time": "2026-04-07 12:01:52",
+      "level": "error",
+      "msg": "天气获取失败(3次重试): 429 Client Error: Too Many Requests for url: https://api.open-meteo.com/v1/forecast?la"
+    },
+    {
+      "time": "2026-04-07 12:02:05",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-07 10:50:54",
+      "time": "2026-04-07 12:02:05",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-07 10:55:56",
+      "time": "2026-04-07 12:02:25",
+      "level": "error",
+      "msg": "天气获取失败(3次重试): 502 Server Error: Bad Gateway for url: https://api.open-meteo.com/v1/forecast?latitude"
+    },
+    {
+      "time": "2026-04-07 12:06:48",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-07 10:55:56",
+      "time": "2026-04-07 12:06:48",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-07 11:00:59",
+      "time": "2026-04-07 12:07:17",
       "level": "error",
-      "msg": "异常检测失败: could not convert string to float: 'unavailable'"
-    },
-    {
-      "time": "2026-04-07 11:00:59",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-07 11:06:02",
-      "level": "error",
-      "msg": "异常检测失败: could not convert string to float: 'unavailable'"
-    },
-    {
-      "time": "2026-04-07 11:06:02",
-      "level": "info",
-      "msg": "开始巡查..."
+      "msg": "天气获取失败(3次重试): 502 Server Error: Bad Gateway for url: https://api.open-meteo.com/v1/forecast?latitude"
     }
   ],
   "error_trend": {
-    "2026-04-07": 81
+    "2026-04-07": 102
   },
   "honey": [
     {
