@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-07T17:16:37.655140",
+  "generated_at": "2026-04-07T18:16:52.102541",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-04-07T17:16:11.773468",
+        "last_run": "2026-04-07T18:16:42.573269",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -202,7 +202,7 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 99.3,
+    "log_size_kb": 107.8,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
@@ -217,114 +217,114 @@
       "   ✅ scout: ready (跑了1次)",
       "   ✅ nurse: ready (跑了0次)",
       "   ✅ builder: ready (跑了0次)",
-      "[2026-04-07 17:11:10] [hive.queen] [warn] run_all 完成，1步失败: ['anomalies']"
+      "[2026-04-07 18:11:41] [hive.queen] [warn] run_all 完成，1步失败: ['anomalies']"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
     {
-      "time": "2026-04-07 16:44:04",
+      "time": "2026-04-07 17:43:47",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-07 16:44:04",
+      "time": "2026-04-07 17:43:47",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-07 16:44:12",
+      "time": "2026-04-07 17:44:16",
+      "level": "error",
+      "msg": "天气获取失败(3次重试): 504 Server Error: Gateway Time-out for url: https://api.open-meteo.com/v1/forecast?lat"
+    },
+    {
+      "time": "2026-04-07 17:49:16",
+      "level": "error",
+      "msg": "异常检测失败: could not convert string to float: 'unavailable'"
+    },
+    {
+      "time": "2026-04-07 17:49:16",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-07 17:49:37",
       "level": "error",
       "msg": "EOF occurred in violation of protocol (_ssl.c:1016)')))"
     },
     {
-      "time": "2026-04-07 16:49:13",
+      "time": "2026-04-07 17:54:37",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-07 16:49:13",
+      "time": "2026-04-07 17:54:37",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-07 16:54:37",
-      "level": "error",
-      "msg": "异常检测失败: could not convert string to float: 'unavailable'"
-    },
-    {
-      "time": "2026-04-07 16:54:37",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-07 16:55:07",
+      "time": "2026-04-07 17:55:12",
       "level": "error",
       "msg": "天气获取失败(3次重试): 502 Server Error: Bad Gateway for url: https://api.open-meteo.com/v1/forecast?latitude"
     },
     {
-      "time": "2026-04-07 17:00:09",
+      "time": "2026-04-07 18:00:13",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-07 17:00:09",
+      "time": "2026-04-07 18:00:13",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-07 17:00:39",
+      "time": "2026-04-07 18:00:46",
       "level": "error",
       "msg": "天气获取失败(3次重试): 502 Server Error: Bad Gateway for url: https://api.open-meteo.com/v1/forecast?latitude"
     },
     {
-      "time": "2026-04-07 17:05:40",
+      "time": "2026-04-07 18:05:48",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-07 17:05:40",
+      "time": "2026-04-07 18:05:48",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-07 17:05:48",
-      "level": "error",
-      "msg": "EOF occurred in violation of protocol (_ssl.c:1016)')))"
-    },
-    {
-      "time": "2026-04-07 17:10:50",
-      "level": "error",
-      "msg": "异常检测失败: could not convert string to float: 'unavailable'"
-    },
-    {
-      "time": "2026-04-07 17:10:50",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-07 17:11:10",
+      "time": "2026-04-07 18:06:03",
       "level": "error",
       "msg": "天气获取失败(3次重试): 502 Server Error: Bad Gateway for url: https://api.open-meteo.com/v1/forecast?latitude"
     },
     {
-      "time": "2026-04-07 17:16:11",
+      "time": "2026-04-07 18:11:05",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-07 17:16:11",
+      "time": "2026-04-07 18:11:05",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-07 17:16:37",
+      "time": "2026-04-07 18:11:41",
       "level": "error",
-      "msg": "天气获取失败(3次重试): 502 Server Error: Bad Gateway for url: https://api.open-meteo.com/v1/forecast?latitude"
+      "msg": "天气获取失败(3次重试): 429 Client Error: Too Many Requests for url: https://api.open-meteo.com/v1/forecast?la"
+    },
+    {
+      "time": "2026-04-07 18:16:42",
+      "level": "error",
+      "msg": "异常检测失败: could not convert string to float: 'unavailable'"
+    },
+    {
+      "time": "2026-04-07 18:16:42",
+      "level": "info",
+      "msg": "开始巡查..."
     }
   ],
   "error_trend": {
-    "2026-04-07": 213
+    "2026-04-07": 234
   },
   "honey": [
     {
