@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-08T20:44:51.941227",
+  "generated_at": "2026-04-09T05:03:24.612122",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -8,9 +8,9 @@
         "name": "dancer",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": null,
+        "last_run": "2026-04-09T05:03:24.499827",
         "last_run_duration": null,
-        "total_runs": 0,
+        "total_runs": 1,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -19,9 +19,9 @@
         "name": "guard",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": null,
+        "last_run": "2026-04-09T05:03:23.036299",
         "last_run_duration": null,
-        "total_runs": 0,
+        "total_runs": 2,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-04-08T20:44:50.467684",
+        "last_run": "2026-04-09T05:03:23.035603",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -52,9 +52,9 @@
         "name": "builder",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": null,
+        "last_run": "2026-04-09T05:03:24.500731",
         "last_run_duration": null,
-        "total_runs": 0,
+        "total_runs": 1,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -70,20 +70,31 @@
   },
   "bees": {},
   "events": {
-    "total": 1162,
+    "total": 1163,
     "recent_500": 500,
-    "today": 5,
+    "today": 1,
     "by_type": {
-      "feishu_sent": 349,
-      "scene_report": 149,
+      "feishu_sent": 348,
+      "scene_report": 150,
       "emergency": 2
     },
     "by_source": {
-      "dancer": 349,
-      "scout": 149,
+      "dancer": 348,
+      "scout": 150,
       "guard": 2
     },
     "last_10": [
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】  \nPERSON_FEATURE: 深色短袖+短裤，男性，短发，站立行走中 | GUESS: 晓峰（符合36岁男性特征，22:48在家合理）\n\n【状态评估】  \n晓峰在客厅走动，状态正常，无异常行为。\n\n【环境检查】  \n客厅21°C/69%湿度，舒适；室外小雨低温（10.9°C），建议关窗防潮。\n\n【提醒事项】  \n⚠️ 降雨预警：5-8点降水概率高，若无人在家需关窗收衣（当前有人，暂不触发）。  \n⚠️ 今日周四，无课外课，无需提醒。\n\n【建议】  \n可开启除湿模式维持湿度舒适；建议晓峰检查门窗是否关严，防雨渗入。",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-04-09T05:03:22.905252"
+      },
       {
         "source": "dancer",
         "type": "feishu_sent",
@@ -182,17 +193,6 @@
         },
         "dance": "waggle",
         "timestamp": "2026-03-31T18:58:16.699646"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 深色上衣、浅色马甲、长发女性，站在门口玄关处 | GUESS: 姥姥（符合18:52门锁记录，体型偏壮实，中老年特征）  \n\n【状态评估】  \n姥姥刚进门，正在玄关换鞋或整理物品，状态正常，无异常行为。  \n\n【环境检查】  \n室内温湿度舒适（22°C/49-51%），无需调整空调或加湿器。  \n\n【提醒事项】  \n今天周二，19:30有英语课，建议提前15分钟提醒小宝准备。室外风速7.6km/h，建议检查窗户是否关严。  \n\n【建议】  \n可播放轻音乐营造放松氛围，提醒姥姥稍后准备小宝英语课用品。  \n\n（画面中仅确认1人，无其他活人，无误报风险）",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-03-31T18:58:14.700418"
       }
     ]
   },
@@ -202,130 +202,33 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 81.9,
+    "log_size_kb": 1.4,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
       "habits_discovered": 1,
       "total_observations": 0,
-      "log_entries": 1057,
+      "log_entries": 1059,
       "devices": 117,
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
     "last_patrol_lines": [
       "  跳过本次巡查",
-      "[20:36] 休息时段，跳过",
+      "[04:53] 休息时段，跳过",
       "  跳过本次巡查",
-      "[20:41] 休息时段，跳过",
+      "[04:58] 休息时段，跳过",
       "  跳过本次巡查"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
     {
-      "time": "2026-04-08 18:11:00",
-      "level": "error",
-      "msg": "异常检测失败: could not convert string to float: 'unavailable'"
-    },
-    {
-      "time": "2026-04-08 18:11:00",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-08 18:16:04",
-      "level": "error",
-      "msg": "异常检测失败: could not convert string to float: 'unavailable'"
-    },
-    {
-      "time": "2026-04-08 18:16:04",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-08 18:21:06",
-      "level": "error",
-      "msg": "异常检测失败: could not convert string to float: 'unavailable'"
-    },
-    {
-      "time": "2026-04-08 18:21:06",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-08 18:26:09",
-      "level": "error",
-      "msg": "异常检测失败: could not convert string to float: 'unavailable'"
-    },
-    {
-      "time": "2026-04-08 18:26:09",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-08 18:31:11",
-      "level": "error",
-      "msg": "异常检测失败: could not convert string to float: 'unavailable'"
-    },
-    {
-      "time": "2026-04-08 18:31:11",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-08 18:36:13",
-      "level": "error",
-      "msg": "异常检测失败: could not convert string to float: 'unavailable'"
-    },
-    {
-      "time": "2026-04-08 18:36:13",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-08 18:41:15",
-      "level": "error",
-      "msg": "异常检测失败: could not convert string to float: 'unavailable'"
-    },
-    {
-      "time": "2026-04-08 18:41:15",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-08 18:46:20",
-      "level": "error",
-      "msg": "异常检测失败: could not convert string to float: 'unavailable'"
-    },
-    {
-      "time": "2026-04-08 18:46:20",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-08 18:51:26",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-08 18:56:36",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-08 18:58:25",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-08 20:44:50",
+      "time": "2026-04-09 05:03:16",
       "level": "info",
       "msg": "开始巡查..."
     }
   ],
-  "error_trend": {
-    "2026-04-08": 152
-  },
+  "error_trend": {},
   "honey": [
     {
       "name": "weekly_2026-03-21.md",
