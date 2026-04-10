@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-10T15:12:23.717748",
+  "generated_at": "2026-04-10T16:13:21.092735",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-04-10T15:12:23.648975",
+        "last_run": "2026-04-10T16:13:21.055026",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -70,18 +70,40 @@
   },
   "bees": {},
   "events": {
-    "total": 1281,
+    "total": 1283,
     "recent_500": 500,
-    "today": 73,
+    "today": 75,
     "by_type": {
-      "feishu_sent": 363,
-      "scene_report": 137
+      "feishu_sent": 362,
+      "scene_report": 138
     },
     "by_source": {
-      "dancer": 363,
-      "scout": 137
+      "dancer": 362,
+      "scout": 138
     },
     "last_10": [
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】  \nPERSON_FEATURE: 短发男性，深灰连帽衫+黑色短裤+拖鞋，弯腰整理地面物品 | GUESS: 晓峰（⚠️当前08:57为工作日，晓峰通常已上班，画面中出现需关注是否临时回家）\n\n【状态评估】  \n晓峰在整理地面杂物，动作正常，无异常行为。\n\n【环境检查】  \n客厅21.0°C/68%湿度，舒适；主卧略暖（22.5°C），建议保持通风。室外大风18.9km/h，提醒关窗。\n\n【提醒事项】  \n距17:00接小宝还有51分钟，请提醒姥姥提前准备出门。今日无课外课。\n\n【建议】  \n确认晓峰是否需在家办公，若非必要建议出门；大风天请检查窗户是否关严。",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-04-10T16:08:09.755452"
+      },
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】  \nPERSON_FEATURE: 短发男性，穿灰色连帽衫+黑色短裤，正弯腰整理门口物品 | GUESS: 晓峰（⚠️时间异常：工作日08:57应不在家，可能临时返家或误识别）  \n\n【状态评估】  \n晓峰正在整理玄关区域，动作自然，无异常。  \n\n【环境检查】  \n客厅21°C/68%湿度，舒适；卧室22°C/61%，主卧22.5°C/58%，均适宜。无需调整空调。  \n\n【提醒事项】  \n⚠️ 晓峰此时在家异常（工作日08:57），建议确认是否临时请假。  \n⏰ 距离17:00接小宝还有87分钟，请提醒姥姥提前准备出门。  \n💨 室外风速18.4km/h，建议关窗防风。  \n\n【建议】  \n确认晓峰在家原因；检查玄关杂物是否需收纳；保持通风但注意关窗防风。",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-04-10T15:32:46.758413"
+      },
       {
         "source": "scout",
         "type": "scene_report",
@@ -169,28 +191,6 @@
         },
         "dance": "waggle",
         "timestamp": "2026-04-10T11:28:52.970363"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 短发男性，穿灰色连帽衫+黑色短裤，弯腰整理地面物品 | GUESS: 晓峰（⚠️当前时间08:57为工作日，晓峰通常已上班，画面中出现需关注是否异常）\n\n【状态评估】  \n晓峰正在整理地面杂物，动作自然，无异常行为。\n\n【环境检查】  \n室内温湿度正常（21°C/66%），舒适无需调整；室外晴朗，风速5.2km/h，无极端天气风险。\n\n【提醒事项】  \n⚠️ 晓峰工作日8:57出现在家，与常规通勤时间冲突，建议确认是否居家办公或临时返家。今日无课外课，无需课程提醒。\n\n【建议】  \n建议晓峰确认是否需出门，避免迟到；可开启“离家模式”自动关灯关空调。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-04-10T11:23:49.044394"
-      },
-      {
-        "source": "dancer",
-        "type": "feishu_sent",
-        "intensity": "normal",
-        "payload": {
-          "text": "帧差无变化，家里一切正常",
-          "target": "ou_a9ca7506b002b1be36148b97d622d551"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-04-10T11:18:42.285462"
       }
     ]
   },
@@ -200,86 +200,26 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 96.3,
+    "log_size_kb": 105.9,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
       "habits_discovered": 1,
       "total_observations": 0,
-      "log_entries": 1113,
+      "log_entries": 1117,
       "devices": 117,
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
     "last_patrol_lines": [
-      "   ✅ guard: ready (跑了0次)",
+      "   ✅ guard: ready (跑了2次)",
       "   ✅ scout: ready (跑了1次)",
       "   ✅ nurse: ready (跑了0次)",
-      "   ✅ builder: ready (跑了0次)",
-      "[2026-04-10 15:07:20] [hive.queen] [info] run_all 完成，全部正常"
+      "   ✅ builder: ready (跑了1次)",
+      "[2026-04-10 16:08:10] [hive.queen] [info] run_all 完成，全部正常"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
-    {
-      "time": "2026-04-10 13:35:45",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 13:40:48",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 13:45:50",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 13:50:58",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 13:56:00",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 14:01:04",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 14:06:08",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 14:11:10",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 14:16:14",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 14:21:17",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 14:26:26",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 14:31:28",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
     {
       "time": "2026-04-10 14:36:31",
       "level": "info",
@@ -317,6 +257,66 @@
     },
     {
       "time": "2026-04-10 15:12:20",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 15:17:28",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 15:22:31",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 15:27:35",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 15:32:37",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 15:37:48",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 15:42:51",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 15:47:54",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 15:52:56",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 15:57:58",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 16:03:01",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 16:08:04",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 16:13:11",
       "level": "info",
       "msg": "开始巡查..."
     }
