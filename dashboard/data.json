@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-10T09:05:43.487323",
+  "generated_at": "2026-04-10T10:06:51.816677",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-04-10T09:05:42.648515",
+        "last_run": "2026-04-10T10:06:51.114626",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -70,16 +70,16 @@
   },
   "bees": {},
   "events": {
-    "total": 1245,
+    "total": 1257,
     "recent_500": 500,
-    "today": 37,
+    "today": 49,
     "by_type": {
-      "feishu_sent": 359,
-      "scene_report": 141
+      "feishu_sent": 364,
+      "scene_report": 136
     },
     "by_source": {
-      "dancer": 359,
-      "scout": 141
+      "dancer": 364,
+      "scout": 136
     },
     "last_10": [
       {
@@ -91,18 +91,73 @@
           "target": "ou_a9ca7506b002b1be36148b97d622d551"
         },
         "dance": "waggle",
-        "timestamp": "2026-04-10T09:05:43.331684"
+        "timestamp": "2026-04-10T10:06:51.808810"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "帧差无变化，家里一切正常",
+          "target": "ou_a9ca7506b002b1be36148b97d622d551"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-04-10T10:01:47.460262"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "帧差无变化，家里一切正常",
+          "target": "ou_a9ca7506b002b1be36148b97d622d551"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-04-10T09:56:43.103031"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "帧差无变化，家里一切正常",
+          "target": "ou_a9ca7506b002b1be36148b97d622d551"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-04-10T09:51:39.512726"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "帧差无变化，家里一切正常",
+          "target": "ou_a9ca7506b002b1be36148b97d622d551"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-04-10T09:46:35.924729"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "帧差无变化，家里一切正常",
+          "target": "ou_a9ca7506b002b1be36148b97d622d551"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-04-10T09:41:30.832790"
       },
       {
         "source": "scout",
         "type": "scene_report",
         "intensity": "normal",
         "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 短发、深色连帽衫、黑色短裤、男性、中青年 | GUESS: 晓峰  \n（⚠️当前08:57为工作日，晓峰通常已上班，画面中出现需标注异常）\n\n【状态评估】  \n晓峰弯腰整理地面物品，动作自然，无异常。\n\n【环境检查】  \n室内温湿度适宜（21°C/63%），无需调整空调。\n\n【提醒事项】  \n⚠️晓峰今日应已上班，若未外出请确认是否居家办公。17:00姥姥需接小宝，距今尚早，暂不提醒。\n\n【建议】  \n请晓峰确认今日工作安排，若居家办公建议开启“勿扰模式”；客厅杂物较多，建议整理避免绊倒。",
+          "report": "【在家人员】  \nPERSON_FEATURE: 短发男性，深灰连帽衫+黑色短裤，弯腰整理地面物品 | GUESS: 晓峰（⚠️当前08:57为工作日，晓峰通常已出门上班，画面中出现需关注是否异常）\n\n【状态评估】  \n该男性动作自然，无异常行为，正在整理地面杂物，状态正常。\n\n【环境检查】  \n室内温湿度适宜（21°C/66-69%），无调节需求。室外晴朗微风，无需关窗。\n\n【提醒事项】  \n⚠️ 晓峰当前时间应在外上班，若确认为本人，请核实是否居家办公或临时返家。  \n今日无课外课，无需提醒。\n\n【建议】  \n建议确认晓峰是否临时居家，若非计划内，可短信询问。保持环境整洁，避免杂物绊倒。",
           "image_path": "/tmp/home_patrol_snapshot.jpg"
         },
         "dance": "waggle",
-        "timestamp": "2026-04-10T09:00:38.524000"
+        "timestamp": "2026-04-10T09:36:16.532555"
       },
       {
         "source": "dancer",
@@ -113,7 +168,7 @@
           "target": "ou_a9ca7506b002b1be36148b97d622d551"
         },
         "dance": "waggle",
-        "timestamp": "2026-04-10T08:55:32.000033"
+        "timestamp": "2026-04-10T09:31:07.540389"
       },
       {
         "source": "dancer",
@@ -124,7 +179,7 @@
           "target": "ou_a9ca7506b002b1be36148b97d622d551"
         },
         "dance": "waggle",
-        "timestamp": "2026-04-10T08:50:29.398514"
+        "timestamp": "2026-04-10T09:26:02.076652"
       },
       {
         "source": "dancer",
@@ -135,62 +190,7 @@
           "target": "ou_a9ca7506b002b1be36148b97d622d551"
         },
         "dance": "waggle",
-        "timestamp": "2026-04-10T08:45:26.212664"
-      },
-      {
-        "source": "dancer",
-        "type": "feishu_sent",
-        "intensity": "normal",
-        "payload": {
-          "text": "帧差无变化，家里一切正常",
-          "target": "ou_a9ca7506b002b1be36148b97d622d551"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-04-10T08:40:23.911608"
-      },
-      {
-        "source": "dancer",
-        "type": "feishu_sent",
-        "intensity": "normal",
-        "payload": {
-          "text": "帧差无变化，家里一切正常",
-          "target": "ou_a9ca7506b002b1be36148b97d622d551"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-04-10T08:35:20.260002"
-      },
-      {
-        "source": "dancer",
-        "type": "feishu_sent",
-        "intensity": "normal",
-        "payload": {
-          "text": "帧差无变化，家里一切正常",
-          "target": "ou_a9ca7506b002b1be36148b97d622d551"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-04-10T08:30:17.294371"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 短发男性，深灰连帽衫+黑色短裤+拖鞋，弯腰整理地面物品 | GUESS: 晓峰（⚠️时间异常：工作日08:57应在外上班，需核实是否居家办公）  \n\n【状态评估】  \n晓峰正在整理地面杂物，动作自然，无异常。  \n\n【环境检查】  \n客厅21.0°C/63%湿度，体感舒适；卧室略湿（68%），建议开窗通风或启用除湿。  \n\n【提醒事项】  \n- 今日无课外课，无需提醒。  \n- 姥姥07:17已到家，当前画面未见其身影，建议确认其状态（是否在卧室/卫生间）。  \n- 室外晴但低温（10.8°C），若开窗需注意保暖。  \n\n【建议】  \n建议晓峰确认是否需远程办公，若非必要建议出门；提醒姥姥注意地面杂物防滑。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-04-10T08:25:08.469792"
-      },
-      {
-        "source": "dancer",
-        "type": "feishu_sent",
-        "intensity": "normal",
-        "payload": {
-          "text": "帧差无变化，家里一切正常",
-          "target": "ou_a9ca7506b002b1be36148b97d622d551"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-04-10T08:20:00.787577"
+        "timestamp": "2026-04-10T09:20:58.312816"
       }
     ]
   },
@@ -200,86 +200,26 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 35.3,
+    "log_size_kb": 46.1,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
       "habits_discovered": 1,
       "total_observations": 0,
-      "log_entries": 1093,
+      "log_entries": 1095,
       "devices": 117,
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
     "last_patrol_lines": [
+      "   ✅ scout: ready (跑了1次)",
       "   ✅ nurse: ready (跑了0次)",
-      "   ✅ builder: ready (跑了1次)",
-      "[2026-04-10 09:00:40] [hive.dancer] [info] 飞书token已缓存",
+      "   ✅ builder: ready (跑了0次)",
       "  📰 日报尚未生成",
-      "[2026-04-10 09:00:40] [hive.queen] [info] run_all 完成，全部正常"
+      "[2026-04-10 10:01:48] [hive.queen] [info] run_all 完成，全部正常"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
-    {
-      "time": "2026-04-10 07:29:17",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 07:34:20",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 07:39:24",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 07:44:28",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 07:49:32",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 07:54:40",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 07:59:43",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 08:04:47",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 08:09:52",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 08:14:55",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 08:19:58",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 08:25:02",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
     {
       "time": "2026-04-10 08:30:10",
       "level": "info",
@@ -317,6 +257,66 @@
     },
     {
       "time": "2026-04-10 09:05:41",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 09:10:47",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 09:15:51",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 09:20:56",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 09:26:00",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 09:31:04",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 09:36:09",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 09:41:28",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 09:46:33",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 09:51:37",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 09:56:41",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 10:01:45",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-10 10:06:49",
       "level": "info",
       "msg": "开始巡查..."
     }
