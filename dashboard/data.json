@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-13T05:00:55.014879",
+  "generated_at": "2026-04-13T06:01:31.927654",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -8,9 +8,9 @@
         "name": "dancer",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": null,
+        "last_run": "2026-04-13T06:01:31.880782",
         "last_run_duration": null,
-        "total_runs": 0,
+        "total_runs": 1,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -19,9 +19,9 @@
         "name": "guard",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": null,
+        "last_run": "2026-04-13T06:01:30.960791",
         "last_run_duration": null,
-        "total_runs": 0,
+        "total_runs": 2,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-04-13T05:00:55.007662",
+        "last_run": "2026-04-13T06:01:30.959538",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -52,9 +52,9 @@
         "name": "builder",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": null,
+        "last_run": "2026-04-13T06:01:31.881473",
         "last_run_duration": null,
-        "total_runs": 0,
+        "total_runs": 1,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -70,9 +70,9 @@
   },
   "bees": {},
   "events": {
-    "total": 1477,
+    "total": 1478,
     "recent_500": 500,
-    "today": 0,
+    "today": 1,
     "by_type": {
       "feishu_sent": 322,
       "scene_report": 178
@@ -82,6 +82,17 @@
       "scout": 178
     },
     "last_10": [
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】\nPERSON_FEATURE: 穿浅蓝上衣、浅灰裤、戴发箍的年轻女性，弯腰扫地 | GUESS: 小冰  \nPERSON_FEATURE: 穿浅色上衣的幼童，坐沙发上看屏幕 | GUESS: 小宝  \n\n【状态评估】小冰正在打扫卫生，动作正常；小宝安静坐沙发，状态平稳。\n\n【环境检查】客厅23°C/73%湿度，体感舒适，无需调整。\n\n【提醒事项】周一18:30体能课，距今仅4分钟，建议提醒小宝准备出门。\n\n【建议】小冰打扫时注意避开小宝活动区，避免碰撞；体能课时间紧迫，建议立即协助小宝换鞋出发。",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-04-13T06:01:30.955280"
+      },
       {
         "source": "dancer",
         "type": "feishu_sent",
@@ -180,17 +191,6 @@
         },
         "dance": "waggle",
         "timestamp": "2026-04-12T18:38:26.715884"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 短发、深色上衣、成年男性，站立抱臂 | GUESS: 晓峰  \nPERSON_FEATURE: 幼童、短发、深色衣裤，坐沙发旁 | GUESS: 小宝  \n\n【状态评估】  \n晓峰站立观察，小宝安静坐于沙发区域，无异常动作，状态正常。\n\n【环境检查】  \n客厅23°C/72%湿度，体感舒适；主卧略暖（24.1°C），建议开窗通风或调低空调。\n\n【提醒事项】  \n今日周日无课外课。姥爷预计20:19归家，可提前准备晚餐。室外阴天无雨，风速3.8km/h，无需关窗。\n\n【建议】  \n可开启客厅除湿或新风，优化湿度；小宝活动区域建议清理地面杂物，防绊倒。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-04-12T18:38:25.277769"
       }
     ]
   },
@@ -200,21 +200,21 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 0.6,
+    "log_size_kb": 5.4,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
       "habits_discovered": 1,
       "total_observations": 0,
-      "log_entries": 1313,
+      "log_entries": 1315,
       "devices": 117,
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
     "last_patrol_lines": [
-      "  跳过本次巡查",
-      "[04:50] 休息时段，跳过",
-      "  跳过本次巡查",
-      "[04:55] 休息时段，跳过",
+      "   ✅ builder: ready (跑了0次)",
+      "[2026-04-13 05:51:23] [hive.queen] [info] run_all 完成，全部正常",
+      "",
+      "[05:56] 距上次5分钟，间隔10分钟，跳过",
       "  跳过本次巡查"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
@@ -222,6 +222,36 @@
   "patrol_timeline": [
     {
       "time": "2026-04-13 05:00:52",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-13 05:11:00",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-13 05:21:04",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-13 05:31:09",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-13 05:41:15",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-13 05:51:20",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-13 06:01:24",
       "level": "info",
       "msg": "开始巡查..."
     }
