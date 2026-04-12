@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-10T18:15:32.463374",
+  "generated_at": "2026-04-12T09:57:43.069659",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -8,9 +8,9 @@
         "name": "dancer",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": null,
+        "last_run": "2026-04-12T09:57:42.978719",
         "last_run_duration": null,
-        "total_runs": 0,
+        "total_runs": 1,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -19,9 +19,9 @@
         "name": "guard",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": null,
+        "last_run": "2026-04-12T09:57:39.537777",
         "last_run_duration": null,
-        "total_runs": 0,
+        "total_runs": 2,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-04-10T18:15:32.460938",
+        "last_run": "2026-04-12T09:57:39.537050",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -52,9 +52,9 @@
         "name": "builder",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": null,
+        "last_run": "2026-04-12T09:57:42.979524",
         "last_run_duration": null,
-        "total_runs": 0,
+        "total_runs": 1,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -70,9 +70,9 @@
   },
   "bees": {},
   "events": {
-    "total": 1286,
+    "total": 1290,
     "recent_500": 500,
-    "today": 78,
+    "today": 2,
     "by_type": {
       "feishu_sent": 361,
       "scene_report": 139
@@ -82,6 +82,50 @@
       "scout": 139
     },
     "last_10": [
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "🦞 09:52 巡查报告\n【在家人员】\nPERSON_FEATURE: 黑T恤短裤男性背影，短发 | GUESS: 晓峰（门锁确认00:00到家，周末在家合理）\nPERSON_FEATURE: 粉色家",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-04-12T09:57:41.348653"
+      },
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】\nPERSON_FEATURE: 黑T恤短裤男性背影，短发 | GUESS: 晓峰（门锁确认00:00到家，周末在家合理）\nPERSON_FEATURE: 粉色家居服年轻女性，中长发，坐沙发抱幼童 | GUESS: 小冰（带小宝，30多岁体态年轻，非姥姥）\nPERSON_FEATURE: 5岁男童，深色衣裤，坐沙发被抱 | GUESS: 小宝\n\n【状态评估】晓峰站立整理物品，小冰陪小宝阅读，状态正常温馨。\n\n【环境检查】室内温湿度舒适（22°C/62%），无需调整。\n\n【提醒事项】周日无课外课；室外风6km/h，建议关窗；小冰陪娃久坐，可提醒起身活动。\n\n【建议】地面散落玩具，建议稍后整理；绿垫可移至安全区防绊倒。",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-04-12T09:57:39.400669"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "📰 今天的 AI 日报已生成：🚀 每日 AI 热点汇总｜2026-04-11\n\n🦞 感知到你不在家，飞书发你方便查看。下面还有语音摘要～",
+          "target": "ou_a9ca7506b002b1be36148b97d622d551"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-04-11T10:05:48.254188"
+      },
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】  \nPERSON_FEATURE: 短发男性，穿灰连帽衫+黑短裤+拖鞋，正弯腰整理墙角物品 | GUESS: 晓峰（⚠️时间异常：周五08:57应为工作日，晓峰通常未归，但门锁无其到家记录，需核实是否提前回家）\n\n【状态评估】  \n动作自然，无异常，疑似整理杂物或取物。\n\n【环境检查】  \n室内温湿度舒适（22°C/61%），无需调整。室外晴热风大，建议关窗防尘。\n\n【提醒事项】  \n⚠️ 晓峰若在家属异常（工作日早9点），建议确认是否请假；姥姥应已出门接小宝（17:00），当前未到时间无需行动；无课外课。\n\n【建议】  \n确认晓峰身份及行程；检查门窗是否关好（大风）；保持客厅整洁。",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-04-10T18:31:06.136035"
+      },
       {
         "source": "scout",
         "type": "scene_report",
@@ -147,50 +191,6 @@
         },
         "dance": "waggle",
         "timestamp": "2026-04-10T14:57:12.353428"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 短发男性，深灰连帽衫+黑色短裤+拖鞋，正弯腰靠近墙角垃圾桶 | GUESS: 晓峰（⚠️当前08:57为工作日，晓峰通常已上班，画面中出现需留意是否临时回家）\n\n【状态评估】  \n晓峰弯腰似在整理或丢弃物品，动作自然，无异常。\n\n【环境检查】  \n客厅21°C/71%湿度，体感微潮；卧室22°C/64%，主卧22.5°C/61%，整体舒适。建议开启除湿或通风。\n\n【提醒事项】  \n室外晴热27.7°C+大风12.7km/h，提醒关窗防尘。今日无课外课，17:00姥姥需接小宝，暂无需提醒。\n\n【建议】  \n若晓峰确为临时回家，建议确认是否需协助；否则可忽略此画面变动。保持环境通风，避免湿度过高。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-04-10T14:21:23.206783"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 短发男性，穿灰连帽衫+黑短裤+拖鞋，弯腰靠近墙角 | GUESS: 晓峰（⚠️时间异常：周五08:57工作日，晓峰通常已出门上班，需确认是否居家办公）\n\n【状态评估】  \n晓峰弯腰似整理地面物品，动作正常，无异常行为。\n\n【环境检查】  \n客厅21°C/72%湿度，体感略闷，建议开启除湿或通风；卧室舒适，无需调整。\n\n【提醒事项】  \n⚠️晓峰出现在非正常在家时段，建议确认是否居家办公。室外大风11.3km/h，提醒关窗。今日无课外课，无需课程提醒。\n\n【建议】  \n开启客厅新风或开窗通风降湿；若晓峰居家办公，建议调整空调至24°C提升舒适度。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-04-10T13:45:55.916950"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 短发男性，深灰连帽衫+黑色短裤+拖鞋，弯腰整理地面物品 | GUESS: 晓峰（⚠️当前08:57工作日，晓峰通常未归，但门锁无其到家记录，疑似提前回家或误判）\n\n【状态评估】  \n晓峰正弯腰处理地面杂物，动作自然，无异常。\n\n【环境检查】  \n客厅湿度75%偏高，建议开窗通风或开启除湿模式；卧室/主卧温湿度舒适。\n\n【提醒事项】  \n室外风速9.9km/h，建议关窗防风；今日无课外课，无需提醒接课。\n\n【建议】  \n若确认晓峰在家，建议检查其是否需协助；持续关注姥姥10:21后是否再次外出。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-04-10T13:10:33.300770"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 短发男性，穿灰色连帽衫+黑色短裤，弯腰靠近墙角 | GUESS: 晓峰（36岁男性，符合工作日在家可能性）  \n\n【状态评估】  \n晓峰正在整理墙角物品，动作自然，无异常。  \n\n【环境检查】  \n客厅湿度81%偏高，建议开窗通风或启用除湿模式；卧室/主卧温湿度正常。  \n\n【提醒事项】  \n今日无课外课；室外晴朗但风速8.9km/h，建议关窗防尘；17:00姥姥需接小宝，距今尚早无需提醒。  \n\n【建议】  \n开启客厅除湿或空调抽湿功能，改善潮湿感；晓峰可检查门口鞋柜是否需整理。  \n\n（注：画面中仅1人，无小宝/姥姥/小冰出现，符合07:17、10:21姥姥到家后可能外出的记录，无需误判。）",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-04-10T12:35:00.335523"
       }
     ]
   },
@@ -200,128 +200,130 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 124.8,
+    "log_size_kb": 39.2,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
       "habits_discovered": 1,
       "total_observations": 0,
-      "log_entries": 1123,
+      "log_entries": 1127,
       "devices": 117,
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
     "last_patrol_lines": [
-      "   ✅ guard: ready (跑了0次)",
-      "   ✅ scout: ready (跑了1次)",
-      "   ✅ nurse: ready (跑了0次)",
-      "   ✅ builder: ready (跑了0次)",
-      "[2026-04-10 18:10:30] [hive.queen] [info] run_all 完成，全部正常"
+      "[2026-04-12 09:52:26] [hive.scout] [info] 开始巡查...",
+      "[2026-04-12 09:52:30] [hive.queen] [error] 核心巡查失败: HTTPConnectionPool(host='localhost', port=8123): Max retries exceeded with url: /api/states/camera.chuangmi_069a01_a9d3_camera_control (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x11001d1d0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+      "[2026-04-12 09:52:30] [hive.dancer] [info] 飞书token已缓存",
+      "  📰 日报尚未生成",
+      "[2026-04-12 09:52:30] [hive.queen] [warn] run_all 完成，2步失败: ['anomalies', 'patrol']"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
     {
-      "time": "2026-04-10 16:38:37",
+      "time": "2026-04-12 09:19:43",
+      "level": "error",
+      "msg": "Connection refused'))"
+    },
+    {
+      "time": "2026-04-12 09:25:08",
+      "level": "error",
+      "msg": "Connection refused'))"
+    },
+    {
+      "time": "2026-04-12 09:25:08",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-10 16:43:41",
+      "time": "2026-04-12 09:25:11",
+      "level": "error",
+      "msg": "Connection refused'))"
+    },
+    {
+      "time": "2026-04-12 09:30:36",
+      "level": "error",
+      "msg": "Connection refused'))"
+    },
+    {
+      "time": "2026-04-12 09:30:36",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-10 16:48:49",
+      "time": "2026-04-12 09:30:40",
+      "level": "error",
+      "msg": "Connection refused'))"
+    },
+    {
+      "time": "2026-04-12 09:36:04",
+      "level": "error",
+      "msg": "Connection refused'))"
+    },
+    {
+      "time": "2026-04-12 09:36:04",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-10 16:53:52",
+      "time": "2026-04-12 09:36:07",
+      "level": "error",
+      "msg": "Connection refused'))"
+    },
+    {
+      "time": "2026-04-12 09:41:32",
+      "level": "error",
+      "msg": "Connection refused'))"
+    },
+    {
+      "time": "2026-04-12 09:41:32",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-10 16:58:55",
+      "time": "2026-04-12 09:41:35",
+      "level": "error",
+      "msg": "Connection refused'))"
+    },
+    {
+      "time": "2026-04-12 09:46:59",
+      "level": "error",
+      "msg": "Connection refused'))"
+    },
+    {
+      "time": "2026-04-12 09:46:59",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-10 17:04:03",
+      "time": "2026-04-12 09:47:02",
+      "level": "error",
+      "msg": "Connection refused'))"
+    },
+    {
+      "time": "2026-04-12 09:52:26",
+      "level": "error",
+      "msg": "Connection refused'))"
+    },
+    {
+      "time": "2026-04-12 09:52:26",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-10 17:09:06",
-      "level": "info",
-      "msg": "开始巡查..."
+      "time": "2026-04-12 09:52:30",
+      "level": "error",
+      "msg": "Connection refused'))"
     },
     {
-      "time": "2026-04-10 17:14:08",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 17:19:30",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 17:24:38",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 17:29:40",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 17:34:43",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 17:39:46",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 17:44:49",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 17:49:52",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 17:54:55",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 18:00:04",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 18:05:26",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 18:10:28",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-10 18:15:31",
+      "time": "2026-04-12 09:57:31",
       "level": "info",
       "msg": "开始巡查..."
     }
   ],
-  "error_trend": {},
+  "error_trend": {
+    "2026-04-12": 88
+  },
   "honey": [
     {
       "name": "weekly_2026-03-21.md",
