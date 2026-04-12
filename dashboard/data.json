@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-12T15:09:56.139331",
+  "generated_at": "2026-04-12T16:12:26.254887",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -8,7 +8,7 @@
         "name": "dancer",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-04-12T15:09:56.072186",
+        "last_run": "2026-04-12T16:12:26.252816",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -19,7 +19,7 @@
         "name": "guard",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-04-12T15:09:53.281131",
+        "last_run": "2026-04-12T16:12:22.143161",
         "last_run_duration": null,
         "total_runs": 2,
         "error_count": 0,
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-04-12T15:09:53.278800",
+        "last_run": "2026-04-12T16:12:22.140666",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -52,7 +52,7 @@
         "name": "builder",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-04-12T15:09:56.073140",
+        "last_run": "2026-04-12T16:12:26.253252",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -70,16 +70,16 @@
   },
   "bees": {},
   "events": {
-    "total": 1389,
+    "total": 1413,
     "recent_500": 500,
-    "today": 101,
+    "today": 125,
     "by_type": {
-      "feishu_sent": 337,
-      "scene_report": 163
+      "feishu_sent": 332,
+      "scene_report": 168
     },
     "by_source": {
-      "dancer": 337,
-      "scout": 163
+      "dancer": 332,
+      "scout": 168
     },
     "last_10": [
       {
@@ -87,110 +87,110 @@
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 15:04 巡查报告（画面来自5分钟前）\n【在家人员】  \nPERSON_FEATURE: 穿浅色上衣、中青年女性、坐桌前整理物品 | GUESS: 小冰（妈妈）  \n（画面中仅1人，无其他活人可",
+          "text": "🦞 16:09 巡查报告\n【在家人员】\nPERSON_FEATURE: 5岁男孩，短发，穿灰白拼色上衣+牛仔裤，正推白色小椅子 | GUESS: 小宝\nPERSON_FEATURE: 女性，30多岁，",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-04-12T15:09:54.620808"
+        "timestamp": "2026-04-12T16:12:24.719586"
       },
       {
         "source": "scout",
         "type": "scene_report",
         "intensity": "normal",
         "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 穿浅色上衣、中青年女性、坐桌前整理物品 | GUESS: 小冰（妈妈）  \n（画面中仅1人，无其他活人可见，沙发靠垫、衣物、玩具均非人）\n\n【状态评估】  \n小冰在餐桌整理物品，状态正常，无异常行为。\n\n【环境检查】  \n客厅22°C/69%湿度，体感舒适；室外阴天26°C+大风7.8km/h，建议关窗防风。\n\n【提醒事项】  \n今日周日无课外课。姥姥11:27已到家，若长时间未见活动建议关注。大风天气请确认窗户关闭。\n\n【建议】  \n保持客厅整洁，小宝玩具可归位；风大注意关窗，避免扬尘。龙虾管家🦞已巡查完毕。",
+          "report": "【在家人员】\nPERSON_FEATURE: 5岁男孩，短发，穿灰白拼色上衣+牛仔裤，正推白色小椅子 | GUESS: 小宝\nPERSON_FEATURE: 女性，30多岁，长发，浅色上衣，坐桌前低头操作 | GUESS: 小冰（妈妈）——周末坐桌前+年轻女性特征，非姥姥/晓峰\n\n【状态评估】小宝在安全区域活动，无危险；小冰专注工作/陪玩，状态正常。\n\n【环境检查】客厅22°C/68%湿度，舒适；室外阴天微风，无需关窗。\n\n【提醒事项】周日无课外课；门锁显示晓峰、姥姥已到家，当前画面未见，属正常。\n\n【建议】小宝活动区域玩具散落，建议稍后整理；小冰久坐，可提醒起身活动。",
           "image_path": "/tmp/home_patrol_snapshot.jpg"
         },
         "dance": "waggle",
-        "timestamp": "2026-04-12T15:09:53.203972"
+        "timestamp": "2026-04-12T16:12:22.081874"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 14:59 巡查报告（画面来自5分钟前）\n【在家人员】  \nPERSON_FEATURE: 粉色上衣、中年女性、短发、坐桌前写字 | GUESS: 姥姥（已确认到家）  \n【状态评估】  \n姥姥正",
+          "text": "🦞 16:04 巡查报告\n【在家人员】  \nPERSON_FEATURE: 短发幼童，穿灰外套+蓝裤，站立翻书架 | GUESS: 小宝  \nPERSON_FEATURE: 女性背影，深色上衣，坐桌前",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-04-12T15:04:42.689400"
+        "timestamp": "2026-04-12T16:07:13.514919"
       },
       {
         "source": "scout",
         "type": "scene_report",
         "intensity": "normal",
         "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 粉色上衣、中年女性、短发、坐桌前写字 | GUESS: 姥姥（已确认到家）  \n\n【状态评估】  \n姥姥正安静伏案，状态正常，无异常动作。  \n\n【环境检查】  \n客厅22°C/69%湿度，体感舒适；卧室略暖，但无闷热感，暂无需调整。  \n\n【提醒事项】  \n今天周日，无课外课。室外风速7.8km/h，建议关窗防尘。  \n\n【建议】  \n姥姥久坐，建议15分钟后起身活动。小宝未在画面中，建议确认其安全位置。  \n\n（画面中仅1人，其余为家具/玩具/衣物，不误报）",
+          "report": "【在家人员】  \nPERSON_FEATURE: 短发幼童，穿灰外套+蓝裤，站立翻书架 | GUESS: 小宝  \nPERSON_FEATURE: 女性背影，深色上衣，坐桌前操作物品 | GUESS: 小冰（年轻女性，非姥姥）  \n\n【状态评估】  \n小宝在书架旁自主翻书，状态正常；小冰在桌前专注做事，无异常。  \n\n【环境检查】  \n客厅22°C/68%湿度，体感舒适；室外阴天25.8°C+大风7.1km/h，建议关窗防风。  \n\n【提醒事项】  \n今日周日无课外课；小宝独自活动属正常，无需干预；室外风大，已提醒关窗。  \n\n【建议】  \n可开启空气净化器（湿度略高），并检查阳台衣物是否收好。  \n\n（注：未见晓峰、姥姥、姥爷；沙发靠垫/衣物/玩具均未误判为人。）",
           "image_path": "/tmp/home_patrol_snapshot.jpg"
         },
         "dance": "waggle",
-        "timestamp": "2026-04-12T15:04:41.292535"
+        "timestamp": "2026-04-12T16:07:12.017148"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 14:51 巡查报告\n【在家人员】  \nPERSON_FEATURE: 粉色上衣、短发、中年女性，坐于桌前低头操作 | GUESS: 姥姥（已确认到家，符合外貌特征）\n【状态评估】  \n姥姥坐桌前",
+          "text": "🦞 15:59 巡查报告\n【在家人员】\nPERSON_FEATURE: 深色上衣、短发、男性，站在门口 | GUESS: 晓峰  \nPERSON_FEATURE: 白色上衣、年轻女性、中长发，站在桌前",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-04-12T14:54:25.570684"
+        "timestamp": "2026-04-12T16:02:00.901151"
       },
       {
         "source": "scout",
         "type": "scene_report",
         "intensity": "normal",
         "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 粉色上衣、短发、中年女性，坐于桌前低头操作 | GUESS: 姥姥（已确认到家，符合外貌特征）\n\n【状态评估】  \n姥姥坐桌前专注做事，状态正常，无异常行为。\n\n【环境检查】  \n客厅22°C/69%湿度，体感舒适；室外阴天26°C+7.5km/h风，建议关窗防风。\n\n【提醒事项】  \n今日周日，无课外课。姥姥已在家超3小时未移动，建议家人轻声问候确认状态。\n\n【建议】  \n可开启客厅新风或开窗通风（若风不大），保持空气流通。玩具散落区域建议稍后整理，避免小宝绊倒。\n\n（画面中仅确认1人，其余为家具/玩具/衣物，不计入）",
+          "report": "【在家人员】\nPERSON_FEATURE: 深色上衣、短发、男性，站在门口 | GUESS: 晓峰  \nPERSON_FEATURE: 白色上衣、年轻女性、中长发，站在桌前整理物品 | GUESS: 小冰  \nPERSON_FEATURE: 灰色上衣、幼童、坐沙发旁地板 | GUESS: 小宝  \n\n【状态评估】  \n晓峰似刚进门或准备外出；小冰在整理桌面物品；小宝安静坐地，状态正常。\n\n【环境检查】  \n室内温湿度舒适（22-23.6°C，60-68%），无需调整空调。\n\n【提醒事项】  \n今日周日，无课外课。室外风速7.1km/h，建议关窗防风。\n\n【建议】  \n小宝独自活动，建议小冰或晓峰就近看护；可开启儿童安全模式监控。",
           "image_path": "/tmp/home_patrol_snapshot.jpg"
         },
         "dance": "waggle",
-        "timestamp": "2026-04-12T14:54:23.597147"
+        "timestamp": "2026-04-12T16:01:59.427934"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 14:46 巡查报告\n【在家人员】  \nPERSON_FEATURE: 粉色上衣、中年女性、短发、坐于白色书桌前 | GUESS: 姥姥（已确认到家，符合外貌特征）\n【状态评估】  \n姥姥坐于书桌",
+          "text": "🦞 15:54 巡查报告\n【在家人员】  \n画面中无人。未见任何可确认的真实活人，家具、衣物、阴影均不计入。\n【状态评估】  \n无人员活动，环境静止，无异常。\n【环境检查】  \n客厅22.0°C/68",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-04-12T14:49:10.471357"
+        "timestamp": "2026-04-12T15:56:49.561563"
       },
       {
         "source": "scout",
         "type": "scene_report",
         "intensity": "normal",
         "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 粉色上衣、中年女性、短发、坐于白色书桌前 | GUESS: 姥姥（已确认到家，符合外貌特征）\n\n【状态评估】  \n姥姥坐于书桌前，姿态放松，无异常动作，状态正常。\n\n【环境检查】  \n客厅22°C/69%湿度，舒适；卧室23°C/62%，主卧23.8°C/59%，均适宜。无需调整空调。\n\n【提醒事项】  \n今日周日，无课外课。室外风速7.5km/h，建议关窗防风。姥姥已到家超3小时未移动，建议轻声问候确认状态。\n\n【建议】  \n可播放轻音乐营造氛围，或提醒姥姥起身活动。小宝未在画面中，建议查看其安全状态。",
+          "report": "【在家人员】  \n画面中无人。未见任何可确认的真实活人，家具、衣物、阴影均不计入。\n\n【状态评估】  \n无人员活动，环境静止，无异常。\n\n【环境检查】  \n客厅22.0°C/68%湿度，舒适；卧室23.0°C/58%，主卧23.6°C/59%，均适宜。室外阴天25.8°C，风速7.2km/h，建议关窗防风。\n\n【提醒事项】  \n今日周日，无课外课。晓峰、姥姥已到家（门锁记录），小冰、小宝、姥爷可能在家但未入镜，无需预警。\n\n【建议】  \n可开启新风系统平衡湿度；若家人长时间未露面，建议语音呼叫确认状态。龙虾管家🦞提醒：安全第一，勿脑补人影！",
           "image_path": "/tmp/home_patrol_snapshot.jpg"
         },
         "dance": "waggle",
-        "timestamp": "2026-04-12T14:49:08.553065"
+        "timestamp": "2026-04-12T15:56:48.147780"
       },
       {
         "source": "dancer",
         "type": "feishu_sent",
         "intensity": "normal",
         "payload": {
-          "text": "🦞 14:41 巡查报告\n【在家人员】  \nPERSON_FEATURE: 坐在白色餐桌前的年轻女性，中长发，穿浅色上衣 | GUESS: 小冰（妈妈）  \n（画面中仅1人，其余为家具/衣物/玩具，无",
+          "text": "🦞 15:49 巡查报告\n【在家人员】  \nPERSON_FEATURE: 粉色家居服、年轻女性、扎马尾、弯腰整理沙发 | GUESS: 小冰（妈妈）  \n【状态评估】  \n小冰正在整理沙发上的衣物与",
           "target": "oc_0d05b57b946873e545decd16231e6dc7"
         },
         "dance": "waggle",
-        "timestamp": "2026-04-12T14:43:52.881414"
+        "timestamp": "2026-04-12T15:51:37.611957"
       },
       {
         "source": "scout",
         "type": "scene_report",
         "intensity": "normal",
         "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 坐在白色餐桌前的年轻女性，中长发，穿浅色上衣 | GUESS: 小冰（妈妈）  \n（画面中仅1人，其余为家具/衣物/玩具，无其他活人）\n\n【状态评估】  \n小冰正坐桌前处理物品，状态正常，无异常行为。\n\n【环境检查】  \n客厅22°C/68%湿度，体感舒适；主卧略暖（23.8°C），建议开窗通风或调低空调。\n\n【提醒事项】  \n今日周日，无课外课。室外风速7.2km/h，建议关窗防尘。姥姥11:27已到家，若长时间未见活动可关注。\n\n【建议】  \n可开启客厅新风系统改善空气流通；小冰若需专注工作，可调暗吊灯减少干扰。",
+          "report": "【在家人员】  \nPERSON_FEATURE: 粉色家居服、年轻女性、扎马尾、弯腰整理沙发 | GUESS: 小冰（妈妈）  \n\n【状态评估】  \n小冰正在整理沙发上的衣物与背包，动作自然，无异常。客厅无其他可见人员，小宝未在画面中。  \n\n【环境检查】  \n客厅22°C/68%湿度，体感舒适；室外阴天25.8°C+大风7.2km/h，建议关窗防风。  \n\n【提醒事项】  \n今日周日，无课外课。15:49门锁无新记录，姥姥11:27已到家，小冰当前在活动，无需预警。  \n\n【建议】  \n建议关窗防风，避免玩具被吹乱；小冰整理后可检查小宝是否在安全区域。  \n\n（画面中仅确认1人，无误报风险）",
           "image_path": "/tmp/home_patrol_snapshot.jpg"
         },
         "dance": "waggle",
-        "timestamp": "2026-04-12T14:43:51.329945"
+        "timestamp": "2026-04-12T15:51:36.090105"
       }
     ]
   },
@@ -200,13 +200,13 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 125.7,
+    "log_size_kb": 144.8,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
       "habits_discovered": 1,
       "total_observations": 0,
-      "log_entries": 1225,
+      "log_entries": 1249,
       "devices": 117,
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
@@ -215,71 +215,11 @@
       "   ✅ scout: ready (跑了1次)",
       "   ✅ nurse: ready (跑了0次)",
       "   ✅ builder: ready (跑了1次)",
-      "[2026-04-12 15:04:45] [hive.queen] [info] run_all 完成，全部正常"
+      "[2026-04-12 16:07:14] [hive.queen] [info] run_all 完成，全部正常"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
-    {
-      "time": "2026-04-12 13:36:07",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-12 13:41:11",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-12 13:46:24",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-12 13:51:35",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-12 13:56:41",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-12 14:01:53",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-12 14:07:05",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-12 14:12:20",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-12 14:17:31",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-12 14:22:35",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-12 14:27:47",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-12 14:32:59",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
     {
       "time": "2026-04-12 14:38:13",
       "level": "info",
@@ -317,6 +257,66 @@
     },
     {
       "time": "2026-04-12 15:09:46",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-12 15:15:01",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-12 15:20:13",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-12 15:25:28",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-12 15:30:39",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-12 15:35:50",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-12 15:41:01",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-12 15:46:13",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-12 15:51:28",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-12 15:56:39",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-12 16:01:51",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-12 16:07:04",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-12 16:12:15",
       "level": "info",
       "msg": "开始巡查..."
     }
