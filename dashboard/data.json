@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-15T12:15:48.505833",
+  "generated_at": "2026-04-15T13:16:56.010226",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-04-15T12:15:48.503937",
+        "last_run": "2026-04-15T13:16:55.962967",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -70,18 +70,73 @@
   },
   "bees": {},
   "events": {
-    "total": 1751,
+    "total": 1756,
     "recent_500": 500,
-    "today": 56,
+    "today": 61,
     "by_type": {
-      "scene_report": 256,
-      "feishu_sent": 244
+      "scene_report": 259,
+      "feishu_sent": 241
     },
     "by_source": {
-      "scout": 256,
-      "dancer": 244
+      "scout": 259,
+      "dancer": 241
     },
     "last_10": [
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】  \n画面中无人。  \n\n【状态评估】  \n无人员活动，环境静止，无异常。  \n\n【环境检查】  \n客厅22.0°C/61%湿度，舒适；卧室23.0°C/63%，略偏暖湿，建议开窗通风或启用除湿模式。  \n\n【提醒事项】  \n今日周三，18:30有小宝体能课，距今6小时03分，暂无需提醒。17:00姥姥需接小宝，距今3小时53分，可设提醒。室外晴，风速7.6km/h，建议关窗防风。  \n\n【建议】  \n保持当前温湿度监控，17:00前可提醒姥姥准备接娃。若小宝17:30到家后无人看护，建议启动儿童安全模式。  \n\n（注：画面中无活人，仅家具、衣物、玩具，严格遵守“宁漏勿错”原则。）",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-04-15T13:06:46.636378"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "🦞 12:26 巡查报告\n【在家人员】  \n画面中无人。所有可见物体均为家具、衣物或玩具，无真实活人。\n【状态评估】  \n环境安静，无异常活动，状态正常。\n【环境检查】  \n室内温湿度适宜（22-23",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-04-15T12:31:14.558574"
+      },
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】  \n画面中无人。所有可见物体均为家具、衣物或玩具，无真实活人。\n\n【状态评估】  \n环境安静，无异常活动，状态正常。\n\n【环境检查】  \n室内温湿度适宜（22-23°C，61-63%），无需调整空调或加湿器。\n\n【提醒事项】  \n- 今日周三，18:30有体能课，建议18:00前提醒小宝准备。  \n- 17:00姥姥需出门接小宝，距今4小时28分，暂不提醒。  \n- 室外晴朗有风（6.8km/h），建议关窗防尘。\n\n【建议】  \n可开启扫地机器人清洁地面，当前无人活动，适合自动清洁。  \n（注：门锁记录显示姥姥及他人已回家，但画面未见，属正常——可能在其他房间。）",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-04-15T12:31:12.912278"
+      },
+      {
+        "source": "dancer",
+        "type": "feishu_sent",
+        "intensity": "normal",
+        "payload": {
+          "text": "🦞 12:18 巡查报告\n【在家人员】  \n画面中无人。未见任何真实活人，沙发靠垫、椅上衣物、地毯玩具等均非人物。\n【状态评估】  \n环境静止，无异常活动，无安全风险。\n【环境检查】  \n室内22-2",
+          "target": "oc_0d05b57b946873e545decd16231e6dc7"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-04-15T12:21:00.505978"
+      },
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】  \n画面中无人。未见任何真实活人，沙发靠垫、椅上衣物、地毯玩具等均非人物。\n\n【状态评估】  \n环境静止，无异常活动，无安全风险。\n\n【环境检查】  \n室内22-23°C，湿度61-63%，体感舒适；室外晴19.4°C，风速5.8km/h，无需关窗或调温。\n\n【提醒事项】  \n- 今日周三，18:30有小宝体能课，距今6小时12分，暂无需提醒。  \n- 17:00姥姥需接小宝，距今4小时39分，暂无需提醒。  \n- 门锁记录显示姥姥及指纹2147942400（疑似晓峰）已多次出入，当前无人属正常。\n\n【建议】  \n可保持当前环境设置，无需操作。建议17:00前确认姥姥是否已出发接小宝。",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-04-15T12:20:58.913360"
+      },
       {
         "source": "dancer",
         "type": "feishu_sent",
@@ -136,61 +191,6 @@
         },
         "dance": "waggle",
         "timestamp": "2026-04-15T11:55:00.697724"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 红色上衣、浅色长裤、短发男性，正在桌前操作 | GUESS: 晓峰（符合11:39指纹到家记录，当前时间工作日，男性在厨房区域合理）\n\n【状态评估】  \n晓峰正在准备食物或整理桌面，动作自然，无异常。\n\n【环境检查】  \n室内温湿度舒适（22°C/61%），无需调整空调。室外晴朗微风，无关窗需求。\n\n【提醒事项】  \n今天周三，18:30有小宝体能课，建议18:00前提醒准备。17:00姥姥需接小宝，距今尚早，暂不提醒。\n\n【建议】  \n晓峰若为午餐准备，可留意小宝17:30到家后用餐安排。保持厨房整洁，避免绊倒风险。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-04-15T11:54:59.069049"
-      },
-      {
-        "source": "dancer",
-        "type": "feishu_sent",
-        "intensity": "normal",
-        "payload": {
-          "text": "🦞 11:44 巡查报告（画面来自5分钟前）\n【在家人员】  \nPERSON_FEATURE: 男，短发，红上衣，卡其裤，背对镜头行走 | GUESS: 晓峰（符合11:39指纹到家记录，性别+年龄匹",
-          "target": "oc_0d05b57b946873e545decd16231e6dc7"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-04-15T11:49:40.347465"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 男，短发，红上衣，卡其裤，背对镜头行走 | GUESS: 晓峰（符合11:39指纹到家记录，性别+年龄匹配）\n\n【状态评估】  \n晓峰在客厅走动，状态正常，无异常行为。\n\n【环境检查】  \n室内温湿度舒适（22°C/61%），无需调整空调。\n\n【提醒事项】  \n今天周三，18:30有小宝体能课，建议18:00前提醒准备。  \n姥姥17:00需接小宝，距今5h10m，暂无需提醒。\n\n【建议】  \n可开启空气净化器（若未开），保持空气质量；建议晓峰查看小宝放学时间，提前安排接人。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-04-15T11:49:38.824705"
-      },
-      {
-        "source": "dancer",
-        "type": "feishu_sent",
-        "intensity": "normal",
-        "payload": {
-          "text": "🦞 11:39 巡查报告\n【在家人员】  \nPERSON_FEATURE: 穿浅绿马甲、黑裤、长发女性，背对镜头站立 | GUESS: 姥姥（符合11:39指纹到家记录，体型与年龄特征匹配）\n【状态评",
-          "target": "oc_0d05b57b946873e545decd16231e6dc7"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-04-15T11:44:28.192308"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \nPERSON_FEATURE: 穿浅绿马甲、黑裤、长发女性，背对镜头站立 | GUESS: 姥姥（符合11:39指纹到家记录，体型与年龄特征匹配）\n\n【状态评估】  \n姥姥站立于玄关附近，手持物品，状态正常，无异常行为。\n\n【环境检查】  \n室内温湿度（22°C/61%）舒适，无需调整。室外晴朗微风，无恶劣天气风险。\n\n【提醒事项】  \n今日周三，18:30有小宝体能课，距今6小时51分钟，暂无需提醒。17:00姥姥需接小宝，距今5小时15分钟，暂不提醒。\n\n【建议】  \n可提前准备小宝体能课所需衣物/水壶，避免临行匆忙。保持玄关整洁，方便出入。\n\n（画面中仅1人，无其他活人，未误判家具/玩具/阴影为人员）",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-04-15T11:44:26.364078"
       }
     ]
   },
@@ -200,86 +200,26 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 79.5,
+    "log_size_kb": 90.8,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
       "habits_discovered": 1,
       "total_observations": 0,
-      "log_entries": 1607,
+      "log_entries": 1613,
       "devices": 117,
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
     "last_patrol_lines": [
-      "   ✅ scout: ready (跑了1次)",
       "   ✅ nurse: ready (跑了0次)",
-      "   ✅ builder: ready (跑了1次)",
+      "   ✅ builder: ready (跑了0次)",
+      "[2026-04-15 13:11:52] [hive.dancer] [info] 飞书token已缓存",
       "  📰 日报尚未生成",
-      "[2026-04-15 12:10:45] [hive.queen] [info] run_all 完成，全部正常"
+      "[2026-04-15 13:11:53] [hive.queen] [info] run_all 完成，全部正常"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
-    {
-      "time": "2026-04-15 10:36:58",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-15 10:42:03",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-15 10:47:10",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-15 10:52:25",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-15 10:57:32",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-15 11:02:45",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-15 11:07:53",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-15 11:12:57",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-15 11:18:07",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-15 11:23:20",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-15 11:28:26",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-15 11:33:31",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
     {
       "time": "2026-04-15 11:38:42",
       "level": "info",
@@ -317,6 +257,66 @@
     },
     {
       "time": "2026-04-15 12:15:47",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-15 12:20:52",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-15 12:26:02",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-15 12:31:06",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-15 12:36:17",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-15 12:41:21",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-15 12:46:24",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-15 12:51:27",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-15 12:56:31",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-15 13:01:36",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-15 13:06:39",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-15 13:11:49",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-15 13:16:53",
       "level": "info",
       "msg": "开始巡查..."
     }
