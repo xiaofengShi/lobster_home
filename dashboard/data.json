@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-16T15:33:03.248601",
+  "generated_at": "2026-04-16T16:51:22.727086",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -8,9 +8,9 @@
         "name": "dancer",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-04-16T15:33:03.201661",
+        "last_run": null,
         "last_run_duration": null,
-        "total_runs": 1,
+        "total_runs": 0,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -19,9 +19,9 @@
         "name": "guard",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-04-16T15:33:02.562670",
+        "last_run": null,
         "last_run_duration": null,
-        "total_runs": 2,
+        "total_runs": 0,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-04-16T15:33:02.561659",
+        "last_run": "2026-04-16T16:51:22.724965",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -52,9 +52,9 @@
         "name": "builder",
         "state": "ready",
         "trigger_type": "event",
-        "last_run": "2026-04-16T15:33:03.202657",
+        "last_run": null,
         "last_run_duration": null,
-        "total_runs": 1,
+        "total_runs": 0,
         "error_count": 0,
         "consecutive_errors": 0,
         "ok": true
@@ -70,9 +70,9 @@
   },
   "bees": {},
   "events": {
-    "total": 1776,
+    "total": 1778,
     "recent_500": 500,
-    "today": 16,
+    "today": 18,
     "by_type": {
       "scene_report": 273,
       "feishu_sent": 227
@@ -82,6 +82,28 @@
       "dancer": 227
     },
     "last_10": [
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】画面中无人。\n\n【状态评估】无人员活动，环境安静。\n\n【环境检查】室内温湿度舒适（23°C/68%），无需调整。\n\n【提醒事项】\n- 距离17:00姥姥接小宝仅剩3小时14分，建议提前准备出门。\n- 今日周四19:30有英语课，建议18:30提醒家人准备。\n- 室外中雨，16点降水概率85%，若无人在家请关窗、收晾衣。\n\n【建议】可开启背景音乐或儿童故事音频，营造温馨氛围；建议检查玄关雨具是否备齐，方便姥姥接娃时使用。\n\n（注：画面中仅见家具、衣物、玩具，无任何可确认为真实活人的身影，严格遵守“宁漏勿误”原则。）",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-04-16T16:46:04.305699"
+      },
+      {
+        "source": "scout",
+        "type": "scene_report",
+        "intensity": "normal",
+        "payload": {
+          "report": "【在家人员】  \n画面中无人。未见任何可确认的活人身影，沙发、椅子上的衣物及玩具非人。\n\n【状态评估】  \n无人员活动，环境静止，状态正常。\n\n【环境检查】  \n客厅23.0°C/69%湿度，舒适无需调整；室外中雨15.6°C，湿度高，建议关窗防潮。\n\n【提醒事项】  \n⚠️ 17:00姥姥需接小宝，距今仅50分钟，请提醒提前准备出门。  \n⚠️ 今日周四19:30有英语课，建议18:30提醒小宝准备。  \n⚠️ 降雨预警：16点降水概率85%，若无人在家，务必关窗收衣。\n\n【建议】  \n建议开启客厅摄像头移动侦测，便于及时发现人员归家或异常。龙虾管家🦞已待命，随时响应。",
+          "image_path": "/tmp/home_patrol_snapshot.jpg"
+        },
+        "dance": "waggle",
+        "timestamp": "2026-04-16T16:09:17.706770"
+      },
       {
         "source": "scout",
         "type": "scene_report",
@@ -169,28 +191,6 @@
         },
         "dance": "waggle",
         "timestamp": "2026-04-16T11:18:46.014462"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \n画面中无人。未见任何真实活人，沙发靠垫、椅上衣物、玩具等均非人员。\n\n【状态评估】  \n无人员活动，环境静止，状态正常。\n\n【环境检查】  \n室内温湿度舒适（23°C/64%），无需调整空调或加湿。室外阴有雨，风速4.3km/h，建议关窗防潮。\n\n【提醒事项】  \n今日周四，19:30有英语课，建议19:00提醒小宝准备。17:00姥姥将接小宝，距今尚早，暂不提醒。降雨概率14点起超90%，若无人在家请确认关窗。\n\n【建议】  \n检查阳台/窗台是否收衣，避免淋湿。小宝回家后可提前准备英语课材料。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-04-16T10:42:42.076820"
-      },
-      {
-        "source": "scout",
-        "type": "scene_report",
-        "intensity": "normal",
-        "payload": {
-          "report": "【在家人员】  \n画面中无人。仅见家具、衣物、玩具及地毯，无任何可确认的活人身影。\n\n【状态评估】  \n无人员活动，环境静止，状态正常。\n\n【环境检查】  \n室内温湿度舒适（23°C/65%），无需调整。室外阴天有强降雨预警（14点起概率90%），建议关窗防雨。\n\n【提醒事项】  \n今日周四，19:30有英语课，建议18:30前提醒小宝准备。17:00姥姥需接小宝，距今尚早，暂不提醒。\n\n【建议】  \n检查窗户是否关闭；可提前准备小宝英语课用品；若姥姥外出接小宝前未归，建议确认其动向。",
-          "image_path": "/tmp/home_patrol_snapshot.jpg"
-        },
-        "dance": "waggle",
-        "timestamp": "2026-04-16T10:05:51.790525"
       }
     ]
   },
@@ -200,106 +200,26 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 90.3,
+    "log_size_kb": 102.7,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
       "habits_discovered": 1,
       "total_observations": 0,
-      "log_entries": 1649,
+      "log_entries": 1653,
       "devices": 117,
       "last_device_scan": "2026-03-18T14:03:22.095522"
     },
     "last_patrol_lines": [
-      "   ✅ builder: ready (跑了0次)",
+      "   ✅ builder: ready (跑了1次)",
       "  ❌ 同步异常: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/xiaofengShi/lobster_home/contents/dashboard/data.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
-      "[2026-04-16 15:27:29] [hive.dancer] [info] 飞书token已缓存",
+      "[2026-04-16 16:46:15] [hive.dancer] [info] 飞书token已缓存",
       "  📰 日报尚未生成",
-      "[2026-04-16 15:27:29] [hive.queen] [info] run_all 完成，全部正常"
+      "[2026-04-16 16:46:16] [hive.queen] [info] run_all 完成，全部正常"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
-    {
-      "time": "2026-04-16 14:04:14",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-16 14:09:22",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-16 14:14:39",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-16 14:19:52",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-16 14:25:14",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-16 14:30:32",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-16 14:35:40",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-16 14:35:59",
-      "level": "error",
-      "msg": "EOF occurred in violation of protocol (_ssl.c:1016)')))"
-    },
-    {
-      "time": "2026-04-16 14:41:02",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-16 14:46:06",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-16 14:51:11",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-16 14:56:17",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-16 15:01:29",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-16 15:06:35",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-16 15:11:47",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
-    {
-      "time": "2026-04-16 15:17:03",
-      "level": "info",
-      "msg": "开始巡查..."
-    },
     {
       "time": "2026-04-16 15:22:07",
       "level": "info",
@@ -319,10 +239,90 @@
       "time": "2026-04-16 15:32:58",
       "level": "error",
       "msg": "EOF occurred in violation of protocol (_ssl.c:1016)')))"
+    },
+    {
+      "time": "2026-04-16 15:38:13",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-16 15:43:29",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-16 15:48:38",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-16 15:53:43",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-16 15:58:50",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-16 16:03:55",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-16 16:09:08",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-16 16:14:20",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-16 16:19:36",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-16 16:24:50",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-16 16:25:12",
+      "level": "error",
+      "msg": "EOF occurred in violation of protocol (_ssl.c:1016)')))"
+    },
+    {
+      "time": "2026-04-16 16:30:14",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-16 16:35:22",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-16 16:40:37",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-16 16:45:54",
+      "level": "info",
+      "msg": "开始巡查..."
+    },
+    {
+      "time": "2026-04-16 16:51:17",
+      "level": "info",
+      "msg": "开始巡查..."
     }
   ],
   "error_trend": {
-    "2026-04-16": 5
+    "2026-04-16": 6
   },
   "honey": [
     {
