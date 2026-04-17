@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-17T10:25:59.759511",
+  "generated_at": "2026-04-17T11:33:07.946489",
   "hive": {
     "all_ok": true,
     "bee_count": 5,
@@ -30,7 +30,7 @@
         "name": "scout",
         "state": "ready",
         "trigger_type": "cron",
-        "last_run": "2026-04-17T10:25:52.168783",
+        "last_run": "2026-04-17T11:32:58.385433",
         "last_run_duration": null,
         "total_runs": 1,
         "error_count": 0,
@@ -200,7 +200,7 @@
     "daily_activity": {}
   },
   "system": {
-    "log_size_kb": 27.4,
+    "log_size_kb": 34.0,
     "brain": {
       "known_people": 8,
       "learning_people": 20,
@@ -215,114 +215,114 @@
       "   ✅ nurse: ready (跑了0次)",
       "   ✅ builder: ready (跑了0次)",
       "  ❌ 同步异常: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/xiaofengShi/lobster_home/contents/dashboard/data.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
-      "[2026-04-17 10:20:51] [hive.queen] [warn] run_all 完成，1步失败: ['anomalies']"
+      "[2026-04-17 11:27:57] [hive.queen] [warn] run_all 完成，1步失败: ['anomalies']"
     ],
     "uptime_note": "LaunchAgent 每5分钟触发"
   },
   "patrol_timeline": [
     {
-      "time": "2026-04-17 09:38:22",
+      "time": "2026-04-17 10:46:31",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-17 09:38:22",
+      "time": "2026-04-17 10:46:31",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-17 09:43:36",
+      "time": "2026-04-17 10:51:46",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-17 09:43:36",
+      "time": "2026-04-17 10:51:46",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-17 09:48:41",
+      "time": "2026-04-17 10:56:52",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-17 09:48:41",
+      "time": "2026-04-17 10:56:52",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-17 09:53:48",
+      "time": "2026-04-17 11:01:57",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-17 09:53:48",
+      "time": "2026-04-17 11:01:57",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-17 09:58:53",
+      "time": "2026-04-17 11:07:00",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-17 09:58:53",
+      "time": "2026-04-17 11:07:00",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-17 10:04:00",
+      "time": "2026-04-17 11:12:04",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-17 10:04:00",
+      "time": "2026-04-17 11:12:04",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-17 10:09:53",
+      "time": "2026-04-17 11:17:08",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-17 10:09:53",
+      "time": "2026-04-17 11:17:08",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-17 10:14:59",
+      "time": "2026-04-17 11:22:22",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-17 10:14:59",
+      "time": "2026-04-17 11:22:22",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-17 10:20:34",
+      "time": "2026-04-17 11:27:29",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-17 10:20:34",
+      "time": "2026-04-17 11:27:29",
       "level": "info",
       "msg": "开始巡查..."
     },
     {
-      "time": "2026-04-17 10:25:52",
+      "time": "2026-04-17 11:32:58",
       "level": "error",
       "msg": "异常检测失败: could not convert string to float: 'unavailable'"
     },
     {
-      "time": "2026-04-17 10:25:52",
+      "time": "2026-04-17 11:32:58",
       "level": "info",
       "msg": "开始巡查..."
     }
   ],
   "error_trend": {
-    "2026-04-17": 52
+    "2026-04-17": 65
   },
   "honey": [
     {
